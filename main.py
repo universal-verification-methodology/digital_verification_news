@@ -21,6 +21,7 @@ from utils import (
     get_daily_papers_by_keyword_with_retries_openalex,
     get_daily_papers_by_keyword_with_retries_semantic_scholar,
     download_dvcon_assets,
+    extract_abstracts_from_downloaded_dvcon_pdfs,
     remove_backups,
     restore_files,
 )
@@ -29,11 +30,63 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("ai_agriculture_news.log"),
+        # NOTE: This filename is mirrored in ``run.sh`` (LOG_FILE) so that
+        # logs can be archived into ``logs/`` with a stable prefix.
+        logging.FileHandler("daily_papers.log"),
         logging.StreamHandler(),
     ],
 )
 logger = logging.getLogger(__name__)
+
+
+def specialise_keyword_for_source(
+    base_keyword: str,
+    source: str,
+    profile: str,
+) -> str:
+    """Specialise a generic keyword for a given source and topic profile.
+
+    For general discovery runs we keep the user-supplied keyword unchanged.
+    For the ``verification`` profile, we tighten the query for broad digital
+    libraries (arXiv, IEEE, ACM, CrossRef, OpenAlex, Semantic Scholar) by
+    mapping a bare ``"verification"`` keyword to ``"digital verification"``.
+    DVCon is already strongly scoped to hardware design and verification, so
+    the broader ``"verification"`` keyword is preserved there.
+
+    Args:
+        base_keyword: The original keyword from the CLI or profile.
+        source: Logical source name (e.g. ``"arxiv"``, ``"ieee"``, ``"dvcon"``).
+        profile: Active topic profile (e.g. ``"general"`` or ``"verification"``).
+
+    Returns:
+        The possibly specialised keyword string to use for this source.
+    """
+    normalized_profile = profile.lower()
+    normalized_source = source.lower()
+    normalized_keyword = base_keyword.strip().lower()
+
+    if normalized_profile != "verification":
+        return base_keyword
+
+    # If the user has already provided a specific phrase (e.g. contains
+    # "uvm" or "digital"), respect it and do not rewrite.
+    if "uvm" in normalized_keyword or "digital" in normalized_keyword:
+        return base_keyword
+
+    # For generic verification runs, tighten large digital libraries to
+    # "digital verification" while keeping DVCon broad.
+    scoped_sources = {
+        "arxiv",
+        "crossref",
+        "acm",
+        "openalex",
+        "semanticscholar",
+        "ieee",
+    }
+    if normalized_keyword == "verification" and normalized_source in scoped_sources:
+        return "digital verification"
+
+    return base_keyword
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -288,12 +341,202 @@ def main() -> None:
                 f_rm.write(f"## {keyword}\n")
                 f_is.write(f"## {keyword}\n")
 
+                # Start from the human-facing topic label, then specialise the
+                # actual query per source where appropriate. The section
+                # headings stay unchanged so that the README remains readable.
+                #
+                # NOTE: For verification-centric workflows we want DVCon and
+                # other hardware-centric venues to be queried first, and leave
+                # general-purpose aggregators like arXiv until last.
                 link = "AND" if len(keyword.split()) == 1 else "OR"
 
-                # arXiv papers (included when selected as primary or when combining all)
-                if args.source in ["arxiv", "all"]:
-                    papers = get_daily_papers_by_keyword_with_retries(
+                # DVCon papers (optional, via CrossRef/OpenAlex venue filtering
+                # and dedicated proceedings scraper). This is prioritised so
+                # that hardware/digital verification content appears first.
+                if args.include_dvcon:
+                    logger.info("Fetching DVCon papers for keyword: %s", keyword)
+                    dvcon_keyword = specialise_keyword_for_source(
+                        base_keyword=keyword,
+                        source="dvcon",
+                        profile=getattr(args, "profile", "general"),
+                    )
+                    dvcon_papers = get_daily_papers_by_keyword_with_retries_dvcon(
+                        dvcon_keyword,
+                        column_names,
+                        args.max_results,
+                    )
+                    if dvcon_papers:
+                        if args.download_dvcon_assets:
+                            logger.info(
+                                "Downloading DVCon assets for keyword: %s",
+                                keyword,
+                            )
+                            download_dvcon_assets(dvcon_papers)
+                            logger.info(
+                                "Extracting abstracts from downloaded DVCon PDFs for keyword: %s",
+                                keyword,
+                            )
+                            dvcon_papers = extract_abstracts_from_downloaded_dvcon_pdfs(
+                                dvcon_papers,
+                            )
+
+                        f_rm.write("### DVCon (proceedings archive)\n")
+                        rm_dvcon_table = generate_table(dvcon_papers)
+                        is_dvcon_table = generate_table(
+                            dvcon_papers[: args.issues_results],
+                            ignore_keys=["Abstract"],
+                        )
+                        f_rm.write(rm_dvcon_table)
+                        f_rm.write("\n\n")
+                        f_is.write(is_dvcon_table)
+                        f_is.write("\n\n")
+
+                # IEEE papers (optional, but high priority for digital
+                # verification content).
+                if args.include_ieee:
+                    logger.info("Fetching IEEE papers for keyword: %s", keyword)
+                    ieee_keyword = specialise_keyword_for_source(
+                        base_keyword=keyword,
+                        source="ieee",
+                        profile=getattr(args, "profile", "general"),
+                    )
+                    ieee_papers = get_daily_papers_by_keyword_with_retries_ieee(
+                        ieee_keyword,
+                        column_names,
+                        args.max_results,
+                    )
+                    if ieee_papers:
+                        f_rm.write("### IEEE (Xplore)\n")
+                        rm_ieee_table = generate_table(ieee_papers)
+                        is_ieee_table = generate_table(
+                            ieee_papers[: args.issues_results],
+                            ignore_keys=["Abstract"],
+                        )
+                        f_rm.write(rm_ieee_table)
+                        f_rm.write("\n\n")
+                        f_is.write(is_ieee_table)
+                        f_is.write("\n\n")
+
+                # ACM papers (optional, via official API) – another
+                # verification-heavy source that we prefer ahead of general
+                # aggregators.
+                if args.include_acm:
+                    logger.info("Fetching ACM papers for keyword: %s", keyword)
+                    acm_keyword = specialise_keyword_for_source(
+                        base_keyword=keyword,
+                        source="acm",
+                        profile=getattr(args, "profile", "general"),
+                    )
+                    acm_papers = get_daily_papers_by_keyword_with_retries_acm(
+                        acm_keyword,
+                        column_names,
+                        args.max_results,
+                    )
+                    if acm_papers:
+                        f_rm.write("### ACM (Digital Library API)\n")
+                        rm_acm_table = generate_table(acm_papers)
+                        is_acm_table = generate_table(
+                            acm_papers[: args.issues_results],
+                            ignore_keys=["Abstract"],
+                        )
+                        f_rm.write(rm_acm_table)
+                        f_rm.write("\n\n")
+                        f_is.write(is_acm_table)
+                        f_is.write("\n\n")
+
+                # CrossRef papers (optional)
+                if args.include_crossref:
+                    logger.info("Fetching CrossRef papers for keyword: %s", keyword)
+                    crossref_keyword = specialise_keyword_for_source(
+                        base_keyword=keyword,
+                        source="crossref",
+                        profile=getattr(args, "profile", "general"),
+                    )
+                    cr_papers = get_daily_papers_by_keyword_with_retries_crossref(
+                        crossref_keyword,
+                        column_names,
+                        args.max_results,
+                    )
+                    if cr_papers:
+                        f_rm.write("### CrossRef\n")
+                        rm_cr_table = generate_table(cr_papers)
+                        is_cr_table = generate_table(
+                            cr_papers[: args.issues_results],
+                            ignore_keys=["Abstract"],
+                        )
+                        f_rm.write(rm_cr_table)
+                        f_rm.write("\n\n")
+                        f_is.write(is_cr_table)
+                        f_is.write("\n\n")
+
+                # OpenAlex papers (optional)
+                if args.include_openalex:
+                    logger.info("Fetching OpenAlex papers for keyword: %s", keyword)
+                    openalex_keyword = specialise_keyword_for_source(
+                        base_keyword=keyword,
+                        source="openalex",
+                        profile=getattr(args, "profile", "general"),
+                    )
+                    oa_papers = get_daily_papers_by_keyword_with_retries_openalex(
+                        openalex_keyword,
+                        column_names,
+                        args.max_results,
+                    )
+                    if oa_papers:
+                        f_rm.write("### OpenAlex\n")
+                        rm_oa_table = generate_table(oa_papers)
+                        is_oa_table = generate_table(
+                            oa_papers[: args.issues_results],
+                            ignore_keys=["Abstract"],
+                        )
+                        f_rm.write(rm_oa_table)
+                        f_rm.write("\n\n")
+                        f_is.write(is_oa_table)
+                        f_is.write("\n\n")
+
+                # Semantic Scholar papers (optional)
+                if args.include_semanticscholar:
+                    logger.info(
+                        "Fetching Semantic Scholar papers for keyword: %s",
                         keyword,
+                    )
+                    semanticscholar_keyword = specialise_keyword_for_source(
+                        base_keyword=keyword,
+                        source="semanticscholar",
+                        profile=getattr(args, "profile", "general"),
+                    )
+                    ss_papers = (
+                        get_daily_papers_by_keyword_with_retries_semantic_scholar(
+                            semanticscholar_keyword,
+                            column_names,
+                            args.max_results,
+                        )
+                    )
+                    if ss_papers:
+                        f_rm.write("### Semantic Scholar\n")
+                        rm_ss_table = generate_table(ss_papers)
+                        is_ss_table = generate_table(
+                            ss_papers[: args.issues_results],
+                            ignore_keys=["Abstract"],
+                        )
+                        f_rm.write(rm_ss_table)
+                        f_rm.write("\n\n")
+                        f_is.write(is_ss_table)
+                        f_is.write("\n\n")
+
+                # arXiv papers (included when selected as primary or when
+                # combining all). This is placed last so that if it has to
+                # retry (e.g. empty result sets) it does not delay the more
+                # targeted DVCon/IEEE/ACM lookups.
+                if args.source in ["arxiv", "all"]:
+                    arxiv_keyword = specialise_keyword_for_source(
+                        base_keyword=keyword,
+                        source="arxiv",
+                        profile=getattr(args, "profile", "general"),
+                    )
+                    link = "AND" if len(arxiv_keyword.split()) == 1 else "OR"
+                    papers = get_daily_papers_by_keyword_with_retries(
+                        arxiv_keyword,
                         column_names,
                         args.max_results,
                         link,
@@ -318,138 +561,6 @@ def main() -> None:
                         len(papers),
                         keyword,
                     )
-
-                # CrossRef papers (optional)
-                if args.include_crossref:
-                    logger.info("Fetching CrossRef papers for keyword: %s", keyword)
-                    cr_papers = get_daily_papers_by_keyword_with_retries_crossref(
-                        keyword,
-                        column_names,
-                        args.max_results,
-                    )
-                    if cr_papers:
-                        f_rm.write("### CrossRef\n")
-                        rm_cr_table = generate_table(cr_papers)
-                        is_cr_table = generate_table(
-                            cr_papers[: args.issues_results],
-                            ignore_keys=["Abstract"],
-                        )
-                        f_rm.write(rm_cr_table)
-                        f_rm.write("\n\n")
-                        f_is.write(is_cr_table)
-                        f_is.write("\n\n")
-
-                # ACM papers (optional, via official API)
-                if args.include_acm:
-                    logger.info("Fetching ACM papers for keyword: %s", keyword)
-                    acm_papers = get_daily_papers_by_keyword_with_retries_acm(
-                        keyword,
-                        column_names,
-                        args.max_results,
-                    )
-                    if acm_papers:
-                        f_rm.write("### ACM (Digital Library API)\n")
-                        rm_acm_table = generate_table(acm_papers)
-                        is_acm_table = generate_table(
-                            acm_papers[: args.issues_results],
-                            ignore_keys=["Abstract"],
-                        )
-                        f_rm.write(rm_acm_table)
-                        f_rm.write("\n\n")
-                        f_is.write(is_acm_table)
-                        f_is.write("\n\n")
-
-                # OpenAlex papers (optional)
-                if args.include_openalex:
-                    logger.info("Fetching OpenAlex papers for keyword: %s", keyword)
-                    oa_papers = get_daily_papers_by_keyword_with_retries_openalex(
-                        keyword,
-                        column_names,
-                        args.max_results,
-                    )
-                    if oa_papers:
-                        f_rm.write("### OpenAlex\n")
-                        rm_oa_table = generate_table(oa_papers)
-                        is_oa_table = generate_table(
-                            oa_papers[: args.issues_results],
-                            ignore_keys=["Abstract"],
-                        )
-                        f_rm.write(rm_oa_table)
-                        f_rm.write("\n\n")
-                        f_is.write(is_oa_table)
-                        f_is.write("\n\n")
-
-                # Semantic Scholar papers (optional)
-                if args.include_semanticscholar:
-                    logger.info(
-                        "Fetching Semantic Scholar papers for keyword: %s",
-                        keyword,
-                    )
-                    ss_papers = (
-                        get_daily_papers_by_keyword_with_retries_semantic_scholar(
-                            keyword,
-                            column_names,
-                            args.max_results,
-                        )
-                    )
-                    if ss_papers:
-                        f_rm.write("### Semantic Scholar\n")
-                        rm_ss_table = generate_table(ss_papers)
-                        is_ss_table = generate_table(
-                            ss_papers[: args.issues_results],
-                            ignore_keys=["Abstract"],
-                        )
-                        f_rm.write(rm_ss_table)
-                        f_rm.write("\n\n")
-                        f_is.write(is_ss_table)
-                        f_is.write("\n\n")
-
-                # IEEE papers (optional)
-                if args.include_ieee:
-                    logger.info("Fetching IEEE papers for keyword: %s", keyword)
-                    ieee_papers = get_daily_papers_by_keyword_with_retries_ieee(
-                        keyword,
-                        column_names,
-                        args.max_results,
-                    )
-                    if ieee_papers:
-                        f_rm.write("### IEEE (Xplore)\n")
-                        rm_ieee_table = generate_table(ieee_papers)
-                        is_ieee_table = generate_table(
-                            ieee_papers[: args.issues_results],
-                            ignore_keys=["Abstract"],
-                        )
-                        f_rm.write(rm_ieee_table)
-                        f_rm.write("\n\n")
-                        f_is.write(is_ieee_table)
-                        f_is.write("\n\n")
-
-                # DVCon papers (optional, via CrossRef/OpenAlex venue filtering)
-                if args.include_dvcon:
-                    logger.info("Fetching DVCon papers for keyword: %s", keyword)
-                    dvcon_papers = get_daily_papers_by_keyword_with_retries_dvcon(
-                        keyword,
-                        column_names,
-                        args.max_results,
-                    )
-                    if dvcon_papers:
-                        f_rm.write("### DVCon (proceedings archive)\n")
-                        rm_dvcon_table = generate_table(dvcon_papers)
-                        is_dvcon_table = generate_table(
-                            dvcon_papers[: args.issues_results],
-                            ignore_keys=["Abstract"],
-                        )
-                        f_rm.write(rm_dvcon_table)
-                        f_rm.write("\n\n")
-                        f_is.write(is_dvcon_table)
-                        f_is.write("\n\n")
-
-                        if args.download_dvcon_assets:
-                            logger.info(
-                                "Downloading DVCon assets for keyword: %s",
-                                keyword,
-                            )
-                            download_dvcon_assets(dvcon_papers)
 
                 time.sleep(5)  # avoid being blocked by remote APIs
 

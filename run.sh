@@ -13,7 +13,7 @@ SOURCE="all"      # valid values: arxiv, crossref, acm, openalex, semanticschola
 PROFILE="verification"  # valid values: general, verification
 LOG_DIR="logs"
 # This must match the filename used in logging.basicConfig in main.py.
-LOG_FILE="ai_agriculture_news.log"
+LOG_FILE="daily_papers.log"
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -75,7 +75,7 @@ case "$SOURCE" in
         INCLUDE_FLAGS="--include-dvcon --download-dvcon-assets"
         ;;
     all)
-        INCLUDE_FLAGS="--include-crossref --include-acm --include-openalex --include-semanticscholar --include-ieee --include-dvcon"
+        INCLUDE_FLAGS="--include-crossref --include-acm --include-openalex --include-semanticscholar --include-ieee --include-dvcon --download-dvcon-assets"
         ;;
     *)
         echo "Invalid source: $SOURCE. Valid options are: arxiv, crossref, acm, openalex, semanticscholar, ieee, all."

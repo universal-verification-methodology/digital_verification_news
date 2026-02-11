@@ -1490,6 +1490,98 @@ def download_dvcon_assets(
         time.sleep(delay_seconds)
 
 
+def extract_abstracts_from_downloaded_dvcon_pdfs(
+    entries: List[Dict[str, str]],
+    pdf_dir: Path = Path("downloads/dvcon"),
+    url_field: str = "Link",
+) -> List[Dict[str, str]]:
+    """Extract abstracts from downloaded DVCon PDFs and update entry dictionaries.
+
+    This function matches each DVCon entry to its downloaded PDF (if available),
+    extracts the abstract from the PDF, and updates the entry's Abstract field.
+
+    The matching is done by:
+    1. Extracting a filename stem from the entry's URL
+    2. Looking for PDFs in the download directory that match that stem
+
+    Args:
+        entries: List of DVCon entry dictionaries (typically from
+            :func:`get_daily_papers_by_keyword_from_dvcon`).
+        pdf_dir: Directory containing downloaded DVCon PDFs.
+        url_field: Dictionary key holding the detail-page URL.
+
+    Returns:
+        The same list of entries with Abstract fields updated where PDFs were
+        found and abstracts successfully extracted.
+    """
+    if not pdf_dir.exists():
+        logger.info("DVCon PDF directory %s does not exist; skipping abstract extraction", pdf_dir)
+        return entries
+
+    pdf_files = list(pdf_dir.glob("*.pdf"))
+    if not pdf_files:
+        logger.info("No PDF files found in %s; skipping abstract extraction", pdf_dir)
+        return entries
+
+    logger.info("Extracting abstracts from %d downloaded DVCon PDFs", len(pdf_files))
+
+    # Create a mapping from URL stems to PDF paths
+    url_to_pdf: Dict[str, Path] = {}
+    for pdf_path in pdf_files:
+        # Try to match PDFs by URL stem (last part of URL path)
+        stem = pdf_path.stem.lower()
+        url_to_pdf[stem] = pdf_path
+
+    updated_entries = []
+    for entry in entries:
+        page_url = entry.get(url_field, "")
+        if not page_url:
+            updated_entries.append(entry)
+            continue
+
+        # Extract a potential filename stem from the URL
+        # e.g., "https://dvcon-proceedings.org/document/some-paper-title/" -> "some-paper-title"
+        url_path = urllib.parse.urlparse(page_url).path.strip("/")
+        url_stem = url_path.split("/")[-1].lower() if url_path else ""
+
+        # Try to find matching PDF
+        matching_pdf: Optional[Path] = None
+        if url_stem and url_stem in url_to_pdf:
+            matching_pdf = url_to_pdf[url_stem]
+        else:
+            # Fallback: try partial matching (e.g., if URL has extra suffixes)
+            for stem, pdf_path in url_to_pdf.items():
+                if url_stem in stem or stem in url_stem:
+                    matching_pdf = pdf_path
+                    break
+
+        if matching_pdf:
+            logger.info(
+                "Extracting abstract from PDF %s for entry: %s",
+                matching_pdf.name,
+                entry.get("Title", "Unknown"),
+            )
+            abstract = extract_abstract_from_pdf(matching_pdf)
+            if abstract:
+                entry["Abstract"] = abstract
+                logger.debug("Extracted abstract (length: %d chars) for: %s", len(abstract), entry.get("Title", "Unknown"))
+            else:
+                logger.debug("No abstract found in PDF: %s", matching_pdf.name)
+        else:
+            logger.debug("No matching PDF found for URL: %s", page_url)
+
+        updated_entries.append(entry)
+
+    abstracts_found = sum(1 for entry in updated_entries if entry.get("Abstract", "").strip())
+    logger.info(
+        "Abstract extraction complete: %d/%d entries now have abstracts",
+        abstracts_found,
+        len(updated_entries),
+    )
+
+    return updated_entries
+
+
 def get_daily_papers_by_keyword_with_retries_ieee(
     keyword: str,
     column_names: List[str],
