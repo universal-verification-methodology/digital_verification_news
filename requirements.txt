@@ -1,0 +1,10 @@
+easydict
+feedparser
+pytz
+requests
+urllib3
+beautifulsoup4
+pypdf
+# Optional but recommended for DVCon PDF OCR support
+pdf2image
+pytesseract
