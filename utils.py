@@ -1464,8 +1464,13 @@ def download_dvcon_assets(
         filename = asset_url.rstrip("/").split("/")[-1] or "dvcon_asset"
         filepath = os.path.join(output_dir, filename)
 
+        # Check if file already exists
         if os.path.exists(filepath):
             logger.info("Skipping existing DVCon asset: %s", filepath)
+            # Update entry Link to point to local file (use relative path)
+            relative_path = os.path.relpath(filepath, start=".").replace("\\", "/")
+            entry[url_field] = relative_path
+            logger.debug("Updated entry link to local file: %s", relative_path)
             continue
 
         logger.info("Downloading DVCon asset %s -> %s", asset_url, filepath)
@@ -1483,8 +1488,13 @@ def download_dvcon_assets(
                     for chunk in dl_resp.iter_content(chunk_size=8192):
                         if chunk:
                             out.write(chunk)
+            # Update entry Link to point to local file (use relative path)
+            relative_path = os.path.relpath(filepath, start=".").replace("\\", "/")
+            entry[url_field] = relative_path
+            logger.debug("Updated entry link to local file: %s", relative_path)
         except requests.RequestException as exc:  # noqa: BLE001
             logger.warning("Failed to download DVCon asset %s: %s", asset_url, exc)
+            # Keep original URL if download fails
             continue
 
         time.sleep(delay_seconds)
@@ -1926,9 +1936,59 @@ def build_dvcon_readme_from_pdfs(
 
 def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) -> str:
     logger.info("Generating table for %d papers", len(papers))
+    
+    # Handle empty papers list
+    if not papers:
+        logger.warning("No papers provided, returning empty table")
+        return ""
+    
+    # Sort papers by date (newest first) before formatting
+    def parse_date(date_str: str) -> datetime.datetime:
+        """Parse date string to datetime object for sorting.
+        
+        Args:
+            date_str: Date string in format "YYYY-MM-DDTHH:MM:SSZ" or "YYYY-MM-DD".
+        
+        Returns:
+            Datetime object, or epoch (1970-01-01) if parsing fails.
+        """
+        if not date_str:
+            return datetime.datetime(1970, 1, 1)
+        try:
+            # Remove timezone suffix (Z) if present
+            date_clean = date_str.rstrip("Z")
+            if "T" in date_clean:
+                # Split date and time
+                date_part, time_part = date_clean.split("T", 1)
+                # Parse date part
+                year, month, day = map(int, date_part.split("-"))
+                # Parse time part (may have microseconds)
+                time_parts = time_part.split(":")
+                hour = int(time_parts[0])
+                minute = int(time_parts[1])
+                second = int(time_parts[2].split(".")[0]) if len(time_parts) > 2 else 0
+                return datetime.datetime(year, month, day, hour, minute, second)
+            else:
+                # Just date part
+                year, month, day = map(int, date_clean.split("-"))
+                return datetime.datetime(year, month, day)
+        except (ValueError, AttributeError, IndexError) as exc:
+            logger.debug("Failed to parse date '%s': %s", date_str, exc)
+            return datetime.datetime(1970, 1, 1)
+    
+    # Sort papers by date (newest first), then by title for stable ordering
+    sorted_papers = sorted(
+        papers,
+        key=lambda p: (
+            parse_date(p.get("Date", "1970-01-01T00:00:00Z")),
+            p.get("Title", "").lower(),
+        ),
+        reverse=True,  # Newest first
+    )
+    
     formatted_papers = []
-    keys = papers[0].keys()
-    for paper in papers:
+    keys = sorted_papers[0].keys()
+    for paper in sorted_papers:
         try:
             # process fixed columns
             formatted_paper = EasyDict()
@@ -1964,6 +2024,11 @@ def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) ->
         except Exception as exc:
             logger.warning("Failed to format paper: %s", exc)
             continue
+
+    # Handle case where all papers failed to format
+    if not formatted_papers:
+        logger.warning("No papers were successfully formatted, returning empty table")
+        return ""
 
     # generate header
     columns = formatted_papers[0].keys()

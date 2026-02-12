@@ -1,0 +1,1199 @@
+2026-02-12 04:46:42,477 - INFO - Using 'verification' profile: focusing on digital/UVM verification topics.
+2026-02-12 04:46:42,488 - INFO - Starting Daily Papers Update Script
+2026-02-12 04:46:42,491 - INFO - Backing up files
+2026-02-12 04:46:42,498 - INFO - Backed up existing files
+2026-02-12 04:46:42,503 - INFO - Processing keyword: verification
+2026-02-12 04:46:42,506 - INFO - Fetching DVCon papers for keyword: verification
+2026-02-12 04:46:42,507 - INFO - Attempting to get DVCon papers for keyword 'verification' with 3 retries
+2026-02-12 04:46:42,507 - INFO - Getting DVCon papers for keyword via proceedings site: verification
+2026-02-12 04:46:44,086 - INFO - Retrieved 100 DVCon proceedings entries after selection
+2026-02-12 04:46:44,087 - INFO - Successfully retrieved 100 DVCon papers on attempt 1
+2026-02-12 04:46:44,088 - INFO - Downloading DVCon assets for keyword: verification
+2026-02-12 04:46:44,092 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-hybrid-functional-verification-approach-of-complex-designs-using-python-based-models/
+2026-02-12 04:46:44,916 - INFO - Skipping existing DVCon asset: downloads/dvcon/4B2-DVConIndia2025_Final_Paper_6824.pdf
+2026-02-12 04:46:44,916 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/efficient-verification-of-multi-die-systems-using-multi-die-co-simulation-framework/
+2026-02-12 04:46:45,239 - INFO - Skipping existing DVCon asset: downloads/dvcon/4A3-DVConIndia2025_Final_Paper_0314.pdf
+2026-02-12 04:46:45,239 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/novel-approach-for-verification-of-multi-die-booting-using-disruptive-distributed-simulation-methodology/
+2026-02-12 04:46:45,596 - INFO - Skipping existing DVCon asset: downloads/dvcon/4A2-DVConIndia2025_Final_Paper_5352.pdf
+2026-02-12 04:46:45,597 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/breaking-barriers-in-advanced-multi-chiplet-ai-socs-using-scalable-ucie-and-boot-verification-and-emulation-techniques/
+2026-02-12 04:46:45,902 - INFO - Skipping existing DVCon asset: downloads/dvcon/4A1-DVConIndia2025_Final_Paper_2911.pdf
+2026-02-12 04:46:45,904 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/catching-the-unseen-a-case-study-on-conquering-caching-and-ordering-verification-challenges-in-release-critical-unit/
+2026-02-12 04:46:46,239 - INFO - Skipping existing DVCon asset: downloads/dvcon/3C3-DVConIndia2025_Final_Paper_7251.pdf
+2026-02-12 04:46:46,241 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/decoding-the-ras-maze-microscopic-complexity-meets-verification/
+2026-02-12 04:46:46,572 - INFO - Skipping existing DVCon asset: downloads/dvcon/3C1-DVConIndia2025_Final_Paper_0076.pdf
+2026-02-12 04:46:46,573 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uncovering-hardware-vulnerabilities-formal-verification-for-security-focused-negative-testing/
+2026-02-12 04:46:46,911 - INFO - Skipping existing DVCon asset: downloads/dvcon/2C2-DVConIndia2025_Final_Paper_9003.pdf
+2026-02-12 04:46:46,912 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/breaking-barriers-formal-verification-in-complex-compressor-controller-architecture/
+2026-02-12 04:46:47,200 - INFO - Skipping existing DVCon asset: downloads/dvcon/2B3-DVConIndia2025_Final_Paper_5338.pdf
+2026-02-12 04:46:47,201 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/breaking-barriers-formal-verification-in-complex-compressor-controller/
+2026-02-12 04:46:47,532 - INFO - Skipping existing DVCon asset: downloads/dvcon/2B3_DVConIndia25_Final_PPT_5338.pdf
+2026-02-12 04:46:47,532 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/navigating-complexity-to-convergence-formal-verification-for-single-precision/
+2026-02-12 04:46:47,865 - INFO - Skipping existing DVCon asset: downloads/dvcon/2A2-DVConIndia2025_Final_Paper_4137.pdf
+2026-02-12 04:46:47,865 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/robust-verification-of-clock-tree-network-using-clock-monitor-integrated-by-acrmg-3/
+2026-02-12 04:46:48,191 - INFO - Skipping existing DVCon asset: downloads/dvcon/1C3-DVConIndia2025_Final_Paper_2809.pdf
+2026-02-12 04:46:48,191 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/optimizing-cpu-based-configuration-path-verification-through-automated-c-test-case-generation-with-uvm-ral/
+2026-02-12 04:46:49,188 - INFO - Skipping existing DVCon asset: downloads/dvcon/1C1-DVConIndia2025_Final_Paper_7562.pdf
+2026-02-12 04:46:49,188 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/accelerating-debug-with-experience-driven-insights-a-tool-based-approach-for-ip-and-soc-level-verification-2/
+2026-02-12 04:46:49,519 - INFO - Skipping existing DVCon asset: downloads/dvcon/1A2_DVConIndia25_Final_PPT_7616.pdf
+2026-02-12 04:46:49,520 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/accelerating-debug-with-experience-driven-insights-a-tool-based-approach-for-ip-and-soc-level-verification/
+2026-02-12 04:46:49,852 - INFO - Skipping existing DVCon asset: downloads/dvcon/1A2-DVConIndia2025_Final_Paper_7616.pdf
+2026-02-12 04:46:49,852 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/an-ideal-fusa-verification-solution-2/
+2026-02-12 04:46:50,175 - INFO - Skipping existing DVCon asset: downloads/dvcon/P20-DVConIndia2025_Final_Paper_6976.pdf
+2026-02-12 04:46:50,175 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/an-ideal-fusa-verification-solution/
+2026-02-12 04:46:50,516 - INFO - Skipping existing DVCon asset: downloads/dvcon/P20-DVConIndia25_Final_PPT_6976.pdf
+2026-02-12 04:46:50,516 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/novel-use-of-symbolic-map-based-constraints-for-synchronization-block-verification-using-formal-methods-2/
+2026-02-12 04:46:50,820 - INFO - Skipping existing DVCon asset: downloads/dvcon/P19-DVConIndia2025_Final_Paper_6547.pdf
+2026-02-12 04:46:50,821 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/novel-use-of-symbolic-map-based-constraints-for-synchronization-block-verification-using-formal-methods/
+2026-02-12 04:46:51,326 - INFO - Skipping existing DVCon asset: downloads/dvcon/P19-DVConIndia25_Final_PPT_6547.pdf
+2026-02-12 04:46:51,327 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/tide-timing-diagram-to-design-verification-model-2/
+2026-02-12 04:46:51,662 - INFO - Skipping existing DVCon asset: downloads/dvcon/P14-DVConIndia2025_Final_Paper_4790.pdf
+2026-02-12 04:46:51,662 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/tide-timing-diagram-to-design-verification-model/
+2026-02-12 04:46:52,158 - INFO - Skipping existing DVCon asset: downloads/dvcon/P14-DVConIndia25_Final_PPT_4790.pdf
+2026-02-12 04:46:52,159 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/novel-customized-algorithm-and-verification-checklist-to-improve-the-process-of-register-verification-in-uvm/
+2026-02-12 04:46:52,473 - INFO - Skipping existing DVCon asset: downloads/dvcon/P13-DVConIndia25_Final_PPT_4118.pdf
+2026-02-12 04:46:52,473 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/bridging-risc-v-core-verification-and-pss-a-portable-stimulus-stress-testing-approach-2/
+2026-02-12 04:46:52,827 - INFO - Skipping existing DVCon asset: downloads/dvcon/P11-DVConIndia2025_Final_Paper_3773.pdf
+2026-02-12 04:46:52,827 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/bridging-risc-v-core-verification-and-pss-a-portable-stimulus-stress-testing-approach/
+2026-02-12 04:46:53,122 - INFO - Skipping existing DVCon asset: downloads/dvcon/P11-DVConIndia25_Final_PPT_3773.pdf
+2026-02-12 04:46:53,122 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/overcoming-the-roadblocks-in-display-port-automotive-extensions-verification-2/
+2026-02-12 04:46:53,406 - INFO - Skipping existing DVCon asset: downloads/dvcon/P10-DVConIndia2025_Final_Paper_3645.pdf
+2026-02-12 04:46:53,407 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/overcoming-the-roadblocks-in-display-port-automotive-extensions-verification/
+2026-02-12 04:46:53,700 - INFO - Skipping existing DVCon asset: downloads/dvcon/P10-DVConIndia25_Final_PPT_3645.pdf
+2026-02-12 04:46:53,701 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/ai-enabled-formal-verification-flow-from-spec-to-sign-off-2/
+2026-02-12 04:46:54,023 - INFO - Skipping existing DVCon asset: downloads/dvcon/P2-DVConIndia2025_Final_Paper_1418.pdf
+2026-02-12 04:46:54,024 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/ai-enabled-formal-verification-flow-from-spec-to-sign-off/
+2026-02-12 04:46:54,383 - INFO - Skipping existing DVCon asset: downloads/dvcon/P2-DVConIndia25_Final_PPT_1418.pdf
+2026-02-12 04:46:54,384 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/introduction-of-ieee-1801-2024-upf4-0-improvements-for-the-specification-and-verification-of-low-power-2/
+2026-02-12 04:46:54,717 - INFO - Skipping existing DVCon asset: downloads/dvcon/Tutorial_5B_Introduction-of-IEEE-1801-2024-UPF4_0.pdf
+2026-02-12 04:46:54,718 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/pss-in-action-scalable-test-reuse-from-design-verification-to-silicon/
+2026-02-12 04:46:55,167 - INFO - Skipping existing DVCon asset: downloads/dvcon/SW_4B_2_PSS_In_Action.pdf
+2026-02-12 04:46:55,168 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/breakthrough-in-cdc-rdc-verification-defining-a-standard-for-interoperable-abstract-model-2/
+2026-02-12 04:46:55,528 - INFO - Skipping existing DVCon asset: downloads/dvcon/SW_4A_1_CDC_RDC_Format_Update.pdf
+2026-02-12 04:46:55,529 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unleashing-the-potential-of-agentic-ai-within-design-functional-verification-2/
+2026-02-12 04:46:55,871 - INFO - Skipping existing DVCon asset: downloads/dvcon/SW_3B_2_Agentic_AI_Functional_Verification.pdf
+2026-02-12 04:46:55,872 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/addressing-formal-verification-challenges-with-genai-technology-and-risc-v-solutions/
+2026-02-12 04:46:56,198 - INFO - Skipping existing DVCon asset: downloads/dvcon/SW_3B_1_Formal_Verification_AI.pdf
+2026-02-12 04:46:56,199 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/addressing-protocol-verification-challenges-in-the-evolving-landscape-of-ai-and-high-performance-computing-hpc/
+2026-02-12 04:46:56,534 - INFO - Skipping existing DVCon asset: downloads/dvcon/SW_3A_2_Addressing_Protocol_Verification_AI_HPC.pdf
+2026-02-12 04:46:56,535 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/liberating-verification-from-boolean-shackles/
+2026-02-12 04:46:56,870 - INFO - Skipping existing DVCon asset: downloads/dvcon/T_2B_Liberating_Functional_Verification.pdf
+2026-02-12 04:46:56,871 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/achieve-software-prototyping-verification-success-with-veloce-profpga-cs/
+2026-02-12 04:46:57,180 - INFO - Skipping existing DVCon asset: downloads/dvcon/SW_2A_2_Veloce_proFPGA.pdf
+2026-02-12 04:46:57,181 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/boost-verification-efficiency-with-vc-execution-manager/
+2026-02-12 04:46:57,544 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConIndia2025_Tutorials_Final_ppt_0156.pdf
+2026-02-12 04:46:57,546 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/software-defined-hardware-design-relies-on-ai-and-intelligent-verification/
+2026-02-12 04:46:58,141 - INFO - Skipping existing DVCon asset: downloads/dvcon/1-Siemens-Bangalore_DVCON_Keynote_Sept_2025.pdf
+2026-02-12 04:46:58,142 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unleashing-the-potential-of-agentic-ai-within-design-functional-verification/
+2026-02-12 04:46:58,504 - INFO - Skipping existing DVCon asset: downloads/dvcon/Unleashing-the-Potential-of-Agentic-AI-Within-Design-Functional-Verification.pdf
+2026-02-12 04:46:58,505 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unified-uvm-testbench-integrating-random-directed-and-pseudo-random-verification-capabilities-2/
+2026-02-12 04:46:58,801 - INFO - Skipping existing DVCon asset: downloads/dvcon/Unified-UVM-Testbench-Integrating-Random-Directed-and-Pseudo-Random-Verification-Capabilities.pdf
+2026-02-12 04:46:58,802 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/the-test-bench-factory-building-verification-environments-faster-better-smarter-2/
+2026-02-12 04:46:59,108 - INFO - Skipping existing DVCon asset: downloads/dvcon/The-Test-Bench-Factory-Building-Verification-Environments-Faster-Better-Smarter.pdf
+2026-02-12 04:46:59,109 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/reduce-reuse-reverify-an-efficient-approach-to-transition-formal-verification-environments-from-pcie-gen6-to-gen7-2/
+2026-02-12 04:46:59,450 - INFO - Skipping existing DVCon asset: downloads/dvcon/Reduce-Reuse-Reverify-An-efficient-approach-to-transition-formal-verification-environments-from-PCIe-Gen6-to-Gen7.pdf
+2026-02-12 04:46:59,452 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/real-number-voltage-aware-behavioral-modeling-and-verification-of-sram-subsystem-with-upf/
+2026-02-12 04:46:59,777 - INFO - Skipping existing DVCon asset: downloads/dvcon/Real-Number-Voltage-aware-behavioral-modeling-and-verification-of-SRAM-subsystem-with-Unified-Power-Format-UPF.pdf
+2026-02-12 04:46:59,778 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/pre-silicon-verification-of-software-safety-mechanisms-a-hybrid-approach-spi-and-nvdla-case-studies/
+2026-02-12 04:47:00,105 - INFO - Skipping existing DVCon asset: downloads/dvcon/Pre-Silicon-Verification-of-Software-Safety-Mechanisms-A-Hybrid-Approach-with-SPI-and-NVDLA-Case-Studies.pdf
+2026-02-12 04:47:00,106 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/out-of-the-box-techniques-for-data-path-verification-2/
+2026-02-12 04:47:00,422 - INFO - Skipping existing DVCon asset: downloads/dvcon/Out-of-The-Box-Techniques-for-Data-Path-Verification.pdf
+2026-02-12 04:47:00,423 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/minimally-intrusive-safety-and-security-verification-of-rust-rtic-applications-2/
+2026-02-12 04:47:01,012 - INFO - Skipping existing DVCon asset: downloads/dvcon/Minimally-Intrusive-Safety-and-Security-Verification-of-Rust-RTIC-Applications.pdf
+2026-02-12 04:47:01,013 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/introduction-to-the-apheleia-verification-library/
+2026-02-12 04:47:01,359 - INFO - Skipping existing DVCon asset: downloads/dvcon/Introduction-to-the-Apheleia-Verification-Library.pdf
+2026-02-12 04:47:01,360 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/introduction-of-ieee-1801-2024-upf4-0-improvements-for-the-specification-and-verification-of-low-power/
+2026-02-12 04:47:01,682 - INFO - Skipping existing DVCon asset: downloads/dvcon/Introduction-of-IEEE-1801-2024-UPF4.0-improvements-for-the-specification-and-verification-of-low-power.pdf
+2026-02-12 04:47:01,683 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/implementing-functional-coverage-for-analog-ips-in-mixed-signal-verification-environments-2/
+2026-02-12 04:47:01,500 - INFO - Skipping existing DVCon asset: downloads/dvcon/Implementing-Functional-Coverage-for-Analog-IPs-in-Mixed-Signal-Verification-Environments.pdf
+2026-02-12 04:47:01,502 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/fully-automated-verification-framework-for-configurable-ips-from-requirements-to-results-2/
+2026-02-12 04:47:01,798 - INFO - Skipping existing DVCon asset: downloads/dvcon/Fully-Automated-Verification-Framework-for-Configurable-IPs-From-Requirements-to-Results.pdf
+2026-02-12 04:47:01,798 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/fpga-firmware-verification-a-common-approach-for-simulation-and-hardware-tests-2/
+2026-02-12 04:47:02,141 - INFO - Skipping existing DVCon asset: downloads/dvcon/FPGA-Firmware-Verification-a-common-approach-for-simulation-and-hardware-tests.pdf
+2026-02-12 04:47:02,142 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/exploring-the-limits-of-vertical-reuse-automation-in-pss-driven-soc-verification-2/
+2026-02-12 04:47:02,473 - INFO - Skipping existing DVCon asset: downloads/dvcon/Exploring-the-Limits-of-Vertical-Reuse-Automation-in-PSS-Driven-SoC-Verification.pdf
+2026-02-12 04:47:02,473 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/expediting-coverage-closure-in-digital-verification-with-the-portable-stimulus-standard-pss/
+2026-02-12 04:47:02,803 - INFO - Skipping existing DVCon asset: downloads/dvcon/Expediting-Coverage-Closure-in-Digital-Verification-with-the-Portable-Stimulus-Standard-PSS.pdf
+2026-02-12 04:47:02,805 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/efficient-coverage-optimization-with-formal-guided-testcase-generation-in-uvm-verification-2/
+2026-02-12 04:47:03,352 - INFO - Skipping existing DVCon asset: downloads/dvcon/Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf
+2026-02-12 04:47:03,353 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/dms-verification-environment-for-gyroscope/
+2026-02-12 04:47:03,696 - INFO - Skipping existing DVCon asset: downloads/dvcon/DMS-Verification-Environment-for-Gyroscope-System.pdf
+2026-02-12 04:47:03,697 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/comprehensive-configurable-ethernet-ip-verification-strategy-2/
+2026-02-12 04:47:03,993 - INFO - Skipping existing DVCon asset: downloads/dvcon/Comprehensive-Configurable-Ethernet-IP-verification-strategy.pdf
+2026-02-12 04:47:03,993 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/next-gen-verification-with-python-driving-hardware-tests-with-pytest-and-cocotb/
+2026-02-12 04:47:04,319 - INFO - Skipping existing DVCon asset: downloads/dvcon/Cocotb-and-PyUVM-tests-powered-with-pytest.pdf
+2026-02-12 04:47:04,320 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/automated-flow-to-maintaining-consistency-in-parallel-design-representations-using-cross-level-verification-2/
+2026-02-12 04:47:04,625 - INFO - Skipping existing DVCon asset: downloads/dvcon/Automated-Flow-to-Maintaining-Consistency-in-Parallel-Design-Representations-Using-Cross-Level-Verification.pdf
+2026-02-12 04:47:04,625 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/advancing-open-source-verification-enabling-full-randomization-in-verilator-2/
+2026-02-12 04:47:04,940 - INFO - Skipping existing DVCon asset: downloads/dvcon/Advancing-Open-Source-Verification-Enabling-Full-Randomization-in-Verilator.pdf
+2026-02-12 04:47:04,941 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/act-with-confidence-formal-verification-of-packet-based-designs-using-array-centric-tracking-2/
+2026-02-12 04:47:05,252 - INFO - Skipping existing DVCon asset: downloads/dvcon/ACT-with-Confidence-Formal-Verification-of-Packet-Based-Designs-using-Array-Centric-Tracking.pdf
+2026-02-12 04:47:05,253 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/accelerating-coverage-closure-with-reinforcement-learning-a-case-study-on-fsm-verification-2/
+2026-02-12 04:47:05,551 - INFO - Skipping existing DVCon asset: downloads/dvcon/Accelerating-Coverage-Closure-with-Reinforcement-Learning-A-Case-Study-on-FSM-Verification.pdf
+2026-02-12 04:47:05,552 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/accelerate-verification-of-complex-hardware-algorithms-using-matlab-based-systemverilog-dpis-2/
+2026-02-12 04:47:06,074 - INFO - Skipping existing DVCon asset: downloads/dvcon/Accelerate-Verification-of-Complex-Hardware-Algorithms-using-MATLAB-based-SystemVerilog-DPIs.pdf
+2026-02-12 04:47:06,074 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-novel-configurable-uvm-architecture-to-unlock-1-6t-ethernet-verification-2/
+2026-02-12 04:47:06,355 - INFO - Skipping existing DVCon asset: downloads/dvcon/A-Novel-Configurable-UVM-Architecture-To-Unlock-1.6T-Ethernet-Verification-Sameh-Mahmoud.pdf
+2026-02-12 04:47:06,355 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/minimally-intrusive-safety-and-security-verification-of-rust-rtic-applications/
+2026-02-12 04:47:06,652 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_172.pdf
+2026-02-12 04:47:06,652 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/gail-v-generative-ai-leveraged-verification/
+2026-02-12 04:47:06,996 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_169.pdf
+2026-02-12 04:47:06,996 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/exploring-the-limits-of-vertical-reuse-automation-in-pss-driven-soc-verification/
+2026-02-12 04:47:07,331 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_164.pdf
+2026-02-12 04:47:07,332 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/pre-silicon-verification-of-software-safety-mechanisms/
+2026-02-12 04:47:07,647 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_163.pdf
+2026-02-12 04:47:07,648 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/transformation-aided-verification-of-mac-designs-using-symbolic-computer-algebra/
+2026-02-12 04:47:07,966 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_158.pdf
+2026-02-12 04:47:07,966 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/efficient-coverage-optimization-with-formal-guided-testcase-generation-in-uvm-verification/
+2026-02-12 04:47:08,273 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_152.pdf
+2026-02-12 04:47:08,274 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/automated-flow-to-maintaining-consistency-in-parallel-design-representations-using-cross-level-verification/
+2026-02-12 04:47:08,633 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_151.pdf
+2026-02-12 04:47:08,634 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/ai-powered-hardware-verification-your-non-human-friend-in-action/
+2026-02-12 04:47:08,930 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_144.pdf
+2026-02-12 04:47:08,930 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/out-of-the-box-techniques-for-data-path-verification/
+2026-02-12 04:47:09,245 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_139.pdf
+2026-02-12 04:47:09,246 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-graph-based-uvm-generation-framework-for-complex-state-machine-verification/
+2026-02-12 04:47:09,764 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_135.pdf
+2026-02-12 04:47:09,764 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unified-uvm-testbench-integrating-random-directed-and-pseudo-random-verification-capabilities/
+2026-02-12 04:47:10,109 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_132.pdf
+2026-02-12 04:47:10,110 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/real-number-voltage-aware-behavioral-modeling-and-verification-of-sram-subsystem-with-unified-power-format-upf/
+2026-02-12 04:47:10,647 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_131.pdf
+2026-02-12 04:47:10,648 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/accelerating-coverage-closure-with-reinforcement-learning-a-case-study-on-fsm-verification/
+2026-02-12 04:47:11,144 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_130.pdf
+2026-02-12 04:47:11,145 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/comprehensive-configurable-ethernet-ip-verification-strategy/
+2026-02-12 04:47:11,448 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_127.pdf
+2026-02-12 04:47:11,449 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/reduce-reuse-reverify-an-efficient-approach-to-transition-formal-verification-environments-from-pcie-gen6-to-gen7/
+2026-02-12 04:47:11,959 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_124.pdf
+2026-02-12 04:47:11,959 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/fully-automated-verification-framework-for-configurable-ips-from-requirements-to-results/
+2026-02-12 04:47:12,457 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_118.pdf
+2026-02-12 04:47:12,458 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/evaluating-the-usability-of-pyuvm-with-cocotb-for-uart-verification/
+2026-02-12 04:47:12,751 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_116.pdf
+2026-02-12 04:47:12,752 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/act-with-confidence-formal-verification-of-packet-based-designs-using-array-centric-tracking/
+2026-02-12 04:47:13,074 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_115.pdf
+2026-02-12 04:47:13,075 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/advancing-open-source-verification-enabling-full-randomization-in-verilator/
+2026-02-12 04:47:13,386 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_107.pdf
+2026-02-12 04:47:13,386 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/the-test-bench-factory-building-verification-environments-faster-better-smarter/
+2026-02-12 04:47:13,881 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_105.pdf
+2026-02-12 04:47:13,881 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/dms-verification-environment-for-gyroscope-system/
+2026-02-12 04:47:14,393 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_104.pdf
+2026-02-12 04:47:14,394 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/implementing-functional-coverage-for-analog-ips-in-mixed-signal-verification-environments/
+2026-02-12 04:47:14,727 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_102.pdf
+2026-02-12 04:47:14,727 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-novel-configurable-uvm-architecture-to-unlock-1-6t-ethernet-verification/
+2026-02-12 04:47:15,017 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_101.pdf
+2026-02-12 04:47:15,018 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/accelerate-verification-of-complex-hardware-algorithms-using-matlab-based-systemverilog-dpis/
+2026-02-12 04:47:15,309 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_100.pdf
+2026-02-12 04:47:15,309 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/fpga-firmware-verification-a-common-approach-for-simulation-and-hardware-tests/
+2026-02-12 04:47:15,615 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_95.pdf
+2026-02-12 04:47:15,615 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/how-agentic-ai-is-reinventing-chip-design-and-verification/
+2026-02-12 04:47:16,110 - INFO - Skipping existing DVCon asset: downloads/dvcon/3.8-DVCon-Taiwan-2025_Tutorial-28-ChipAgents.pptx.pdf
+2026-02-12 04:47:16,111 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/ep-ready-hardware-assisted-verification-platforms/
+2026-02-12 04:47:16,425 - INFO - Skipping existing DVCon asset: downloads/dvcon/3.3-DVCon-Taiwan-2025_paper_15_20250830.pdf
+2026-02-12 04:47:16,425 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/harnessing-ai-ml-for-superior-regression-management-boost-verification-efficiency/
+2026-02-12 04:47:16,750 - INFO - Skipping existing DVCon asset: downloads/dvcon/3.2-5hB6qaZecKn7-DVCon_Taiwan_2025_paper_16.pdf
+2026-02-12 04:47:16,751 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/accelerate-verification-streamline-challenges-a-comprehensive-hbm-model-solution/
+2026-02-12 04:47:17,049 - INFO - Skipping existing DVCon asset: downloads/dvcon/2.A-DVCon_Taiwan_2025_Paper_5.pdf
+2026-02-12 04:47:17,049 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-video-entropy-coder-design-and-verification-using-hls-and-hlv/
+2026-02-12 04:47:17,349 - INFO - Skipping existing DVCon asset: downloads/dvcon/2.8-DVCon-Taiwan-2025_Entropy_Coder_HLS_HLV-20.pdf
+2026-02-12 04:47:17,349 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/efficient-debug-strategies-for-pcie-gen6-verification-using-verification-ip/
+2026-02-12 04:47:17,663 - INFO - Skipping existing DVCon asset: downloads/dvcon/2.7-S3cUxbnoVpHq-DVCon_Taiwan_2025_paper_12.pdf
+2026-02-12 04:47:17,663 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unveiling-advance-hybrid-emulation-methodology-for-accelerated-android-home-screen-bring-up-and-system-level-verification/
+2026-02-12 04:47:17,949 - INFO - Skipping existing DVCon asset: downloads/dvcon/5B3-DVCon_India_2024_Final_Paper_2224.pdf
+2026-02-12 04:47:17,949 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/expedited-gate-level-verification-unleashing-the-potential-of-netlist-integrated-emulation-platforms/
+2026-02-12 04:47:18,308 - INFO - Skipping existing DVCon asset: downloads/dvcon/5B1-DVCon_India_2024_Final_Paper_3974.pdf
+2026-02-12 04:47:18,309 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/pragmatic-use-cases-of-chatgpt-in-chip-verification/
+2026-02-12 04:47:18,588 - INFO - Skipping existing DVCon asset: downloads/dvcon/5A3-DVCon_India_2024_Final_Paper_5557.pdf
+2026-02-12 04:47:18,590 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/expanding-verification-horizons-oops-enhanced-script-driven-verification-using-auto-pss-gen-utility-apgu/
+2026-02-12 04:47:18,902 - INFO - Skipping existing DVCon asset: downloads/dvcon/5A2-DVCon_India_2024_Final_Paper_7316.pdf
+2026-02-12 04:47:18,903 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/verification-methodology-for-debug-unit-of-a-superscalar-risc-v-processor/
+2026-02-12 04:47:19,203 - INFO - Skipping existing DVCon asset: downloads/dvcon/4C3-DVCon_India_2024_Final_Paper_2603.pdf
+2026-02-12 04:47:19,204 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/power-probe-addressing-power-noise-signal-integrity-challenges-for-wide-io-hbm-memories-through-advanced-verification-approach/
+2026-02-12 04:47:19,519 - INFO - Skipping existing DVCon asset: downloads/dvcon/4B3-DVCon_India_2024_Final_Paper_3654.pdf
+2026-02-12 04:47:19,519 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/next-gen-low-power-verification-empowering-shift-left-predictive-analysis-with-virtual-instrumentation/
+2026-02-12 04:47:19,831 - INFO - Skipping existing DVCon asset: downloads/dvcon/4B1-DVCon_India_2024_Final_Paper_8500.pdf
+2026-02-12 04:47:19,833 - INFO - Extracting abstracts from downloaded DVCon PDFs for keyword: verification
+2026-02-12 04:47:19,841 - INFO - Extracting abstracts from 181 downloaded DVCon PDFs
+2026-02-12 04:47:19,841 - INFO - Extracting abstract from PDF 4B2-DVConIndia2025_Final_Paper_6824.pdf for entry: A Hybrid Functional Verification Approach of complex designs using Python based Models
+2026-02-12 04:47:20,004 - INFO - Extracting abstract from PDF 4A3-DVConIndia2025_Final_Paper_0314.pdf for entry: Efficient Verification of Multi-Die Systems using Multi-Die Co-Simulation Framework
+2026-02-12 04:47:20,112 - INFO - Extracting abstract from PDF 4A2-DVConIndia2025_Final_Paper_5352.pdf for entry: Novel Approach for Verification of Multi Die Booting Using Disruptive Distributed Simulation Methodology
+2026-02-12 04:47:20,277 - INFO - Extracting abstract from PDF 4A1-DVConIndia2025_Final_Paper_2911.pdf for entry: Breaking barriers in Advanced Multi-Chiplet AI SoCs using scalable UCIe and Boot Verification and Emulation techniques
+2026-02-12 04:47:20,467 - INFO - Extracting abstract from PDF 3C3-DVConIndia2025_Final_Paper_7251.pdf for entry: Catching the Unseen: A Case Study on Conquering Caching and Ordering Verification Challenges in Release Critical Unit
+2026-02-12 04:47:20,589 - INFO - Extracting abstract from PDF 3C1-DVConIndia2025_Final_Paper_0076.pdf for entry: Decoding the RAS Maze: Microscopic Complexity Meets Verification
+2026-02-12 04:47:20,635 - INFO - No explicit 'Abstract' section found in downloads/dvcon/3C1-DVConIndia2025_Final_Paper_0076.pdf
+2026-02-12 04:47:20,636 - INFO - Extracting abstract from PDF 2C2-DVConIndia2025_Final_Paper_9003.pdf for entry: Uncovering Hardware Vulnerabilities: Formal Verification for Security-Focused Negative Testing
+2026-02-12 04:47:20,825 - INFO - Extracting abstract from PDF 2B3-DVConIndia2025_Final_Paper_5338.pdf for entry: Breaking Barriers: Formal Verification in Complex Compressor Controller Architecture
+2026-02-12 04:47:20,962 - INFO - Extracting abstract from PDF 2B3_DVConIndia25_Final_PPT_5338.pdf for entry: Breaking Barriers: Formal Verification in Complex Compressor Controller
+2026-02-12 04:47:21,009 - INFO - No explicit 'Abstract' section found in downloads/dvcon/2B3_DVConIndia25_Final_PPT_5338.pdf
+2026-02-12 04:47:21,009 - INFO - Extracting abstract from PDF 2A2-DVConIndia2025_Final_Paper_4137.pdf for entry: Navigating Complexity to Convergence: Formal Verification for Single Precision
+2026-02-12 04:47:21,165 - INFO - Extracting abstract from PDF 1C3-DVConIndia2025_Final_Paper_2809.pdf for entry: Robust Verification of Clock Tree Network using “Clock Monitor” Integrated by ACRMG
+2026-02-12 04:47:21,336 - INFO - Extracting abstract from PDF 1C1-DVConIndia2025_Final_Paper_7562.pdf for entry: Optimizing CPU-Based Configuration Path Verification Through Automated C Test Case Generation with UVM RAL
+2026-02-12 04:47:21,712 - INFO - Extracting abstract from PDF 1A2_DVConIndia25_Final_PPT_7616.pdf for entry: Accelerating Debug with Experience-Driven Insights: A Tool-Based Approach for IP and SoC-Level Verification
+2026-02-12 04:47:21,740 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1A2_DVConIndia25_Final_PPT_7616.pdf
+2026-02-12 04:47:21,741 - INFO - Extracting abstract from PDF 1A2-DVConIndia2025_Final_Paper_7616.pdf for entry: Accelerating Debug with Experience-Driven Insights: A Tool-Based Approach for IP and SoC-Level Verification
+2026-02-12 04:47:21,903 - INFO - Extracting abstract from PDF P20-DVConIndia2025_Final_Paper_6976.pdf for entry: An Ideal FuSa Verification Solution!
+2026-02-12 04:47:21,995 - INFO - Extracting abstract from PDF P20-DVConIndia25_Final_PPT_6976.pdf for entry: An Ideal FuSa Verification Solution!
+2026-02-12 04:47:22,183 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P20-DVConIndia25_Final_PPT_6976.pdf
+2026-02-12 04:47:22,184 - INFO - Extracting abstract from PDF P19-DVConIndia2025_Final_Paper_6547.pdf for entry: Novel Use of Symbolic Map Based Constraints for Synchronization Block Verification Using Formal Methods
+2026-02-12 04:47:22,407 - INFO - Extracting abstract from PDF P19-DVConIndia25_Final_PPT_6547.pdf for entry: Novel Use of Symbolic Map Based Constraints for Synchronization Block Verification Using Formal Methods
+2026-02-12 04:47:22,580 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P19-DVConIndia25_Final_PPT_6547.pdf
+2026-02-12 04:47:22,581 - INFO - Extracting abstract from PDF P14-DVConIndia2025_Final_Paper_4790.pdf for entry: TiDe : Timing diagram to Design verification model
+2026-02-12 04:47:22,760 - INFO - Extracting abstract from PDF P14-DVConIndia25_Final_PPT_4790.pdf for entry: TiDe : Timing diagram to Design verification model
+2026-02-12 04:47:22,769 - INFO - Direct extraction from downloads/dvcon/P14-DVConIndia25_Final_PPT_4790.pdf produced only 0 characters; attempting OCR fallback.
+2026-02-12 04:47:28,557 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P14-DVConIndia25_Final_PPT_4790.pdf
+2026-02-12 04:47:28,557 - INFO - Extracting abstract from PDF P13-DVConIndia25_Final_PPT_4118.pdf for entry: Novel Customized Algorithm and Verification Checklist to Improve the Process of Register Verification in UVM
+2026-02-12 04:47:28,616 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P13-DVConIndia25_Final_PPT_4118.pdf
+2026-02-12 04:47:28,617 - INFO - Extracting abstract from PDF P11-DVConIndia2025_Final_Paper_3773.pdf for entry: Bridging RISC-V Core Verification and PSS: A Portable-Stimulus Stress-Testing Approach
+2026-02-12 04:47:28,745 - INFO - Extracting abstract from PDF P11-DVConIndia25_Final_PPT_3773.pdf for entry: Bridging RISC-V Core Verification and PSS : A Portable-Stimulus Stress-Testing Approach
+2026-02-12 04:47:28,927 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P11-DVConIndia25_Final_PPT_3773.pdf
+2026-02-12 04:47:28,928 - INFO - Extracting abstract from PDF P10-DVConIndia2025_Final_Paper_3645.pdf for entry: Overcoming the roadblocks in Display Port Automotive Extensions verification
+2026-02-12 04:47:29,127 - INFO - Extracting abstract from PDF P10-DVConIndia25_Final_PPT_3645.pdf for entry: Overcoming the roadblocks in Display Port Automotive Extensions verification
+2026-02-12 04:47:29,211 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P10-DVConIndia25_Final_PPT_3645.pdf
+2026-02-12 04:47:29,212 - INFO - Extracting abstract from PDF P2-DVConIndia2025_Final_Paper_1418.pdf for entry: AI-Enabled Formal Verification Flow: From Spec to Sign-off
+2026-02-12 04:47:29,359 - INFO - Extracting abstract from PDF P2-DVConIndia25_Final_PPT_1418.pdf for entry: AI-Enabled Formal Verification Flow : From Spec to Sign-off
+2026-02-12 04:47:29,547 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P2-DVConIndia25_Final_PPT_1418.pdf
+2026-02-12 04:47:29,548 - INFO - Extracting abstract from PDF Tutorial_5B_Introduction-of-IEEE-1801-2024-UPF4_0.pdf for entry: Introduction of IEEE 1801-2024 (UPF4.0) Improvements for the Specification and Verification of Low-Power
+2026-02-12 04:47:29,658 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Tutorial_5B_Introduction-of-IEEE-1801-2024-UPF4_0.pdf
+2026-02-12 04:47:29,659 - INFO - Extracting abstract from PDF SW_4B_2_PSS_In_Action.pdf for entry: PSS in Action: Scalable Test Reuse from Design Verification to Silicon
+2026-02-12 04:47:29,751 - INFO - No explicit 'Abstract' section found in downloads/dvcon/SW_4B_2_PSS_In_Action.pdf
+2026-02-12 04:47:29,752 - INFO - Extracting abstract from PDF SW_4A_1_CDC_RDC_Format_Update.pdf for entry: Breakthrough in CDC-RDC Verification Defining a Standard for Interoperable Abstract Model
+2026-02-12 04:47:29,922 - INFO - Extracting abstract from PDF SW_3B_2_Agentic_AI_Functional_Verification.pdf for entry: Unleashing the Potential of Agentic AI Within Design & Functional Verification
+2026-02-12 04:47:29,973 - INFO - No explicit 'Abstract' section found in downloads/dvcon/SW_3B_2_Agentic_AI_Functional_Verification.pdf
+2026-02-12 04:47:29,974 - INFO - Extracting abstract from PDF SW_3B_1_Formal_Verification_AI.pdf for entry: Addressing Formal Verification Challenges with GenAI Technology and RISC-V Solutions
+2026-02-12 04:47:30,022 - INFO - No explicit 'Abstract' section found in downloads/dvcon/SW_3B_1_Formal_Verification_AI.pdf
+2026-02-12 04:47:30,022 - INFO - Extracting abstract from PDF SW_3A_2_Addressing_Protocol_Verification_AI_HPC.pdf for entry: Addressing Protocol Verification Challenges in the Evolving Landscape of AI and High-Performance Computing (HPC)
+2026-02-12 04:47:30,068 - INFO - No explicit 'Abstract' section found in downloads/dvcon/SW_3A_2_Addressing_Protocol_Verification_AI_HPC.pdf
+2026-02-12 04:47:30,069 - INFO - Extracting abstract from PDF T_2B_Liberating_Functional_Verification.pdf for entry: Liberating Verification from Boolean Shackles
+2026-02-12 04:47:30,145 - INFO - No explicit 'Abstract' section found in downloads/dvcon/T_2B_Liberating_Functional_Verification.pdf
+2026-02-12 04:47:30,146 - INFO - Extracting abstract from PDF SW_2A_2_Veloce_proFPGA.pdf for entry: Achieve software prototyping verification success with Veloce proFPGA CS
+2026-02-12 04:47:30,183 - INFO - No explicit 'Abstract' section found in downloads/dvcon/SW_2A_2_Veloce_proFPGA.pdf
+2026-02-12 04:47:30,184 - INFO - Extracting abstract from PDF DVConIndia2025_Tutorials_Final_ppt_0156.pdf for entry: Boost Verification Efficiency with VC Execution Manager
+2026-02-12 04:47:30,228 - INFO - No explicit 'Abstract' section found in downloads/dvcon/DVConIndia2025_Tutorials_Final_ppt_0156.pdf
+2026-02-12 04:47:30,228 - INFO - Extracting abstract from PDF 1-Siemens-Bangalore_DVCON_Keynote_Sept_2025.pdf for entry: Software-defined Hardware Design Relies on AI and Intelligent Verification
+2026-02-12 04:47:30,279 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1-Siemens-Bangalore_DVCON_Keynote_Sept_2025.pdf
+2026-02-12 04:47:30,279 - INFO - Extracting abstract from PDF Unleashing-the-Potential-of-Agentic-AI-Within-Design-Functional-Verification.pdf for entry: Unleashing the Potential of Agentic AI Within Design & Functional Verification
+2026-02-12 04:47:30,761 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Unleashing-the-Potential-of-Agentic-AI-Within-Design-Functional-Verification.pdf
+2026-02-12 04:47:30,761 - INFO - Extracting abstract from PDF Unified-UVM-Testbench-Integrating-Random-Directed-and-Pseudo-Random-Verification-Capabilities.pdf for entry: Unified UVM Testbench: Integrating Random, Directed and Pseudo-Random Verification Capabilities
+2026-02-12 04:47:30,787 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Unified-UVM-Testbench-Integrating-Random-Directed-and-Pseudo-Random-Verification-Capabilities.pdf
+2026-02-12 04:47:30,787 - INFO - Extracting abstract from PDF The-Test-Bench-Factory-Building-Verification-Environments-Faster-Better-Smarter.pdf for entry: The Test Bench Factory: Building Verification Environments Faster, Better, Smarter
+2026-02-12 04:47:30,813 - INFO - No explicit 'Abstract' section found in downloads/dvcon/The-Test-Bench-Factory-Building-Verification-Environments-Faster-Better-Smarter.pdf
+2026-02-12 04:47:30,813 - INFO - Extracting abstract from PDF Reduce-Reuse-Reverify-An-efficient-approach-to-transition-formal-verification-environments-from-PCIe-Gen6-to-Gen7.pdf for entry: Reduce, Reuse, Reverify: An efficient approach to transition formal verification environments from PCIe Gen6 to Gen7
+2026-02-12 04:47:30,837 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Reduce-Reuse-Reverify-An-efficient-approach-to-transition-formal-verification-environments-from-PCIe-Gen6-to-Gen7.pdf
+2026-02-12 04:47:30,838 - INFO - Extracting abstract from PDF Real-Number-Voltage-aware-behavioral-modeling-and-verification-of-SRAM-subsystem-with-Unified-Power-Format-UPF.pdf for entry: Real Number Voltage aware behavioral modeling and verification of SRAM subsystem with UPF
+2026-02-12 04:47:30,867 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Real-Number-Voltage-aware-behavioral-modeling-and-verification-of-SRAM-subsystem-with-Unified-Power-Format-UPF.pdf
+2026-02-12 04:47:30,868 - INFO - Extracting abstract from PDF Pre-Silicon-Verification-of-Software-Safety-Mechanisms-A-Hybrid-Approach-with-SPI-and-NVDLA-Case-Studies.pdf for entry: Pre-Silicon Verification of Software Safety Mechanisms: A Hybrid Approach SPI and NVDLA case studies
+2026-02-12 04:47:30,898 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Pre-Silicon-Verification-of-Software-Safety-Mechanisms-A-Hybrid-Approach-with-SPI-and-NVDLA-Case-Studies.pdf
+2026-02-12 04:47:30,899 - INFO - Extracting abstract from PDF Out-of-The-Box-Techniques-for-Data-Path-Verification.pdf for entry: Out of The Box Techniques for Data-Path Verification
+2026-02-12 04:47:30,924 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Out-of-The-Box-Techniques-for-Data-Path-Verification.pdf
+2026-02-12 04:47:30,925 - INFO - Extracting abstract from PDF Minimally-Intrusive-Safety-and-Security-Verification-of-Rust-RTIC-Applications.pdf for entry: Minimally Intrusive Safety and Security Verification of Rust RTIC Applications
+2026-02-12 04:47:30,943 - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2026-02-12 04:47:30,943 - WARNING - Ignoring wrong pointing object 13 0 (offset 0)
+2026-02-12 04:47:30,943 - WARNING - Ignoring wrong pointing object 15 0 (offset 0)
+2026-02-12 04:47:30,944 - WARNING - Ignoring wrong pointing object 26 0 (offset 0)
+2026-02-12 04:47:30,944 - WARNING - Ignoring wrong pointing object 28 0 (offset 0)
+2026-02-12 04:47:30,944 - WARNING - Ignoring wrong pointing object 30 0 (offset 0)
+2026-02-12 04:47:30,945 - WARNING - Ignoring wrong pointing object 83 0 (offset 0)
+2026-02-12 04:47:30,945 - WARNING - Ignoring wrong pointing object 85 0 (offset 0)
+2026-02-12 04:47:30,945 - WARNING - Ignoring wrong pointing object 87 0 (offset 0)
+2026-02-12 04:47:30,945 - WARNING - Ignoring wrong pointing object 93 0 (offset 0)
+2026-02-12 04:47:30,946 - WARNING - Ignoring wrong pointing object 134 0 (offset 0)
+2026-02-12 04:47:30,946 - WARNING - Ignoring wrong pointing object 141 0 (offset 0)
+2026-02-12 04:47:30,946 - WARNING - Ignoring wrong pointing object 149 0 (offset 0)
+2026-02-12 04:47:30,973 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Minimally-Intrusive-Safety-and-Security-Verification-of-Rust-RTIC-Applications.pdf
+2026-02-12 04:47:30,974 - INFO - Extracting abstract from PDF Introduction-to-the-Apheleia-Verification-Library.pdf for entry: Introduction to the Apheleia Verification Library
+2026-02-12 04:47:31,028 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Introduction-to-the-Apheleia-Verification-Library.pdf
+2026-02-12 04:47:31,028 - INFO - Extracting abstract from PDF Introduction-of-IEEE-1801-2024-UPF4.0-improvements-for-the-specification-and-verification-of-low-power.pdf for entry: Introduction of IEEE 1801-2024 (UPF4.0) improvements for the specification and verification of low-power
+2026-02-12 04:47:31,089 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Introduction-of-IEEE-1801-2024-UPF4.0-improvements-for-the-specification-and-verification-of-low-power.pdf
+2026-02-12 04:47:31,089 - INFO - Extracting abstract from PDF Implementing-Functional-Coverage-for-Analog-IPs-in-Mixed-Signal-Verification-Environments.pdf for entry: Implementing Functional Coverage for Analog IPs in Mixed-Signal Verification Environments
+2026-02-12 04:47:31,114 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Implementing-Functional-Coverage-for-Analog-IPs-in-Mixed-Signal-Verification-Environments.pdf
+2026-02-12 04:47:31,114 - INFO - Extracting abstract from PDF Fully-Automated-Verification-Framework-for-Configurable-IPs-From-Requirements-to-Results.pdf for entry: Fully Automated Verification Framework for Configurable IPs: From Requirements to Results
+2026-02-12 04:47:31,132 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Fully-Automated-Verification-Framework-for-Configurable-IPs-From-Requirements-to-Results.pdf
+2026-02-12 04:47:31,133 - INFO - Extracting abstract from PDF FPGA-Firmware-Verification-a-common-approach-for-simulation-and-hardware-tests.pdf for entry: FPGA Firmware Verification: a common approach for simulation and hardware tests
+2026-02-12 04:47:31,152 - INFO - No explicit 'Abstract' section found in downloads/dvcon/FPGA-Firmware-Verification-a-common-approach-for-simulation-and-hardware-tests.pdf
+2026-02-12 04:47:31,153 - INFO - Extracting abstract from PDF Exploring-the-Limits-of-Vertical-Reuse-Automation-in-PSS-Driven-SoC-Verification.pdf for entry: Exploring the Limits of Vertical Reuse Automation in PSS-Driven SoC Verification
+2026-02-12 04:47:31,204 - INFO - Direct extraction from downloads/dvcon/Exploring-the-Limits-of-Vertical-Reuse-Automation-in-PSS-Driven-SoC-Verification.pdf produced only 176 characters; attempting OCR fallback.
+2026-02-12 04:47:34,690 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Exploring-the-Limits-of-Vertical-Reuse-Automation-in-PSS-Driven-SoC-Verification.pdf
+2026-02-12 04:47:34,691 - INFO - Extracting abstract from PDF Expediting-Coverage-Closure-in-Digital-Verification-with-the-Portable-Stimulus-Standard-PSS.pdf for entry: Expediting Coverage Closure in Digital Verification with the Portable Stimulus Standard (PSS)
+2026-02-12 04:47:34,773 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Expediting-Coverage-Closure-in-Digital-Verification-with-the-Portable-Stimulus-Standard-PSS.pdf
+2026-02-12 04:47:34,774 - INFO - Extracting abstract from PDF Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf for entry: Efficient Coverage Optimization with Formal Guided Testcase Generation in UVM Verification
+2026-02-12 04:47:34,848 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf
+2026-02-12 04:47:34,850 - INFO - Extracting abstract from PDF DMS-Verification-Environment-for-Gyroscope-System.pdf for entry: DMS Verification Environment for Gyroscope
+2026-02-12 04:47:34,902 - INFO - No explicit 'Abstract' section found in downloads/dvcon/DMS-Verification-Environment-for-Gyroscope-System.pdf
+2026-02-12 04:47:34,902 - INFO - Extracting abstract from PDF Comprehensive-Configurable-Ethernet-IP-verification-strategy.pdf for entry: Comprehensive & Configurable Ethernet IP Verification Strategy
+2026-02-12 04:47:34,976 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Comprehensive-Configurable-Ethernet-IP-verification-strategy.pdf
+2026-02-12 04:47:34,976 - INFO - Extracting abstract from PDF Cocotb-and-PyUVM-tests-powered-with-pytest.pdf for entry: Next-Gen Verification with Python: Driving Hardware Tests with Pytest and Cocotb
+2026-02-12 04:47:35,061 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Cocotb-and-PyUVM-tests-powered-with-pytest.pdf
+2026-02-12 04:47:35,062 - INFO - Extracting abstract from PDF Automated-Flow-to-Maintaining-Consistency-in-Parallel-Design-Representations-Using-Cross-Level-Verification.pdf for entry: Automated Flow to Maintaining Consistency in Parallel Design Representations Using Cross-Level Verification
+2026-02-12 04:47:35,132 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Automated-Flow-to-Maintaining-Consistency-in-Parallel-Design-Representations-Using-Cross-Level-Verification.pdf
+2026-02-12 04:47:35,142 - INFO - Extracting abstract from PDF Advancing-Open-Source-Verification-Enabling-Full-Randomization-in-Verilator.pdf for entry: Advancing Open-Source Verification: Enabling Full Randomization in Verilator
+2026-02-12 04:47:35,176 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Advancing-Open-Source-Verification-Enabling-Full-Randomization-in-Verilator.pdf
+2026-02-12 04:47:35,177 - INFO - Extracting abstract from PDF ACT-with-Confidence-Formal-Verification-of-Packet-Based-Designs-using-Array-Centric-Tracking.pdf for entry: ACT with Confidence: Formal Verification of Packet Based Designs using Array Centric Tracking
+2026-02-12 04:47:35,247 - INFO - No explicit 'Abstract' section found in downloads/dvcon/ACT-with-Confidence-Formal-Verification-of-Packet-Based-Designs-using-Array-Centric-Tracking.pdf
+2026-02-12 04:47:35,248 - INFO - Extracting abstract from PDF Accelerating-Coverage-Closure-with-Reinforcement-Learning-A-Case-Study-on-FSM-Verification.pdf for entry: Accelerating Coverage Closure with Reinforcement Learning: A Case Study on FSM Verification
+2026-02-12 04:47:35,290 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Accelerating-Coverage-Closure-with-Reinforcement-Learning-A-Case-Study-on-FSM-Verification.pdf
+2026-02-12 04:47:35,291 - INFO - Extracting abstract from PDF Accelerate-Verification-of-Complex-Hardware-Algorithms-using-MATLAB-based-SystemVerilog-DPIs.pdf for entry: Accelerate Verification of Complex Hardware Algorithms using MATLAB based SystemVerilog DPIs
+2026-02-12 04:47:35,331 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Accelerate-Verification-of-Complex-Hardware-Algorithms-using-MATLAB-based-SystemVerilog-DPIs.pdf
+2026-02-12 04:47:35,332 - INFO - Extracting abstract from PDF A-Novel-Configurable-UVM-Architecture-To-Unlock-1.6T-Ethernet-Verification-Sameh-Mahmoud.pdf for entry: A Novel Configurable UVM Architecture To Unlock 1.6T Ethernet Verification
+2026-02-12 04:47:35,377 - INFO - No explicit 'Abstract' section found in downloads/dvcon/A-Novel-Configurable-UVM-Architecture-To-Unlock-1.6T-Ethernet-Verification-Sameh-Mahmoud.pdf
+2026-02-12 04:47:35,378 - INFO - Extracting abstract from PDF DVConEU_2025_paper_172.pdf for entry: Minimally Intrusive Safety and Security Verification of Rust RTIC Applications
+2026-02-12 04:47:35,619 - INFO - Extracting abstract from PDF DVConEU_2025_paper_169.pdf for entry: GAIL-V: Generative AI Leveraged -Verification
+2026-02-12 04:47:35,890 - INFO - Extracting abstract from PDF DVConEU_2025_paper_164.pdf for entry: Exploring the Limits of Vertical Reuse Automation in PSS-Driven SoC Verification
+2026-02-12 04:47:36,386 - INFO - Extracting abstract from PDF DVConEU_2025_paper_163.pdf for entry: Pre-Silicon Verification of Software Safety Mechanisms
+2026-02-12 04:47:36,478 - INFO - Extracting abstract from PDF DVConEU_2025_paper_158.pdf for entry: Transformation-Aided Verification of MAC Designs using Symbolic Computer Algebra
+2026-02-12 04:47:36,635 - INFO - Extracting abstract from PDF DVConEU_2025_paper_152.pdf for entry: Efficient Coverage Optimization with Formal-Guided Testcase Generation in UVM Verification
+2026-02-12 04:47:36,758 - INFO - Extracting abstract from PDF DVConEU_2025_paper_151.pdf for entry: Automated Flow to Maintaining Consistency in Parallel Design Representations Using Cross-Level Verification
+2026-02-12 04:47:37,039 - INFO - Extracting abstract from PDF DVConEU_2025_paper_144.pdf for entry: AI-Powered Hardware Verification: Your Non-Human Friend in Action
+2026-02-12 04:47:37,149 - INFO - Extracting abstract from PDF DVConEU_2025_paper_139.pdf for entry: Out of The Box Techniques for Data-Path Verification
+2026-02-12 04:47:37,375 - INFO - Extracting abstract from PDF DVConEU_2025_paper_135.pdf for entry: A Graph-Based UVM Generation Framework for Complex State Machine Verification
+2026-02-12 04:47:37,750 - INFO - Extracting abstract from PDF DVConEU_2025_paper_132.pdf for entry: Unified UVM Testbench: Integrating Random, Directed and Pseudo-Random Verification Capabilities
+2026-02-12 04:47:37,935 - INFO - Extracting abstract from PDF DVConEU_2025_paper_131.pdf for entry: Real Number Voltage aware behavioral modeling and verification of SRAM subsystem with Unified Power Format (UPF)
+2026-02-12 04:47:38,299 - INFO - Extracting abstract from PDF DVConEU_2025_paper_130.pdf for entry: Accelerating Coverage Closure with Reinforcement Learning: A Case Study on FSM Verification
+2026-02-12 04:47:38,474 - INFO - Extracting abstract from PDF DVConEU_2025_paper_127.pdf for entry: Comprehensive & Configurable Ethernet IP Verification Strategy
+2026-02-12 04:47:38,779 - INFO - Extracting abstract from PDF DVConEU_2025_paper_124.pdf for entry: Reduce, Reuse, Reverify: An efficient approach to transition formal verification environments from PCIe Gen6 to Gen7
+2026-02-12 04:47:39,113 - INFO - Extracting abstract from PDF DVConEU_2025_paper_118.pdf for entry: Fully Automated Verification Framework for Configurable IPs: From Requirements to Results
+2026-02-12 04:47:39,415 - INFO - Extracting abstract from PDF DVConEU_2025_paper_116.pdf for entry: Evaluating the Usability of pyuvm with cocotb for UART Verification
+2026-02-12 04:47:39,614 - INFO - Extracting abstract from PDF DVConEU_2025_paper_115.pdf for entry: ACT with Confidence: Formal Verification of Packet Based Designs using Array Centric Tracking
+2026-02-12 04:47:39,967 - INFO - Extracting abstract from PDF DVConEU_2025_paper_107.pdf for entry: Advancing Open-Source Verification: Enabling Full Randomization in Verilator
+2026-02-12 04:47:39,996 - WARNING - Overwriting cache for 0 539
+2026-02-12 04:47:40,294 - INFO - Extracting abstract from PDF DVConEU_2025_paper_105.pdf for entry: The Test Bench Factory: Building Verification Environments Faster, Better, Smarter
+2026-02-12 04:47:40,501 - INFO - Extracting abstract from PDF DVConEU_2025_paper_104.pdf for entry: DMS Verification environment for Gyroscope System
+2026-02-12 04:47:40,729 - INFO - Extracting abstract from PDF DVConEU_2025_paper_102.pdf for entry: Implementing Functional Coverage for Analog IPs in Mixed-Signal Verification Environments
+2026-02-12 04:47:40,947 - INFO - Extracting abstract from PDF DVConEU_2025_paper_101.pdf for entry: A Novel Configurable UVM Architecture To Unlock 1.6T Ethernet Verification
+2026-02-12 04:47:41,238 - INFO - Extracting abstract from PDF DVConEU_2025_paper_100.pdf for entry: Accelerate Verification of Complex Hardware Algorithms using MATLAB based SystemVerilog DPIs
+2026-02-12 04:47:41,567 - INFO - Extracting abstract from PDF DVConEU_2025_paper_95.pdf for entry: FPGA Firmware Verification: a common approach for simulation and hardware tests
+2026-02-12 04:47:41,798 - INFO - No explicit 'Abstract' section found in downloads/dvcon/DVConEU_2025_paper_95.pdf
+2026-02-12 04:47:41,798 - INFO - Extracting abstract from PDF 3.8-DVCon-Taiwan-2025_Tutorial-28-ChipAgents.pptx.pdf for entry: How Agentic AI is Reinventing Chip Design and Verification
+2026-02-12 04:47:41,850 - INFO - No explicit 'Abstract' section found in downloads/dvcon/3.8-DVCon-Taiwan-2025_Tutorial-28-ChipAgents.pptx.pdf
+2026-02-12 04:47:41,852 - INFO - Extracting abstract from PDF 3.3-DVCon-Taiwan-2025_paper_15_20250830.pdf for entry: EP-Ready Hardware-Assisted-Verification Platforms
+2026-02-12 04:47:41,934 - INFO - No explicit 'Abstract' section found in downloads/dvcon/3.3-DVCon-Taiwan-2025_paper_15_20250830.pdf
+2026-02-12 04:47:41,934 - INFO - Extracting abstract from PDF 3.2-5hB6qaZecKn7-DVCon_Taiwan_2025_paper_16.pdf for entry: Harnessing AI/ML for Superior Regression Management - Boost Verification Efficiency
+2026-02-12 04:47:42,018 - INFO - No explicit 'Abstract' section found in downloads/dvcon/3.2-5hB6qaZecKn7-DVCon_Taiwan_2025_paper_16.pdf
+2026-02-12 04:47:42,018 - INFO - Extracting abstract from PDF 2.A-DVCon_Taiwan_2025_Paper_5.pdf for entry: Accelerate Verification, Streamline Challenges: A Comprehensive HBM Model Solution
+2026-02-12 04:47:42,105 - INFO - No explicit 'Abstract' section found in downloads/dvcon/2.A-DVCon_Taiwan_2025_Paper_5.pdf
+2026-02-12 04:47:42,105 - INFO - Extracting abstract from PDF 2.8-DVCon-Taiwan-2025_Entropy_Coder_HLS_HLV-20.pdf for entry: A Video Entropy Coder Design and Verification Using HLS and HLV
+2026-02-12 04:47:42,184 - INFO - No explicit 'Abstract' section found in downloads/dvcon/2.8-DVCon-Taiwan-2025_Entropy_Coder_HLS_HLV-20.pdf
+2026-02-12 04:47:42,185 - INFO - Extracting abstract from PDF 2.7-S3cUxbnoVpHq-DVCon_Taiwan_2025_paper_12.pdf for entry: Efficient Debug Strategies for PCIe Gen6 Verification Using Verification IP
+2026-02-12 04:47:42,363 - INFO - Extracting abstract from PDF 5B3-DVCon_India_2024_Final_Paper_2224.pdf for entry: Unveiling Advance Hybrid Emulation Methodology for Accelerated Android Home Screen Bring-up and System Level Verification
+2026-02-12 04:47:42,494 - INFO - Extracting abstract from PDF 5B1-DVCon_India_2024_Final_Paper_3974.pdf for entry: Expedited Gate Level Verification: Unleashing the Potential of Netlist Integrated Emulation Platforms
+2026-02-12 04:47:42,668 - INFO - Extracting abstract from PDF 5A3-DVCon_India_2024_Final_Paper_5557.pdf for entry: Pragmatic use cases of ChatGPT in Chip Verification
+2026-02-12 04:47:42,744 - INFO - No explicit 'Abstract' section found in downloads/dvcon/5A3-DVCon_India_2024_Final_Paper_5557.pdf
+2026-02-12 04:47:42,746 - INFO - Extracting abstract from PDF 5A2-DVCon_India_2024_Final_Paper_7316.pdf for entry: Expanding Verification Horizons: OOPs- Enhanced Script-Driven Verification using Auto PSS Gen Utility (APGU)
+2026-02-12 04:47:43,019 - INFO - Extracting abstract from PDF 4C3-DVCon_India_2024_Final_Paper_2603.pdf for entry: Verification Methodology for Debug Unit of a Superscalar RISC-V Processor
+2026-02-12 04:47:43,232 - INFO - Extracting abstract from PDF 4B3-DVCon_India_2024_Final_Paper_3654.pdf for entry: Power Probe: Addressing Power Noise Signal Integrity Challenges for Wide IO HBM Memories Through Advanced Verification Approach
+2026-02-12 04:47:43,381 - INFO - Extracting abstract from PDF 4B1-DVCon_India_2024_Final_Paper_8500.pdf for entry: Next-Gen Low Power Verification: Empowering Shift-Left Predictive Analysis with Virtual Instrumentation
+2026-02-12 04:47:43,538 - INFO - Abstract extraction complete: 49/100 entries now have abstracts
+2026-02-12 04:47:43,539 - INFO - Generating table for 100 papers
+2026-02-12 04:47:43,542 - INFO - Successfully generated table
+2026-02-12 04:47:43,542 - INFO - Generating table for 15 papers
+2026-02-12 04:47:43,543 - INFO - Successfully generated table
+2026-02-12 04:47:43,547 - INFO - Fetching IEEE papers for keyword: verification
+2026-02-12 04:47:43,548 - INFO - Attempting to get IEEE papers for keyword 'digital verification' with 3 retries
+2026-02-12 04:47:43,549 - INFO - Getting IEEE papers for keyword: digital verification
+2026-02-12 04:47:43,550 - INFO - Requesting IEEE papers for keyword: digital verification
+2026-02-12 04:47:43,552 - INFO - IEEE search page query=digital verification page=1 get_page_number=True
+2026-02-12 04:47:47,342 - INFO - IEEE keyword search totalPages=204
+2026-02-12 04:47:47,343 - INFO - IEEE search page query=digital verification page=1 get_page_number=False
+2026-02-12 04:47:51,277 - INFO - IEEE page 1 returned 100 records
+2026-02-12 04:47:51,279 - INFO - Successfully processed 100 IEEE papers
+2026-02-12 04:47:51,280 - INFO - Retrieved 100 IEEE papers after column selection
+2026-02-12 04:47:51,280 - INFO - Successfully retrieved 100 IEEE papers on attempt 1
+2026-02-12 04:47:51,281 - INFO - Generating table for 100 papers
+2026-02-12 04:47:51,282 - INFO - Successfully generated table
+2026-02-12 04:47:51,282 - INFO - Generating table for 15 papers
+2026-02-12 04:47:51,282 - INFO - Successfully generated table
+2026-02-12 04:47:51,283 - INFO - Fetching ACM papers for keyword: verification
+2026-02-12 04:47:51,284 - INFO - Attempting to get ACM papers for keyword 'digital verification' with 3 retries
+2026-02-12 04:47:51,284 - INFO - Getting ACM papers for keyword: digital verification
+2026-02-12 04:47:51,284 - ERROR - Error on ACM attempt 1: ACM_ACCESS_TOKEN environment variable is not set. Please configure your ACM API access token before using the ACM metadata integration.
+2026-02-12 04:47:51,285 - INFO - Waiting 60 seconds before ACM retry...
+2026-02-12 04:48:50,213 - INFO - Getting ACM papers for keyword: digital verification
+2026-02-12 04:48:50,214 - ERROR - Error on ACM attempt 2: ACM_ACCESS_TOKEN environment variable is not set. Please configure your ACM API access token before using the ACM metadata integration.
+2026-02-12 04:48:50,214 - INFO - Waiting 60 seconds before ACM retry...
+2026-02-12 04:49:49,095 - INFO - Getting ACM papers for keyword: digital verification
+2026-02-12 04:49:49,095 - ERROR - Error on ACM attempt 3: ACM_ACCESS_TOKEN environment variable is not set. Please configure your ACM API access token before using the ACM metadata integration.
+2026-02-12 04:49:49,096 - ERROR - Failed to get ACM papers after all retry attempts
+2026-02-12 04:49:49,096 - INFO - Fetching CrossRef papers for keyword: verification
+2026-02-12 04:49:49,096 - INFO - Attempting to get CrossRef papers for keyword 'digital verification' with 3 retries
+2026-02-12 04:49:49,096 - INFO - Getting CrossRef papers for keyword: digital verification
+2026-02-12 04:49:49,097 - INFO - Requesting papers from CrossRef for keyword: digital verification
+2026-02-12 04:49:51,057 - INFO - Successfully retrieved 100 papers from CrossRef
+2026-02-12 04:49:51,059 - INFO - Successfully processed 100 CrossRef papers
+2026-02-12 04:49:51,060 - INFO - Retrieved 100 CrossRef papers after column selection
+2026-02-12 04:49:51,061 - INFO - Successfully retrieved 100 CrossRef papers on attempt 1
+2026-02-12 04:49:51,061 - INFO - Generating table for 100 papers
+2026-02-12 04:49:51,062 - INFO - Successfully generated table
+2026-02-12 04:49:51,062 - INFO - Generating table for 15 papers
+2026-02-12 04:49:51,063 - INFO - Successfully generated table
+2026-02-12 04:49:51,064 - INFO - Fetching OpenAlex papers for keyword: verification
+2026-02-12 04:49:51,064 - INFO - Attempting to get OpenAlex papers for keyword 'digital verification' with 3 retries
+2026-02-12 04:49:51,064 - INFO - Getting OpenAlex papers for keyword: digital verification
+2026-02-12 04:49:51,065 - INFO - Requesting papers from OpenAlex for keyword: digital verification
+2026-02-12 04:49:53,817 - INFO - Successfully retrieved 100 papers from OpenAlex
+2026-02-12 04:49:53,837 - INFO - Successfully processed 100 OpenAlex papers
+2026-02-12 04:49:53,840 - INFO - Retrieved 100 OpenAlex papers after column selection
+2026-02-12 04:49:53,840 - INFO - Successfully retrieved 100 OpenAlex papers on attempt 1
+2026-02-12 04:49:53,841 - INFO - Generating table for 100 papers
+2026-02-12 04:49:53,842 - INFO - Successfully generated table
+2026-02-12 04:49:53,843 - INFO - Generating table for 15 papers
+2026-02-12 04:49:53,843 - INFO - Successfully generated table
+2026-02-12 04:49:53,846 - INFO - Fetching Semantic Scholar papers for keyword: verification
+2026-02-12 04:49:53,846 - INFO - Attempting to get Semantic Scholar papers for keyword 'digital verification' with 3 retries
+2026-02-12 04:49:53,846 - INFO - Getting Semantic Scholar papers for keyword: digital verification
+2026-02-12 04:49:53,846 - INFO - Requesting papers from Semantic Scholar for keyword: digital verification
+2026-02-12 04:49:54,132 - ERROR - Failed to fetch papers from Semantic Scholar: HTTP Error 429: 
+2026-02-12 04:49:54,133 - ERROR - Error on Semantic Scholar attempt 1: HTTP Error 429: 
+2026-02-12 04:49:54,133 - ERROR - Semantic Scholar returned HTTP 429 for keyword 'digital verification'; skipping further Semantic Scholar retries for this keyword.
+2026-02-12 04:49:54,134 - INFO - Attempting to get papers for keyword 'digital verification' with 6 retries
+2026-02-12 04:49:54,134 - INFO - Getting papers for keyword: digital verification
+2026-02-12 04:49:54,134 - INFO - Requesting papers from arXiv API for keyword: "digital verification"
+2026-02-12 04:49:54,258 - INFO - Successfully retrieved 0 papers from arXiv API
+2026-02-12 04:49:54,258 - INFO - Successfully processed 0 papers
+2026-02-12 04:49:54,259 - INFO - Filtering papers by tags: ['cs', 'stat']
+2026-02-12 04:49:54,259 - INFO - Filtered papers: 0 out of 0 papers kept
+2026-02-12 04:49:54,259 - INFO - Retrieved 0 papers after filtering and column selection
+2026-02-12 04:49:54,259 - WARNING - Received empty list on attempt 1, retrying in 10 seconds...
+2026-02-12 04:50:04,289 - INFO - Getting papers for keyword: digital verification
+2026-02-12 04:50:04,290 - INFO - Requesting papers from arXiv API for keyword: "digital verification"
+2026-02-12 04:50:04,359 - INFO - Successfully retrieved 0 papers from arXiv API
+2026-02-12 04:50:04,359 - INFO - Successfully processed 0 papers
+2026-02-12 04:50:04,359 - INFO - Filtering papers by tags: ['cs', 'stat']
+2026-02-12 04:50:04,359 - INFO - Filtered papers: 0 out of 0 papers kept
+2026-02-12 04:50:04,360 - INFO - Retrieved 0 papers after filtering and column selection
+2026-02-12 04:50:04,360 - WARNING - Received empty list on attempt 2, retrying in 10 seconds...
+2026-02-12 04:50:13,853 - INFO - Getting papers for keyword: digital verification
+2026-02-12 04:50:13,854 - INFO - Requesting papers from arXiv API for keyword: "digital verification"
+2026-02-12 04:50:13,933 - INFO - Successfully retrieved 0 papers from arXiv API
+2026-02-12 04:50:13,934 - INFO - Successfully processed 0 papers
+2026-02-12 04:50:13,934 - INFO - Filtering papers by tags: ['cs', 'stat']
+2026-02-12 04:50:13,934 - INFO - Filtered papers: 0 out of 0 papers kept
+2026-02-12 04:50:13,935 - INFO - Retrieved 0 papers after filtering and column selection
+2026-02-12 04:50:13,935 - WARNING - Received empty list on attempt 3, retrying in 10 seconds...
+2026-02-12 04:50:23,948 - INFO - Getting papers for keyword: digital verification
+2026-02-12 04:50:23,949 - INFO - Requesting papers from arXiv API for keyword: "digital verification"
+2026-02-12 04:50:24,024 - INFO - Successfully retrieved 0 papers from arXiv API
+2026-02-12 04:50:24,024 - INFO - Successfully processed 0 papers
+2026-02-12 04:50:24,024 - INFO - Filtering papers by tags: ['cs', 'stat']
+2026-02-12 04:50:24,024 - INFO - Filtered papers: 0 out of 0 papers kept
+2026-02-12 04:50:24,025 - INFO - Retrieved 0 papers after filtering and column selection
+2026-02-12 04:50:24,025 - WARNING - Received empty list on attempt 4, retrying in 10 seconds...
+2026-02-12 04:50:34,036 - INFO - Getting papers for keyword: digital verification
+2026-02-12 04:50:34,036 - INFO - Requesting papers from arXiv API for keyword: "digital verification"
+2026-02-12 04:50:34,110 - INFO - Successfully retrieved 0 papers from arXiv API
+2026-02-12 04:50:34,111 - INFO - Successfully processed 0 papers
+2026-02-12 04:50:34,111 - INFO - Filtering papers by tags: ['cs', 'stat']
+2026-02-12 04:50:34,111 - INFO - Filtered papers: 0 out of 0 papers kept
+2026-02-12 04:50:34,111 - INFO - Retrieved 0 papers after filtering and column selection
+2026-02-12 04:50:34,112 - WARNING - Received empty list on attempt 5, retrying in 10 seconds...
+2026-02-12 04:50:43,562 - INFO - Getting papers for keyword: digital verification
+2026-02-12 04:50:43,562 - INFO - Requesting papers from arXiv API for keyword: "digital verification"
+2026-02-12 04:50:43,641 - INFO - Successfully retrieved 0 papers from arXiv API
+2026-02-12 04:50:43,641 - INFO - Successfully processed 0 papers
+2026-02-12 04:50:43,641 - INFO - Filtering papers by tags: ['cs', 'stat']
+2026-02-12 04:50:43,641 - INFO - Filtered papers: 0 out of 0 papers kept
+2026-02-12 04:50:43,642 - INFO - Retrieved 0 papers after filtering and column selection
+2026-02-12 04:50:43,642 - WARNING - Received empty list on attempt 6, retrying in 10 seconds...
+2026-02-12 04:50:53,654 - ERROR - Failed to get papers after all retry attempts; returning empty list.
+2026-02-12 04:50:53,654 - INFO - Generating table for 0 papers
+2026-02-12 04:50:53,655 - WARNING - No papers provided, returning empty table
+2026-02-12 04:50:53,655 - INFO - Generating table for 0 papers
+2026-02-12 04:50:53,655 - WARNING - No papers provided, returning empty table
+2026-02-12 04:50:53,655 - INFO - Successfully processed 0 arXiv papers for keyword: verification
+2026-02-12 04:50:58,662 - INFO - Processing keyword: UVM
+2026-02-12 04:50:58,665 - INFO - Fetching DVCon papers for keyword: UVM
+2026-02-12 04:50:58,665 - INFO - Attempting to get DVCon papers for keyword 'UVM' with 3 retries
+2026-02-12 04:50:58,665 - INFO - Getting DVCon papers for keyword via proceedings site: UVM
+2026-02-12 04:50:59,236 - INFO - Retrieved 100 DVCon proceedings entries after selection
+2026-02-12 04:50:59,237 - INFO - Successfully retrieved 100 DVCon papers on attempt 1
+2026-02-12 04:50:59,237 - INFO - Downloading DVCon assets for keyword: UVM
+2026-02-12 04:50:59,240 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/optimizing-cpu-based-configuration-path-verification-through-automated-c-test-case-generation-with-uvm-ral/
+2026-02-12 04:50:59,594 - INFO - Skipping existing DVCon asset: downloads/dvcon/1C1-DVConIndia2025_Final_Paper_7562.pdf
+2026-02-12 04:50:59,594 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-summary-and-examination-of-uvm-virtual-sequence-techniques/
+2026-02-12 04:50:59,918 - INFO - Skipping existing DVCon asset: downloads/dvcon/1B1-DVConIndia2025_Final_Paper_3272.pdf
+2026-02-12 04:50:59,919 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/pumping-up-test-development-with-task-based-c-callable-uvm-based-tests-2/
+2026-02-12 04:51:00,228 - INFO - Skipping existing DVCon asset: downloads/dvcon/1A3_DVConIndia25_Final_PPT_5986.pdf
+2026-02-12 04:51:00,229 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/pumping-up-test-development-with-task-based-c-callable-uvm-based-tests/
+2026-02-12 04:51:00,622 - INFO - Skipping existing DVCon asset: downloads/dvcon/1A3-DVConIndia2025_Final_Paper_5986.pdf
+2026-02-12 04:51:00,622 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-based-generic-interrupt-service-routine-gisr-2/
+2026-02-12 04:51:01,576 - INFO - Skipping existing DVCon asset: downloads/dvcon/1A1-DVConIndia2025_Final_Paper_4877.pdf
+2026-02-12 04:51:01,576 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-based-generic-interrupt-service-routine-gisr/
+2026-02-12 04:51:02,125 - INFO - Skipping existing DVCon asset: downloads/dvcon/1A1_DVConIndia25_Final_PPT_4877.pdf
+2026-02-12 04:51:02,125 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/chain-of-responsibility-design-pattern-for-scalable-uvm-drivers-2/
+2026-02-12 04:51:02,538 - INFO - Skipping existing DVCon asset: downloads/dvcon/P17-DVConIndia2025_Final_Paper_5053.pdf
+2026-02-12 04:51:02,538 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/chain-of-responsibility-design-pattern-for-scalable-uvm-drivers/
+2026-02-12 04:51:02,822 - INFO - Skipping existing DVCon asset: downloads/dvcon/P17-DVConIndia25_Final_PPT_5053.pdf
+2026-02-12 04:51:02,823 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/smartlint-booster-automation-of-uvm-testbench-linting-with-amiq-verissimo-2/
+2026-02-12 04:51:03,380 - INFO - Skipping existing DVCon asset: downloads/dvcon/P15-DVConIndia2025_Final_Paper_4873.pdf
+2026-02-12 04:51:03,380 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/smartlint-booster-automation-of-uvm-testbench-linting-with-amiq-verissimo/
+2026-02-12 04:51:03,728 - INFO - Skipping existing DVCon asset: downloads/dvcon/P15-DVConIndia25_Final_PPT_4873.pdf
+2026-02-12 04:51:03,729 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/novel-customized-algorithm-and-verification-checklist-to-improve-the-process-of-register-verification-in-uvm/
+2026-02-12 04:51:04,076 - INFO - Skipping existing DVCon asset: downloads/dvcon/P13-DVConIndia25_Final_PPT_4118.pdf
+2026-02-12 04:51:04,076 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unified-uvm-testbench-integrating-random-directed-and-pseudo-random-verification-capabilities-2/
+2026-02-12 04:51:04,425 - INFO - Skipping existing DVCon asset: downloads/dvcon/Unified-UVM-Testbench-Integrating-Random-Directed-and-Pseudo-Random-Verification-Capabilities.pdf
+2026-02-12 04:51:04,425 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/efficient-coverage-optimization-with-formal-guided-testcase-generation-in-uvm-verification-2/
+2026-02-12 04:51:04,779 - INFO - Skipping existing DVCon asset: downloads/dvcon/Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf
+2026-02-12 04:51:04,780 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/ai-pair-or-despair-programmingusing-aider-to-build-a-vip-with-uvm-sv-and-pyuvm/
+2026-02-12 04:51:05,104 - INFO - Skipping existing DVCon asset: downloads/dvcon/AI-Pair-or-Despair-Programming-Using-Aider-to-build-a-VIP-with-UVM-SV-and-PyUVM.pdf
+2026-02-12 04:51:05,104 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-testbench-for-exploring-design-margins-of-analog-mixed-signal-systems-a-pci-express-receiver-detection-circuit-example/
+2026-02-12 04:51:05,419 - INFO - Skipping existing DVCon asset: downloads/dvcon/A-UVM-Testbench-for-Exploring-Design-Margins-of-AnalogMixed-Signal-Circuits-A-PCI-Express-Receiver-Detection-Circuit-Example.pdf
+2026-02-12 04:51:05,419 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-novel-configurable-uvm-architecture-to-unlock-1-6t-ethernet-verification-2/
+2026-02-12 04:51:05,764 - INFO - Skipping existing DVCon asset: downloads/dvcon/A-Novel-Configurable-UVM-Architecture-To-Unlock-1.6T-Ethernet-Verification-Sameh-Mahmoud.pdf
+2026-02-12 04:51:05,765 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/efficient-coverage-optimization-with-formal-guided-testcase-generation-in-uvm-verification/
+2026-02-12 04:51:06,072 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_152.pdf
+2026-02-12 04:51:06,072 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/vertical-reuse-of-reference-models-in-uvm/
+2026-02-12 04:51:06,401 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_143.pdf
+2026-02-12 04:51:06,404 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-testbench-for-exploring-design-margins-of-analog-mixed-signal-circuits-a-pci-express-receiver-detection-circuit-example/
+2026-02-12 04:51:06,737 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_136.pdf
+2026-02-12 04:51:06,737 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-graph-based-uvm-generation-framework-for-complex-state-machine-verification/
+2026-02-12 04:51:07,047 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_135.pdf
+2026-02-12 04:51:07,047 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unified-uvm-testbench-integrating-random-directed-and-pseudo-random-verification-capabilities/
+2026-02-12 04:51:07,361 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_132.pdf
+2026-02-12 04:51:07,362 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/evaluating-the-usability-of-pyuvm-with-cocotb-for-uart-verification/
+2026-02-12 04:51:07,679 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_116.pdf
+2026-02-12 04:51:07,679 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-novel-configurable-uvm-architecture-to-unlock-1-6t-ethernet-verification/
+2026-02-12 04:51:07,973 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVConEU_2025_paper_101.pdf
+2026-02-12 04:51:07,974 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/sparking-uvm-stimulus-via-state-design-pattern/
+2026-02-12 04:51:08,273 - INFO - Skipping existing DVCon asset: downloads/dvcon/3A1-DVCon_India_2024_Final_Paper_3687.pdf
+2026-02-12 04:51:08,274 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/design-implementation-of-generic-architecture-for-image-processing-applications-and-its-verification-with-uvm-framework/
+2026-02-12 04:51:08,563 - INFO - Skipping existing DVCon asset: downloads/dvcon/1A1-DVCon_India_2024_Final_Paper_3195.pdf
+2026-02-12 04:51:08,563 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/maximizing-verification-productivity-using-uvm-and-dynamic-test-loading/
+2026-02-12 04:51:08,870 - INFO - Skipping existing DVCon asset: downloads/dvcon/PP2.3-Slide-Maximizing-Verification-Productivity-Using-UVM-and-Dynamic-Test-Loading.pdf
+2026-02-12 04:51:08,870 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/having-your-cake-and-eating-it-too-programming-uvm-sequences-with-c-code/
+2026-02-12 04:51:09,174 - INFO - Skipping existing DVCon asset: downloads/dvcon/PP2.2-Slide-Having-Your-Cake-and-Eating-It-Too-Programming-UVM-Sequences-with-DPI-C.pdf
+2026-02-12 04:51:09,174 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/having-your-cake-and-eating-it-too-programming-uvm-sequences-with-dpi-c/
+2026-02-12 04:51:09,477 - INFO - Skipping existing DVCon asset: downloads/dvcon/PP2.2-Paper-Having-Your-Cake-and-Eating-It-Too-Programming-UVM-Sequences-with-DPI-C.pdf
+2026-02-12 04:51:09,477 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/dont-go-changing-how-to-code-immutable-uvm-objects-2/
+2026-02-12 04:51:09,795 - INFO - Skipping existing DVCon asset: downloads/dvcon/1086-Dont-Go-Changing-How-to-Code-Immutable-UVM-Objects.pdf
+2026-02-12 04:51:09,795 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/real-time-synchronization-of-c-model-with-uvm-testbench-3/
+2026-02-12 04:51:10,112 - INFO - Skipping existing DVCon asset: downloads/dvcon/1078-Real-time-synchronization-of-C-model-with-UVM-Testbench.pptx
+2026-02-12 04:51:10,113 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/user-programmable-targeted-uvm-debug-verbosity-escalation-2/
+2026-02-12 04:51:10,427 - INFO - Skipping existing DVCon asset: downloads/dvcon/1077-User-Programmable-Targeted-UVM-Debug-Verbosity-Escalation.pptx
+2026-02-12 04:51:10,427 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/addressing-advanced-mixed-signal-verification-scenarios-by-developing-a-uvm-framework-for-analog-models-2/
+2026-02-12 04:51:10,742 - INFO - Skipping existing DVCon asset: downloads/dvcon/1060-Addressing-Advanced-Mixed-Signal-Verification-Scenarios-by-Developing-a-UVM-Framework-for-Analog-Models.pptx
+2026-02-12 04:51:10,742 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/accelerating-the-functional-coverage-through-machine-learning-within-a-uvm-framework/
+2026-02-12 04:51:11,034 - INFO - Skipping existing DVCon asset: downloads/dvcon/1019-AFCML-Accelerating-the-Functional-Coverage-through-Machine-Learning-within-a-UVM-Framework.pptx
+2026-02-12 04:51:11,035 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/real-time-synchronization-of-c-model-with-uvm-testbench-2/
+2026-02-12 04:51:11,338 - INFO - Skipping existing DVCon asset: downloads/dvcon/1078-Real-time-synchronization-of-C-model-with-UVM-Testbench.pdf
+2026-02-12 04:51:11,339 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/dont-go-changing-how-to-code-immutable-uvm-objects/
+2026-02-12 04:51:11,625 - INFO - Skipping existing DVCon asset: downloads/dvcon/1086.pdf
+2026-02-12 04:51:11,626 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/real-time-synchronization-of-c-model-with-uvm-testbench/
+2026-02-12 04:51:12,134 - INFO - Skipping existing DVCon asset: downloads/dvcon/1078-2.pdf
+2026-02-12 04:51:12,135 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/user-programmable-targeted-uvm-debug-verbosity-escalation/
+2026-02-12 04:51:12,442 - INFO - Skipping existing DVCon asset: downloads/dvcon/1077.pdf
+2026-02-12 04:51:12,443 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/addressing-advanced-mixed-signal-verification-scenarios-by-developing-a-uvm-framework-for-analog-models/
+2026-02-12 04:51:12,765 - INFO - Skipping existing DVCon asset: downloads/dvcon/1060.pdf
+2026-02-12 04:51:12,766 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/afcml-accelerating-the-functional-coverage-through-machine-learning-within-a-uvm-framework/
+2026-02-12 04:51:13,079 - INFO - Skipping existing DVCon asset: downloads/dvcon/1019-2.pdf
+2026-02-12 04:51:13,080 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/session-1-7-left-shifting-testbench-development-using-environment-inversion-in-uvm/
+2026-02-12 04:51:13,387 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVCon-Taiwan-2024_1.7_Synopsys_Left-shifting-Testbench-Development-Using-Environment-Inversion-in-UVM.pdf
+2026-02-12 04:51:13,388 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/session-1-2-improving-uvm-test-benches-using-uvm-run-time-phases/
+2026-02-12 04:51:13,734 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVCon-Taiwan-2024_1.2_AMD_Improving-UVM-test-benches-using-UVM-Run-time-phases.pdf
+2026-02-12 04:51:13,735 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-novel-approach-for-hw-sw-co-verification-leveraging-pss-to-orchestrate-uvm-and-c-tests/
+2026-02-12 04:51:14,029 - INFO - Skipping existing DVCon asset: downloads/dvcon/149-A-Novel-Approach-for-HWSW-Co-Verification-Leveraging-PSS-to-Orchestrate-UVM-and-C-Tests.pdf
+2026-02-12 04:51:14,030 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-testbench-for-checking-the-global-convergence-of-analog-mixed-signal-systems-an-adaptive-decision-feedback-equalizer-example/
+2026-02-12 04:51:14,317 - INFO - Skipping existing DVCon asset: downloads/dvcon/151-A-UVM-Testbench-for-Checking-the-Global-Convergence-of-AnalogMixed-Signal-Systems-An-Adaptive-Decision-Feedback-Equalizer-Example.pdf
+2026-02-12 04:51:14,318 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm_objection-challenges-of-synchronizing-embedded-code-running-on-cores-and-using-uvm/
+2026-02-12 04:51:14,605 - INFO - Skipping existing DVCon asset: downloads/dvcon/155-uvm_objection-–-challenges-of-synchronizing-embedded-code-running-on-cores-and-using-UVM.pdf
+2026-02-12 04:51:14,606 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/enable-reuse-of-systemverilog-verification-ips-in-cocotb-pyuvm/
+2026-02-12 04:51:14,890 - INFO - Skipping existing DVCon asset: downloads/dvcon/156-Enable-Reuse-of-SystemVerilog-Verification-IPs-in-cocotbpyuvm.pdf
+2026-02-12 04:51:14,890 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-portable-stimulus-synchronized-multistream-parallel-state-scenario-in-uvm/
+2026-02-12 04:51:15,180 - INFO - Skipping existing DVCon asset: downloads/dvcon/158-UVM-Portable-Stimulus-Synchronized-Multi-Stream-Parallel-State-Scenario-in-UVM.pdf
+2026-02-12 04:51:15,180 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/hard-math-easy-uvm/
+2026-02-12 04:51:15,133 - INFO - Skipping existing DVCon asset: downloads/dvcon/159-Hard-Math-–-Easy-UVM-Pragmatic-solutions-for-verifying-hardware-algorithms-using-UVM.pdf
+2026-02-12 04:51:15,133 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/trustworthiness-evaluation-of-deep-learning-accelerators-using-uvm-based-verification-with-error-injection/
+2026-02-12 04:51:15,442 - INFO - Skipping existing DVCon asset: downloads/dvcon/184-Trustworthiness-Evaluation-of-Deep-Learning-Accelerators-Using-UVM-based-Verification-with-Error-Injection.pdf
+2026-02-12 04:51:15,442 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/trustworthiness-evaluation-of-deep-learning-accelerators-using-uvm-based-verification-with-error-injection-2/
+2026-02-12 04:51:15,732 - INFO - Skipping existing DVCon asset: downloads/dvcon/slides_184_Trustworthiness-Evaluation-of-Deep-Learning-Accelerators-Using-UVM-based-Verification-with-Error-Injection.pdf
+2026-02-12 04:51:15,732 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-update/
+2026-02-12 04:51:16,017 - INFO - Skipping existing DVCon asset: downloads/dvcon/UVM-Update.pptx
+2026-02-12 04:51:16,018 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/dv-uvm-based-ams-co-simulation-and-verification-methodology-for-mixed-signal-designs-2/
+2026-02-12 04:51:16,337 - INFO - Skipping existing DVCon asset: downloads/dvcon/1160-1.pdf
+2026-02-12 04:51:16,338 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-systemverilog-testbench-for-directed-random-testing-of-an-ams-ldo-voltage-regulator-2/
+2026-02-12 04:51:16,693 - INFO - Skipping existing DVCon asset: downloads/dvcon/1141-2.pdf
+2026-02-12 04:51:16,693 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-testbench-automation-for-ams-designs-2/
+2026-02-12 04:51:17,011 - INFO - Skipping existing DVCon asset: downloads/dvcon/1137-1.pdf
+2026-02-12 04:51:17,012 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/gherkin-implementation-in-systemverilog-brings-agile-behavior-driven-development-to-uvm-2/
+2026-02-12 04:51:17,310 - INFO - Skipping existing DVCon asset: downloads/dvcon/1133-1.pdf
+2026-02-12 04:51:17,310 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/without-objection-touring-the-uvm_objection-implementations-uses-and-improvements/
+2026-02-12 04:51:17,661 - INFO - Skipping existing DVCon asset: downloads/dvcon/1116-1.pdf
+2026-02-12 04:51:17,662 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/advanced-uvm-based-chip-verification-methodologies-with-full-analog-functionality-2/
+2026-02-12 04:51:17,986 - INFO - Skipping existing DVCon asset: downloads/dvcon/1112-1.pdf
+2026-02-12 04:51:17,987 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/leveraging-interface-class-to-improve-uvm-tlm/
+2026-02-12 04:51:18,284 - INFO - Skipping existing DVCon asset: downloads/dvcon/1103-1.pdf
+2026-02-12 04:51:18,284 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/novel-method-to-speed-up-uvm-testbench-development-2/
+2026-02-12 04:51:18,621 - INFO - Skipping existing DVCon asset: downloads/dvcon/1099-1.pdf
+2026-02-12 04:51:18,622 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-multi-agent-verification-ip-architecture-to-enable-next-gen-protocols-with-enhanced-reusability-controllability-and-observability-2/
+2026-02-12 04:51:18,943 - INFO - Skipping existing DVCon asset: downloads/dvcon/1047-1.pdf
+2026-02-12 04:51:18,944 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/crafting-a-million-instructions-sec-riscv-dv-hpc-techniques-to-boost-uvm-testbench-performance-by-over-100x-2/
+2026-02-12 04:51:19,386 - INFO - Skipping existing DVCon asset: downloads/dvcon/1008-1.pdf
+2026-02-12 04:51:19,386 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/dv-uvm-based-ams-co-simulation-and-verification-methodology-for-mixed-signal-designs/
+2026-02-12 04:51:19,670 - INFO - Skipping existing DVCon asset: downloads/dvcon/1160.pdf
+2026-02-12 04:51:19,670 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-systemverilog-testbench-for-directed-and-random-testing-of-an-ams-low-dropout-voltage-regulator/
+2026-02-12 04:51:19,972 - INFO - Skipping existing DVCon asset: downloads/dvcon/1141-1.pdf
+2026-02-12 04:51:19,972 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-testbench-automation-for-ams-designs/
+2026-02-12 04:51:20,277 - INFO - Skipping existing DVCon asset: downloads/dvcon/1137.pdf
+2026-02-12 04:51:20,277 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/gherkin-implementation-in-systemverilog-brings-agile-behavior-driven-development-to-uvm/
+2026-02-12 04:51:20,613 - INFO - Skipping existing DVCon asset: downloads/dvcon/1133.pdf
+2026-02-12 04:51:20,613 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/towards-efficient-design-verification-constrained-random-verification-using-pyuvm/
+2026-02-12 04:51:20,916 - INFO - Skipping existing DVCon asset: downloads/dvcon/1131-1.pdf
+2026-02-12 04:51:20,917 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/without-objection-touring-the-uvm_objection-implementation-uses-and-improvements/
+2026-02-12 04:51:21,216 - INFO - Skipping existing DVCon asset: downloads/dvcon/1116.pdf
+2026-02-12 04:51:21,217 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/advanced-uvm-based-chip-verification-methodologies-with-full-analog-functionality/
+2026-02-12 04:51:21,536 - INFO - Skipping existing DVCon asset: downloads/dvcon/1112.pdf
+2026-02-12 04:51:21,536 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/leveraging-interface-classes-to-improve-uvm-tlm/
+2026-02-12 04:51:21,855 - INFO - Skipping existing DVCon asset: downloads/dvcon/1103.pdf
+2026-02-12 04:51:21,856 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/novel-method-to-speed-up-uvm-testbench-development/
+2026-02-12 04:51:22,147 - INFO - Skipping existing DVCon asset: downloads/dvcon/1099.pdf
+2026-02-12 04:51:22,148 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-multi-agent-verification-ip-architecture-to-enable-next-gen-protocols-with-enhanced-reusability-controllability-and-observability/
+2026-02-12 04:51:22,439 - INFO - Skipping existing DVCon asset: downloads/dvcon/1047.pdf
+2026-02-12 04:51:22,440 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-configurable-re-usable-uvm-environment-coupled-with-advanced-spice-simulator-for-analog-and-mixed-signal-verification-of-a-display-pmic/
+2026-02-12 04:51:22,772 - INFO - Skipping existing DVCon asset: downloads/dvcon/1013.pdf
+2026-02-12 04:51:22,772 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/crafting-a-million-instructions-sec-riscv-dv-hpc-techniques-to-boost-uvm-testbench-performance-by-over-100x/
+2026-02-12 04:51:23,078 - INFO - Skipping existing DVCon asset: downloads/dvcon/1008.pdf
+2026-02-12 04:51:23,078 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-systemverilog-testbench-for-directed-random-testing-of-an-ams-ldo-voltage-regulator/
+2026-02-12 04:51:23,572 - INFO - Skipping existing DVCon asset: downloads/dvcon/1141.pdf
+2026-02-12 04:51:23,572 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/towards-efficient-design-verification-pyuvm-pyvsc/
+2026-02-12 04:51:23,872 - INFO - Skipping existing DVCon asset: downloads/dvcon/1131.pdf
+2026-02-12 04:51:23,873 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unified-architecture-of-l1-l2-cache-with-low-power-extensions-for-multicore-uvm-based-library-package/
+2026-02-12 04:51:24,378 - INFO - Skipping existing DVCon asset: downloads/dvcon/Unified-Architecture-of-L1-L2-Cache-with-Low-Power-Extensions-for-Multi-Core-UVM-based-Library-Package.pdf
+2026-02-12 04:51:24,379 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/an-elegant-scoreboard-eco-system-deploying-uvm-callbacks-parameterization-for-multimedia-designs-from-imaging-perspective-2/
+2026-02-12 04:51:24,690 - INFO - Skipping existing DVCon asset: downloads/dvcon/An-Elegant-scoreboard-eco-system-deploying-UVM-Callbacks-Parameterization-for-Multimedia-designs-from-Imaging-perspective-Chakravarthi-Nanda.pdf
+2026-02-12 04:51:24,691 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/break-the-soc-with-uvm-dynamically-generated-program-code/
+2026-02-12 04:51:25,001 - INFO - Skipping existing DVCon asset: downloads/dvcon/92144.pdf
+2026-02-12 04:51:25,001 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/an-elegant-scoreboard-eco-system-deploying-uvm-callbacks-parameterization-for-multimedia-designs-from-imaging-perspective/
+2026-02-12 04:51:25,283 - INFO - Skipping existing DVCon asset: downloads/dvcon/91809.pdf
+2026-02-12 04:51:25,283 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/unified-architecture-of-l1-and-l2-cache-with-low-power-extensions-for-multi-core-uvm-based-library-package/
+2026-02-12 04:51:25,570 - INFO - Skipping existing DVCon asset: downloads/dvcon/91176.pdf
+2026-02-12 04:51:25,571 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-test-bench-skeleton-leveraging-the-event-pool-and-sequence-layering/
+2026-02-12 04:51:25,867 - INFO - Skipping existing DVCon asset: downloads/dvcon/90997.pdf
+2026-02-12 04:51:25,868 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/verilator-uvm-systemc-a-match-made-in-heaven/
+2026-02-12 04:51:26,159 - INFO - Skipping existing DVCon asset: downloads/dvcon/90555.pdf
+2026-02-12 04:51:26,159 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/scalable-agile-processor-verification-using-systemc-uvm-and-friends/
+2026-02-12 04:51:26,475 - INFO - Skipping existing DVCon asset: downloads/dvcon/Scalable-agile-processor-verification-using-SystemC-UVM-and-friends.pdf
+2026-02-12 04:51:26,475 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/migrating-from-uvm-to-uvm-ms/
+2026-02-12 04:51:26,794 - INFO - Skipping existing DVCon asset: downloads/dvcon/Migrating-from-UVM-to-UVM-MS.pdf
+2026-02-12 04:51:26,795 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/exploring-new-frontiers-of-high-performance-verification-with-uvm-ams/
+2026-02-12 04:51:27,306 - INFO - Skipping existing DVCon asset: downloads/dvcon/Exploring-New-Frontiers-of-High-Performance-Verification-with-UVM-AMS.pdf
+2026-02-12 04:51:27,306 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-scoreboards-and-checkers-memory-tlb-and-cache/
+2026-02-12 04:51:27,597 - INFO - Skipping existing DVCon asset: downloads/dvcon/Paper-1.3-Scoreboards-and-Checkers-Memory-TLB-and-Cache.pdf
+2026-02-12 04:51:27,597 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-based-extended-low-power-library-package-with-low-power-multi-core-architectures/
+2026-02-12 04:51:28,054 - INFO - Skipping existing DVCon asset: downloads/dvcon/Paper-1.2-UVM-based-extended-Low-Power-Library-package-with-Low-Power-Multi-Core-Architectures_paper.pdf
+2026-02-12 04:51:28,055 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-sequence-layering-for-register-sequences-2/
+2026-02-12 04:51:28,338 - INFO - Skipping existing DVCon asset: downloads/dvcon/3B2_DVCon_India_2023_Final_Paper_285.pdf
+2026-02-12 04:51:28,339 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-sequence-layering-for-register-sequences/
+2026-02-12 04:51:28,625 - INFO - Skipping existing DVCon asset: downloads/dvcon/3B2_285.pptx
+2026-02-12 04:51:28,626 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/breaking-down-barriers-seamless-protocol-conversion-with-uvm-component-layering-2/
+2026-02-12 04:51:28,903 - INFO - Skipping existing DVCon asset: downloads/dvcon/1B3_DVCon_India_2023_Final_Paper_2910.pdf
+2026-02-12 04:51:28,903 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/breaking-down-barriers-seamless-protocol-conversion-with-uvm-component-layering/
+2026-02-12 04:51:29,183 - INFO - Skipping existing DVCon asset: downloads/dvcon/1B3_2910.pptx
+2026-02-12 04:51:29,183 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/securing-design-confidence-for-low-power-and-functional-features-of-image-sensor-soc-reuse-of-uvm-simulation-testbench-on-hw-acceleration-platform/
+2026-02-12 04:51:29,470 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVCon_India_2023_Final_Presentation_9180.pptx
+2026-02-12 04:51:29,471 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/counterintuitive-approaches-to-have-better-communication-between-uvm-and-python-for-registers-with-single-controlling-algorithm/
+2026-02-12 04:51:29,755 - INFO - Skipping existing DVCon asset: downloads/dvcon/DVCon_India_2023_Final_Presentation_4989.pptx
+2026-02-12 04:51:29,755 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/integrating-l1l2-cache-for-multi-core-uvm-based-extended-low-power-library-package/
+2026-02-12 04:51:30,045 - INFO - Skipping existing DVCon asset: downloads/dvcon/TS2A-Integrating-L1-L2-Cache-for-multi-Core-UVM-based-extended-Low-Power-Library-Package-slide.pdf
+2026-02-12 04:51:30,045 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/integrating-l1-l2-cache-for-multi-core-uvm-based-extended-low-power-library-package/
+2026-02-12 04:51:30,356 - INFO - Skipping existing DVCon asset: downloads/dvcon/TS2A-Integrating-L1-L2-Cache-for-multi-Core-UVM-based-extended-Low-Power-Library-Package-paper.pdf
+2026-02-12 04:51:30,357 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-working-group-releases-1800-2-2020-2-0-library/
+2026-02-12 04:51:30,645 - INFO - Skipping existing DVCon asset: downloads/dvcon/UVM-Working-Group-Release-1800.2-2020-2.0-Library.pdf
+2026-02-12 04:51:30,646 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/harnessing-the-power-of-uvm-for-ams-verification-with-xmodel/
+2026-02-12 04:51:30,963 - INFO - Skipping existing DVCon asset: downloads/dvcon/3008-Harnessing-the-Power-of-UVM-for-AMS-Verification-with-XMODEL.pdf
+2026-02-12 04:51:30,963 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/migrating-from-uvm-to-uvm-ams/
+2026-02-12 04:51:31,259 - INFO - Skipping existing DVCon asset: downloads/dvcon/104-Migrating-from-UVM-to-UVM-AMS.pdf
+2026-02-12 04:51:31,260 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/tree-data-framework-for-code-generation-application-of-generating-uvm-testbench-for-complex-designs-2/
+2026-02-12 04:51:31,572 - INFO - Skipping existing DVCon asset: downloads/dvcon/1125-Tree-Data-Framework-for-Code-Generation-Application-of-Generating-UVM-Testbench-for-Complex-Designs-1.pdf
+2026-02-12 04:51:31,572 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/a-uvm-reactive-testbench-for-jitter-tolerance-measurement-of-high-speed-wireline-receivers-2/
+2026-02-12 04:51:31,893 - INFO - Skipping existing DVCon asset: downloads/dvcon/1113-A-UVM-Reactive-Testbench-for-Jitter-Tolerance-Measurement-of-High-Speed-Wireline-Receivers-1.pdf
+2026-02-12 04:51:31,893 - INFO - Resolving DVCon asset from page: https://dvcon-proceedings.org/document/uvm-sv-feedback-loop-the-foundation-of-self-improving-testbenches-2/
+2026-02-12 04:51:32,209 - INFO - Skipping existing DVCon asset: downloads/dvcon/1086-UVM-SV-Feedback-Loop-The-foundation-of-self-improving-testbenches-1.pdf
+2026-02-12 04:51:32,210 - INFO - Extracting abstracts from downloaded DVCon PDFs for keyword: UVM
+2026-02-12 04:51:32,215 - INFO - Extracting abstracts from 181 downloaded DVCon PDFs
+2026-02-12 04:51:32,215 - INFO - Extracting abstract from PDF 1C1-DVConIndia2025_Final_Paper_7562.pdf for entry: Optimizing CPU-Based Configuration Path Verification Through Automated C Test Case Generation with UVM RAL
+2026-02-12 04:51:32,502 - INFO - Extracting abstract from PDF 1B1-DVConIndia2025_Final_Paper_3272.pdf for entry: A Summary and Examination of UVM Virtual Sequence Techniques
+2026-02-12 04:51:32,589 - INFO - Extracting abstract from PDF 1A3_DVConIndia25_Final_PPT_5986.pdf for entry: Pumping Up Test Development with Task Based, C-callable, UVM based Tests
+2026-02-12 04:51:32,622 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1A3_DVConIndia25_Final_PPT_5986.pdf
+2026-02-12 04:51:32,623 - INFO - Extracting abstract from PDF 1A3-DVConIndia2025_Final_Paper_5986.pdf for entry: Pumping Up Test Development with Task Based, C-callable, UVM based Tests
+2026-02-12 04:51:32,748 - INFO - Extracting abstract from PDF 1A1-DVConIndia2025_Final_Paper_4877.pdf for entry: UVM Based Generic Interrupt Service Routine (gISR)
+2026-02-12 04:51:32,823 - INFO - Extracting abstract from PDF 1A1_DVConIndia25_Final_PPT_4877.pdf for entry: UVM based Generic Interrupt Service Routine (gISR)
+2026-02-12 04:51:32,859 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1A1_DVConIndia25_Final_PPT_4877.pdf
+2026-02-12 04:51:32,859 - INFO - Extracting abstract from PDF P17-DVConIndia2025_Final_Paper_5053.pdf for entry: Chain of Responsibility Design Pattern for scalable UVM drivers
+2026-02-12 04:51:32,936 - INFO - Extracting abstract from PDF P17-DVConIndia25_Final_PPT_5053.pdf for entry: Chain of Responsibility Design Pattern for scalable UVM drivers
+2026-02-12 04:51:33,048 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P17-DVConIndia25_Final_PPT_5053.pdf
+2026-02-12 04:51:33,049 - INFO - Extracting abstract from PDF P15-DVConIndia2025_Final_Paper_4873.pdf for entry: SmartLint Booster: Automation of UVM Testbench Linting with AMIQ Verissimo
+2026-02-12 04:51:33,157 - INFO - Extracting abstract from PDF P15-DVConIndia25_Final_PPT_4873.pdf for entry: SmartLint Booster: Automation of UVM Testbench Linting with AMIQ Verissimo
+2026-02-12 04:51:33,253 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P15-DVConIndia25_Final_PPT_4873.pdf
+2026-02-12 04:51:33,254 - INFO - Extracting abstract from PDF P13-DVConIndia25_Final_PPT_4118.pdf for entry: Novel Customized Algorithm and Verification Checklist to Improve the Process of Register Verification in UVM
+2026-02-12 04:51:33,340 - INFO - No explicit 'Abstract' section found in downloads/dvcon/P13-DVConIndia25_Final_PPT_4118.pdf
+2026-02-12 04:51:33,340 - INFO - Extracting abstract from PDF Unified-UVM-Testbench-Integrating-Random-Directed-and-Pseudo-Random-Verification-Capabilities.pdf for entry: Unified UVM Testbench: Integrating Random, Directed and Pseudo-Random Verification Capabilities
+2026-02-12 04:51:33,362 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Unified-UVM-Testbench-Integrating-Random-Directed-and-Pseudo-Random-Verification-Capabilities.pdf
+2026-02-12 04:51:33,363 - INFO - Extracting abstract from PDF Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf for entry: Efficient Coverage Optimization with Formal Guided Testcase Generation in UVM Verification
+2026-02-12 04:51:33,400 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf
+2026-02-12 04:51:33,401 - INFO - Extracting abstract from PDF AI-Pair-or-Despair-Programming-Using-Aider-to-build-a-VIP-with-UVM-SV-and-PyUVM.pdf for entry: AI Pair or Despair ProgrammingUsing Aider to build a VIP with UVM-SV and PyUVM
+2026-02-12 04:51:33,435 - INFO - No explicit 'Abstract' section found in downloads/dvcon/AI-Pair-or-Despair-Programming-Using-Aider-to-build-a-VIP-with-UVM-SV-and-PyUVM.pdf
+2026-02-12 04:51:33,435 - INFO - Extracting abstract from PDF A-UVM-Testbench-for-Exploring-Design-Margins-of-AnalogMixed-Signal-Circuits-A-PCI-Express-Receiver-Detection-Circuit-Example.pdf for entry: A UVM Testbench for Exploring Design Margins of Analog/Mixed-Signal Systems: A PCI-Express Receiver Detection Circuit Example
+2026-02-12 04:51:33,480 - INFO - No explicit 'Abstract' section found in downloads/dvcon/A-UVM-Testbench-for-Exploring-Design-Margins-of-AnalogMixed-Signal-Circuits-A-PCI-Express-Receiver-Detection-Circuit-Example.pdf
+2026-02-12 04:51:33,481 - INFO - Extracting abstract from PDF A-Novel-Configurable-UVM-Architecture-To-Unlock-1.6T-Ethernet-Verification-Sameh-Mahmoud.pdf for entry: A Novel Configurable UVM Architecture To Unlock 1.6T Ethernet Verification
+2026-02-12 04:51:33,505 - INFO - No explicit 'Abstract' section found in downloads/dvcon/A-Novel-Configurable-UVM-Architecture-To-Unlock-1.6T-Ethernet-Verification-Sameh-Mahmoud.pdf
+2026-02-12 04:51:33,505 - INFO - Extracting abstract from PDF DVConEU_2025_paper_152.pdf for entry: Efficient Coverage Optimization with Formal-Guided Testcase Generation in UVM Verification
+2026-02-12 04:51:33,612 - INFO - Extracting abstract from PDF DVConEU_2025_paper_143.pdf for entry: Vertical Reuse of Reference Models in UVM
+2026-02-12 04:51:33,619 - WARNING - Overwriting cache for 0 790
+2026-02-12 04:51:33,840 - INFO - Extracting abstract from PDF DVConEU_2025_paper_136.pdf for entry: A UVM Testbench for Exploring Design Margins of Analog/Mixed-Signal Circuits: A PCI-Express Receiver Detection Circuit Example
+2026-02-12 04:51:34,040 - INFO - Extracting abstract from PDF DVConEU_2025_paper_135.pdf for entry: A Graph-Based UVM Generation Framework for Complex State Machine Verification
+2026-02-12 04:51:34,290 - INFO - Extracting abstract from PDF DVConEU_2025_paper_132.pdf for entry: Unified UVM Testbench: Integrating Random, Directed and Pseudo-Random Verification Capabilities
+2026-02-12 04:51:34,417 - INFO - Extracting abstract from PDF DVConEU_2025_paper_116.pdf for entry: Evaluating the Usability of pyuvm with cocotb for UART Verification
+2026-02-12 04:51:34,527 - INFO - Extracting abstract from PDF DVConEU_2025_paper_101.pdf for entry: A Novel Configurable UVM Architecture To Unlock 1.6T Ethernet Verification
+2026-02-12 04:51:34,726 - INFO - Extracting abstract from PDF 3A1-DVCon_India_2024_Final_Paper_3687.pdf for entry: Sparking UVM stimulus via state design pattern
+2026-02-12 04:51:34,940 - INFO - Extracting abstract from PDF 1A1-DVCon_India_2024_Final_Paper_3195.pdf for entry: Design Implementation of Generic Architecture for Image Processing Applications and its Verification with UVM Framework
+2026-02-12 04:51:35,115 - INFO - Extracting abstract from PDF PP2.3-Slide-Maximizing-Verification-Productivity-Using-UVM-and-Dynamic-Test-Loading.pdf for entry: Maximizing Verification Productivity Using UVM and Dynamic Test Loading
+2026-02-12 04:51:35,123 - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2026-02-12 04:51:35,124 - WARNING - Ignoring wrong pointing object 13 0 (offset 0)
+2026-02-12 04:51:35,125 - WARNING - Ignoring wrong pointing object 26 0 (offset 0)
+2026-02-12 04:51:35,125 - WARNING - Ignoring wrong pointing object 28 0 (offset 0)
+2026-02-12 04:51:35,125 - WARNING - Ignoring wrong pointing object 30 0 (offset 0)
+2026-02-12 04:51:35,126 - WARNING - Ignoring wrong pointing object 38 0 (offset 0)
+2026-02-12 04:51:35,126 - WARNING - Ignoring wrong pointing object 48 0 (offset 0)
+2026-02-12 04:51:35,126 - WARNING - Ignoring wrong pointing object 50 0 (offset 0)
+2026-02-12 04:51:35,126 - WARNING - Ignoring wrong pointing object 52 0 (offset 0)
+2026-02-12 04:51:35,127 - WARNING - Ignoring wrong pointing object 54 0 (offset 0)
+2026-02-12 04:51:35,127 - WARNING - Ignoring wrong pointing object 56 0 (offset 0)
+2026-02-12 04:51:35,127 - WARNING - Ignoring wrong pointing object 74 0 (offset 0)
+2026-02-12 04:51:35,128 - WARNING - Ignoring wrong pointing object 166 0 (offset 0)
+2026-02-12 04:51:35,128 - WARNING - Ignoring wrong pointing object 173 0 (offset 0)
+2026-02-12 04:51:35,155 - INFO - No explicit 'Abstract' section found in downloads/dvcon/PP2.3-Slide-Maximizing-Verification-Productivity-Using-UVM-and-Dynamic-Test-Loading.pdf
+2026-02-12 04:51:35,155 - INFO - Extracting abstract from PDF PP2.2-Slide-Having-Your-Cake-and-Eating-It-Too-Programming-UVM-Sequences-with-DPI-C.pdf for entry: Having Your Cake and Eating It Too: Programming UVM Sequences with C Code
+2026-02-12 04:51:35,165 - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2026-02-12 04:51:35,166 - WARNING - Ignoring wrong pointing object 13 0 (offset 0)
+2026-02-12 04:51:35,166 - WARNING - Ignoring wrong pointing object 15 0 (offset 0)
+2026-02-12 04:51:35,166 - WARNING - Ignoring wrong pointing object 17 0 (offset 0)
+2026-02-12 04:51:35,167 - WARNING - Ignoring wrong pointing object 30 0 (offset 0)
+2026-02-12 04:51:35,167 - WARNING - Ignoring wrong pointing object 32 0 (offset 0)
+2026-02-12 04:51:35,167 - WARNING - Ignoring wrong pointing object 34 0 (offset 0)
+2026-02-12 04:51:35,167 - WARNING - Ignoring wrong pointing object 36 0 (offset 0)
+2026-02-12 04:51:35,168 - WARNING - Ignoring wrong pointing object 38 0 (offset 0)
+2026-02-12 04:51:35,168 - WARNING - Ignoring wrong pointing object 40 0 (offset 0)
+2026-02-12 04:51:35,168 - WARNING - Ignoring wrong pointing object 47 0 (offset 0)
+2026-02-12 04:51:35,168 - WARNING - Ignoring wrong pointing object 49 0 (offset 0)
+2026-02-12 04:51:35,168 - WARNING - Ignoring wrong pointing object 51 0 (offset 0)
+2026-02-12 04:51:35,169 - WARNING - Ignoring wrong pointing object 53 0 (offset 0)
+2026-02-12 04:51:35,169 - WARNING - Ignoring wrong pointing object 55 0 (offset 0)
+2026-02-12 04:51:35,169 - WARNING - Ignoring wrong pointing object 57 0 (offset 0)
+2026-02-12 04:51:35,169 - WARNING - Ignoring wrong pointing object 59 0 (offset 0)
+2026-02-12 04:51:35,170 - WARNING - Ignoring wrong pointing object 83 0 (offset 0)
+2026-02-12 04:51:35,170 - WARNING - Ignoring wrong pointing object 85 0 (offset 0)
+2026-02-12 04:51:35,170 - WARNING - Ignoring wrong pointing object 87 0 (offset 0)
+2026-02-12 04:51:35,171 - WARNING - Ignoring wrong pointing object 128 0 (offset 0)
+2026-02-12 04:51:35,171 - WARNING - Ignoring wrong pointing object 130 0 (offset 0)
+2026-02-12 04:51:35,227 - INFO - No explicit 'Abstract' section found in downloads/dvcon/PP2.2-Slide-Having-Your-Cake-and-Eating-It-Too-Programming-UVM-Sequences-with-DPI-C.pdf
+2026-02-12 04:51:35,228 - INFO - Extracting abstract from PDF PP2.2-Paper-Having-Your-Cake-and-Eating-It-Too-Programming-UVM-Sequences-with-DPI-C.pdf for entry: Having Your Cake and Eating It Too: Programming UVM Sequences with DPI-C
+2026-02-12 04:51:35,304 - INFO - Extracting abstract from PDF 1086-Dont-Go-Changing-How-to-Code-Immutable-UVM-Objects.pdf for entry: Don’t Go Changing: How to Code Immutable UVM Objects
+2026-02-12 04:51:35,336 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1086-Dont-Go-Changing-How-to-Code-Immutable-UVM-Objects.pdf
+2026-02-12 04:51:35,336 - INFO - Extracting abstract from PDF 1078-Real-time-synchronization-of-C-model-with-UVM-Testbench.pdf for entry: Real-Time Synchronization of C model with UVM Testbench
+2026-02-12 04:51:35,406 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1078-Real-time-synchronization-of-C-model-with-UVM-Testbench.pdf
+2026-02-12 04:51:35,406 - INFO - Extracting abstract from PDF 1077.pdf for entry: User Programmable Targeted UVM Debug Verbosity Escalation
+2026-02-12 04:51:35,411 - WARNING - Ignoring wrong pointing object 6 0 (offset 0)
+2026-02-12 04:51:35,412 - WARNING - Ignoring wrong pointing object 8 0 (offset 0)
+2026-02-12 04:51:35,412 - WARNING - Ignoring wrong pointing object 10 0 (offset 0)
+2026-02-12 04:51:35,413 - WARNING - Ignoring wrong pointing object 12 0 (offset 0)
+2026-02-12 04:51:35,413 - WARNING - Ignoring wrong pointing object 14 0 (offset 0)
+2026-02-12 04:51:35,413 - WARNING - Ignoring wrong pointing object 20 0 (offset 0)
+2026-02-12 04:51:35,414 - WARNING - Ignoring wrong pointing object 27 0 (offset 0)
+2026-02-12 04:51:35,414 - WARNING - Ignoring wrong pointing object 49 0 (offset 0)
+2026-02-12 04:51:35,415 - WARNING - Ignoring wrong pointing object 51 0 (offset 0)
+2026-02-12 04:51:35,415 - WARNING - Ignoring wrong pointing object 54 0 (offset 0)
+2026-02-12 04:51:35,588 - INFO - Extracting abstract from PDF 1060.pdf for entry: Addressing Advanced Mixed-Signal Verification Scenarios by Developing a UVM Framework for Analog Models
+2026-02-12 04:51:35,755 - INFO - Extracting abstract from PDF 1078-Real-time-synchronization-of-C-model-with-UVM-Testbench.pdf for entry: Real-Time Synchronization of C model with UVM Testbench
+2026-02-12 04:51:35,863 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1078-Real-time-synchronization-of-C-model-with-UVM-Testbench.pdf
+2026-02-12 04:51:35,864 - INFO - Extracting abstract from PDF 1086.pdf for entry: Don’t Go Changing: How to Code Immutable UVM Objects
+2026-02-12 04:51:36,068 - INFO - Extracting abstract from PDF 1078-2.pdf for entry: Real-time Synchronization of C model with UVM Testbench
+2026-02-12 04:51:36,192 - INFO - Extracting abstract from PDF 1077.pdf for entry: User Programmable Targeted UVM Debug Verbosity Escalation
+2026-02-12 04:51:36,197 - WARNING - Ignoring wrong pointing object 6 0 (offset 0)
+2026-02-12 04:51:36,197 - WARNING - Ignoring wrong pointing object 8 0 (offset 0)
+2026-02-12 04:51:36,197 - WARNING - Ignoring wrong pointing object 10 0 (offset 0)
+2026-02-12 04:51:36,198 - WARNING - Ignoring wrong pointing object 12 0 (offset 0)
+2026-02-12 04:51:36,198 - WARNING - Ignoring wrong pointing object 14 0 (offset 0)
+2026-02-12 04:51:36,198 - WARNING - Ignoring wrong pointing object 20 0 (offset 0)
+2026-02-12 04:51:36,199 - WARNING - Ignoring wrong pointing object 27 0 (offset 0)
+2026-02-12 04:51:36,199 - WARNING - Ignoring wrong pointing object 49 0 (offset 0)
+2026-02-12 04:51:36,199 - WARNING - Ignoring wrong pointing object 51 0 (offset 0)
+2026-02-12 04:51:36,200 - WARNING - Ignoring wrong pointing object 54 0 (offset 0)
+2026-02-12 04:51:36,380 - INFO - Extracting abstract from PDF 1060.pdf for entry: Addressing Advanced Mixed-Signal Verification Scenarios by Developing a UVM Framework for Analog Models
+2026-02-12 04:51:36,576 - INFO - Extracting abstract from PDF 1019-2.pdf for entry: AFCML: Accelerating the Functional Coverage through Machine Learning within a UVM Framework
+2026-02-12 04:51:36,747 - INFO - Extracting abstract from PDF DVCon-Taiwan-2024_1.7_Synopsys_Left-shifting-Testbench-Development-Using-Environment-Inversion-in-UVM.pdf for entry: Session 1.7: Left-shifting Testbench Development Using Environment Inversion in UVM
+2026-02-12 04:51:36,768 - INFO - No explicit 'Abstract' section found in downloads/dvcon/DVCon-Taiwan-2024_1.7_Synopsys_Left-shifting-Testbench-Development-Using-Environment-Inversion-in-UVM.pdf
+2026-02-12 04:51:36,769 - INFO - Extracting abstract from PDF DVCon-Taiwan-2024_1.2_AMD_Improving-UVM-test-benches-using-UVM-Run-time-phases.pdf for entry: Session 1.2: Improving UVM test benches using UVM Run time phases
+2026-02-12 04:51:36,807 - INFO - No explicit 'Abstract' section found in downloads/dvcon/DVCon-Taiwan-2024_1.2_AMD_Improving-UVM-test-benches-using-UVM-Run-time-phases.pdf
+2026-02-12 04:51:36,808 - INFO - Extracting abstract from PDF 149-A-Novel-Approach-for-HWSW-Co-Verification-Leveraging-PSS-to-Orchestrate-UVM-and-C-Tests.pdf for entry: A Novel Approach for HW/SW Co-Verification: Leveraging PSS to Orchestrate UVM and C Tests
+2026-02-12 04:51:36,964 - INFO - Extracting abstract from PDF 151-A-UVM-Testbench-for-Checking-the-Global-Convergence-of-AnalogMixed-Signal-Systems-An-Adaptive-Decision-Feedback-Equalizer-Example.pdf for entry: A UVM Testbench for Checking the Global Convergence of Analog/Mixed-Signal Systems: An Adaptive Decision-Feedback Equalizer Example
+2026-02-12 04:51:37,039 - INFO - Extracting abstract from PDF 155-uvm_objection-–-challenges-of-synchronizing-embedded-code-running-on-cores-and-using-UVM.pdf for entry: uvm_objection – challenges of synchronizing embedded code running on cores and using UVM
+2026-02-12 04:51:37,196 - INFO - Extracting abstract from PDF 156-Enable-Reuse-of-SystemVerilog-Verification-IPs-in-cocotbpyuvm.pdf for entry: Enable Reuse of SystemVerilog Verification IPs in cocotb/pyuvm
+2026-02-12 04:51:37,374 - INFO - Extracting abstract from PDF 158-UVM-Portable-Stimulus-Synchronized-Multi-Stream-Parallel-State-Scenario-in-UVM.pdf for entry: UVM Portable Stimulus: Synchronized MultiStream Parallel-State Scenario in UVM
+2026-02-12 04:51:37,477 - INFO - Extracting abstract from PDF 159-Hard-Math-–-Easy-UVM-Pragmatic-solutions-for-verifying-hardware-algorithms-using-UVM.pdf for entry: Hard Math – Easy UVM
+2026-02-12 04:51:37,486 - WARNING - Ignoring wrong pointing object 6 0 (offset 0)
+2026-02-12 04:51:37,486 - WARNING - Ignoring wrong pointing object 9 0 (offset 0)
+2026-02-12 04:51:37,487 - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2026-02-12 04:51:37,487 - WARNING - Ignoring wrong pointing object 13 0 (offset 0)
+2026-02-12 04:51:37,487 - WARNING - Ignoring wrong pointing object 15 0 (offset 0)
+2026-02-12 04:51:37,487 - WARNING - Ignoring wrong pointing object 17 0 (offset 0)
+2026-02-12 04:51:37,488 - WARNING - Ignoring wrong pointing object 19 0 (offset 0)
+2026-02-12 04:51:37,488 - WARNING - Ignoring wrong pointing object 21 0 (offset 0)
+2026-02-12 04:51:37,488 - WARNING - Ignoring wrong pointing object 28 0 (offset 0)
+2026-02-12 04:51:37,488 - WARNING - Ignoring wrong pointing object 30 0 (offset 0)
+2026-02-12 04:51:37,489 - WARNING - Ignoring wrong pointing object 65 0 (offset 0)
+2026-02-12 04:51:37,489 - WARNING - Ignoring wrong pointing object 67 0 (offset 0)
+2026-02-12 04:51:37,489 - WARNING - Ignoring wrong pointing object 69 0 (offset 0)
+2026-02-12 04:51:37,489 - WARNING - Ignoring wrong pointing object 71 0 (offset 0)
+2026-02-12 04:51:37,618 - INFO - Extracting abstract from PDF 184-Trustworthiness-Evaluation-of-Deep-Learning-Accelerators-Using-UVM-based-Verification-with-Error-Injection.pdf for entry: Trustworthiness Evaluation of Deep Learning Accelerators Using UVM-based Verification with Error Injection
+2026-02-12 04:51:37,725 - INFO - Extracting abstract from PDF slides_184_Trustworthiness-Evaluation-of-Deep-Learning-Accelerators-Using-UVM-based-Verification-with-Error-Injection.pdf for entry: Trustworthiness Evaluation of Deep Learning Accelerators Using UVM-based Verification with Error Injection
+2026-02-12 04:51:37,772 - INFO - No explicit 'Abstract' section found in downloads/dvcon/slides_184_Trustworthiness-Evaluation-of-Deep-Learning-Accelerators-Using-UVM-based-Verification-with-Error-Injection.pdf
+2026-02-12 04:51:37,772 - INFO - Extracting abstract from PDF 1160-1.pdf for entry: DV UVM based AMS co-simulation and verification methodology for mixed signal designs
+2026-02-12 04:51:37,783 - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2026-02-12 04:51:37,783 - WARNING - Ignoring wrong pointing object 13 0 (offset 0)
+2026-02-12 04:51:37,783 - WARNING - Ignoring wrong pointing object 26 0 (offset 0)
+2026-02-12 04:51:37,784 - WARNING - Ignoring wrong pointing object 28 0 (offset 0)
+2026-02-12 04:51:37,784 - WARNING - Ignoring wrong pointing object 44 0 (offset 0)
+2026-02-12 04:51:37,784 - WARNING - Ignoring wrong pointing object 50 0 (offset 0)
+2026-02-12 04:51:37,785 - WARNING - Ignoring wrong pointing object 52 0 (offset 0)
+2026-02-12 04:51:37,785 - WARNING - Ignoring wrong pointing object 59 0 (offset 0)
+2026-02-12 04:51:37,785 - WARNING - Ignoring wrong pointing object 61 0 (offset 0)
+2026-02-12 04:51:37,786 - WARNING - Ignoring wrong pointing object 74 0 (offset 0)
+2026-02-12 04:51:37,786 - WARNING - Ignoring wrong pointing object 76 0 (offset 0)
+2026-02-12 04:51:37,786 - WARNING - Ignoring wrong pointing object 92 0 (offset 0)
+2026-02-12 04:51:37,786 - WARNING - Ignoring wrong pointing object 94 0 (offset 0)
+2026-02-12 04:51:37,787 - WARNING - Ignoring wrong pointing object 96 0 (offset 0)
+2026-02-12 04:51:37,806 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1160-1.pdf
+2026-02-12 04:51:37,807 - INFO - Extracting abstract from PDF 1141-2.pdf for entry: A UVM SystemVerilog Testbench for Directed & Random Testing of an AMS LDO Voltage Regulator
+2026-02-12 04:51:37,884 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1141-2.pdf
+2026-02-12 04:51:37,884 - INFO - Extracting abstract from PDF 1137-1.pdf for entry: UVM Testbench Automation for AMS Designs
+2026-02-12 04:51:37,910 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1137-1.pdf
+2026-02-12 04:51:37,911 - INFO - Extracting abstract from PDF 1133-1.pdf for entry: Gherkin Implementation in SystemVerilog Brings Agile Behavior-Driven Development to UVM
+2026-02-12 04:51:37,926 - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2026-02-12 04:51:37,927 - WARNING - Ignoring wrong pointing object 13 0 (offset 0)
+2026-02-12 04:51:37,927 - WARNING - Ignoring wrong pointing object 26 0 (offset 0)
+2026-02-12 04:51:37,927 - WARNING - Ignoring wrong pointing object 28 0 (offset 0)
+2026-02-12 04:51:37,928 - WARNING - Ignoring wrong pointing object 30 0 (offset 0)
+2026-02-12 04:51:37,928 - WARNING - Ignoring wrong pointing object 32 0 (offset 0)
+2026-02-12 04:51:37,928 - WARNING - Ignoring wrong pointing object 34 0 (offset 0)
+2026-02-12 04:51:37,928 - WARNING - Ignoring wrong pointing object 36 0 (offset 0)
+2026-02-12 04:51:37,929 - WARNING - Ignoring wrong pointing object 42 0 (offset 0)
+2026-02-12 04:51:37,929 - WARNING - Ignoring wrong pointing object 44 0 (offset 0)
+2026-02-12 04:51:37,929 - WARNING - Ignoring wrong pointing object 86 0 (offset 0)
+2026-02-12 04:51:37,930 - WARNING - Ignoring wrong pointing object 90 0 (offset 0)
+2026-02-12 04:51:37,930 - WARNING - Ignoring wrong pointing object 93 0 (offset 0)
+2026-02-12 04:51:37,930 - WARNING - Ignoring wrong pointing object 110 0 (offset 0)
+2026-02-12 04:51:37,930 - WARNING - Ignoring wrong pointing object 113 0 (offset 0)
+2026-02-12 04:51:37,931 - WARNING - Ignoring wrong pointing object 144 0 (offset 0)
+2026-02-12 04:51:37,931 - WARNING - Ignoring wrong pointing object 146 0 (offset 0)
+2026-02-12 04:51:37,931 - WARNING - Ignoring wrong pointing object 148 0 (offset 0)
+2026-02-12 04:51:37,932 - WARNING - Ignoring wrong pointing object 150 0 (offset 0)
+2026-02-12 04:51:37,932 - WARNING - Ignoring wrong pointing object 152 0 (offset 0)
+2026-02-12 04:51:37,932 - WARNING - Ignoring wrong pointing object 154 0 (offset 0)
+2026-02-12 04:51:37,932 - WARNING - Ignoring wrong pointing object 161 0 (offset 0)
+2026-02-12 04:51:37,932 - WARNING - Ignoring wrong pointing object 167 0 (offset 0)
+2026-02-12 04:51:37,933 - WARNING - Ignoring wrong pointing object 173 0 (offset 0)
+2026-02-12 04:51:37,933 - WARNING - Ignoring wrong pointing object 175 0 (offset 0)
+2026-02-12 04:51:37,933 - WARNING - Ignoring wrong pointing object 177 0 (offset 0)
+2026-02-12 04:51:37,934 - WARNING - Ignoring wrong pointing object 179 0 (offset 0)
+2026-02-12 04:51:37,934 - WARNING - Ignoring wrong pointing object 181 0 (offset 0)
+2026-02-12 04:51:37,934 - WARNING - Ignoring wrong pointing object 183 0 (offset 0)
+2026-02-12 04:51:37,934 - WARNING - Ignoring wrong pointing object 189 0 (offset 0)
+2026-02-12 04:51:37,955 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1133-1.pdf
+2026-02-12 04:51:37,956 - INFO - Extracting abstract from PDF 1116-1.pdf for entry: Without Objection - Touring the uvm_objection implementations - uses and improvements
+2026-02-12 04:51:37,999 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1116-1.pdf
+2026-02-12 04:51:38,000 - INFO - Extracting abstract from PDF 1112-1.pdf for entry: Advanced UVM Based Chip Verification Methodologies with Full Analog Functionality
+2026-02-12 04:51:38,012 - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2026-02-12 04:51:38,013 - WARNING - Ignoring wrong pointing object 13 0 (offset 0)
+2026-02-12 04:51:38,013 - WARNING - Ignoring wrong pointing object 26 0 (offset 0)
+2026-02-12 04:51:38,013 - WARNING - Ignoring wrong pointing object 28 0 (offset 0)
+2026-02-12 04:51:38,013 - WARNING - Ignoring wrong pointing object 34 0 (offset 0)
+2026-02-12 04:51:38,014 - WARNING - Ignoring wrong pointing object 36 0 (offset 0)
+2026-02-12 04:51:38,014 - WARNING - Ignoring wrong pointing object 50 0 (offset 0)
+2026-02-12 04:51:38,014 - WARNING - Ignoring wrong pointing object 65 0 (offset 0)
+2026-02-12 04:51:38,015 - WARNING - Ignoring wrong pointing object 78 0 (offset 0)
+2026-02-12 04:51:38,015 - WARNING - Ignoring wrong pointing object 93 0 (offset 0)
+2026-02-12 04:51:38,015 - WARNING - Ignoring wrong pointing object 99 0 (offset 0)
+2026-02-12 04:51:38,015 - WARNING - Ignoring wrong pointing object 102 0 (offset 0)
+2026-02-12 04:51:38,016 - WARNING - Ignoring wrong pointing object 130 0 (offset 0)
+2026-02-12 04:51:38,016 - WARNING - Ignoring wrong pointing object 132 0 (offset 0)
+2026-02-12 04:51:38,016 - WARNING - Ignoring wrong pointing object 154 0 (offset 0)
+2026-02-12 04:51:38,016 - WARNING - Ignoring wrong pointing object 156 0 (offset 0)
+2026-02-12 04:51:38,017 - WARNING - Ignoring wrong pointing object 158 0 (offset 0)
+2026-02-12 04:51:38,017 - WARNING - Ignoring wrong pointing object 165 0 (offset 0)
+2026-02-12 04:51:38,017 - WARNING - Ignoring wrong pointing object 167 0 (offset 0)
+2026-02-12 04:51:38,018 - WARNING - Ignoring wrong pointing object 173 0 (offset 0)
+2026-02-12 04:51:38,018 - WARNING - Ignoring wrong pointing object 185 0 (offset 0)
+2026-02-12 04:51:38,018 - WARNING - Ignoring wrong pointing object 192 0 (offset 0)
+2026-02-12 04:51:38,018 - WARNING - Ignoring wrong pointing object 194 0 (offset 0)
+2026-02-12 04:51:38,019 - WARNING - Ignoring wrong pointing object 200 0 (offset 0)
+2026-02-12 04:51:38,019 - WARNING - Ignoring wrong pointing object 202 0 (offset 0)
+2026-02-12 04:51:38,019 - WARNING - Ignoring wrong pointing object 204 0 (offset 0)
+2026-02-12 04:51:38,019 - WARNING - Ignoring wrong pointing object 206 0 (offset 0)
+2026-02-12 04:51:38,039 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1112-1.pdf
+2026-02-12 04:51:38,039 - INFO - Extracting abstract from PDF 1103-1.pdf for entry: Leveraging Interface Class to Improve UVM TLM
+2026-02-12 04:51:38,074 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1103-1.pdf
+2026-02-12 04:51:38,075 - INFO - Extracting abstract from PDF 1099-1.pdf for entry: Novel Method To Speed-Up UVM Testbench Development
+2026-02-12 04:51:38,138 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1099-1.pdf
+2026-02-12 04:51:38,138 - INFO - Extracting abstract from PDF 1047-1.pdf for entry: A UVM Multi-Agent Verification IP architecture to enable Next-Gen protocols with enhanced reusability, controllability and observability
+2026-02-12 04:51:38,176 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1047-1.pdf
+2026-02-12 04:51:38,177 - INFO - Extracting abstract from PDF 1008-1.pdf for entry: Crafting a Million Instructions/Sec RISCV-DV HPC Techniques to Boost UVM Testbench Performance by Over 100x
+2026-02-12 04:51:38,266 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1008-1.pdf
+2026-02-12 04:51:38,266 - INFO - Extracting abstract from PDF 1160.pdf for entry: DV UVM based AMS co-simulation and verification methodology for mixed signal designs
+2026-02-12 04:51:38,388 - INFO - Extracting abstract from PDF 1141-1.pdf for entry: A UVM SystemVerilog Testbench for Directed and Random Testing of an AMS Low-Dropout Voltage Regulator
+2026-02-12 04:51:38,572 - INFO - Extracting abstract from PDF 1137.pdf for entry: UVM Testbench Automation for AMS Designs
+2026-02-12 04:51:38,738 - INFO - Extracting abstract from PDF 1133.pdf for entry: Gherkin Implementation in SystemVerilog Brings Agile Behavior-Driven Development to UVM
+2026-02-12 04:51:38,986 - INFO - Extracting abstract from PDF 1131-1.pdf for entry: Towards Efficient Design Verification – Constrained Random Verification using PyUVM
+2026-02-12 04:51:39,085 - INFO - Extracting abstract from PDF 1116.pdf for entry: Without Objection – Touring the uvm_objection implementation – uses and improvements
+2026-02-12 04:51:39,136 - INFO - Extracting abstract from PDF 1112.pdf for entry: Advanced UVM Based Chip Verification Methodologies with Full Analog Functionality
+2026-02-12 04:51:39,349 - INFO - Extracting abstract from PDF 1103.pdf for entry: Leveraging Interface Classes to Improve UVM TLM
+2026-02-12 04:51:39,536 - INFO - Extracting abstract from PDF 1099.pdf for entry: Novel Method To Speed-Up UVM Testbench Development
+2026-02-12 04:51:39,715 - INFO - Extracting abstract from PDF 1047.pdf for entry: A UVM Multi-Agent Verification IP architecture to enable Next-Gen protocols with enhanced reusability, controllability and observability
+2026-02-12 04:51:39,833 - INFO - Extracting abstract from PDF 1013.pdf for entry: A Configurable, Re-usable UVM Environment Coupled with Advanced Spice Simulator for Analog and Mixed-Signal Verification of a Display PMIC
+2026-02-12 04:51:39,960 - INFO - Extracting abstract from PDF 1008.pdf for entry: Crafting a Million Instructions/Sec RISCV-DV HPC Techniques to Boost UVM Testbench Performance by Over 100x
+2026-02-12 04:51:40,225 - INFO - Extracting abstract from PDF 1141.pdf for entry: A UVM SystemVerilog Testbench for Directed & Random Testing of an AMS LDO Voltage Regulator
+2026-02-12 04:51:40,385 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1141.pdf
+2026-02-12 04:51:40,386 - INFO - Extracting abstract from PDF 1131.pdf for entry: Towards Efficient Design Verification - PyUVM & PyVSC
+2026-02-12 04:51:40,506 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1131.pdf
+2026-02-12 04:51:40,506 - INFO - Extracting abstract from PDF Unified-Architecture-of-L1-L2-Cache-with-Low-Power-Extensions-for-Multi-Core-UVM-based-Library-Package.pdf for entry: Unified Architecture of L1 L2 Cache with Low Power Extensions for MultiCore UVM-based Library Package
+2026-02-12 04:51:40,536 - INFO - Direct extraction from downloads/dvcon/Unified-Architecture-of-L1-L2-Cache-with-Low-Power-Extensions-for-Multi-Core-UVM-based-Library-Package.pdf produced only 177 characters; attempting OCR fallback.
+2026-02-12 04:51:43,814 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Unified-Architecture-of-L1-L2-Cache-with-Low-Power-Extensions-for-Multi-Core-UVM-based-Library-Package.pdf
+2026-02-12 04:51:43,815 - INFO - Extracting abstract from PDF An-Elegant-scoreboard-eco-system-deploying-UVM-Callbacks-Parameterization-for-Multimedia-designs-from-Imaging-perspective-Chakravarthi-Nanda.pdf for entry: An Elegant scoreboard eco-system deploying UVM Callbacks, Parameterization for Multimedia designs from Imaging perspective
+2026-02-12 04:51:43,854 - INFO - No explicit 'Abstract' section found in downloads/dvcon/An-Elegant-scoreboard-eco-system-deploying-UVM-Callbacks-Parameterization-for-Multimedia-designs-from-Imaging-perspective-Chakravarthi-Nanda.pdf
+2026-02-12 04:51:43,855 - INFO - Extracting abstract from PDF 92144.pdf for entry: Break the SoC with UVM Dynamically Generated Program Code
+2026-02-12 04:51:43,966 - INFO - Extracting abstract from PDF 91809.pdf for entry: An Elegant scoreboard eco-system deploying UVM Callbacks, Parameterization for Multimedia designs from Imaging perspective
+2026-02-12 04:51:44,114 - INFO - Extracting abstract from PDF 91176.pdf for entry: Unified Architecture of L1 and L2 Cache with Low Power Extensions for Multi-Core UVM-based Library Package
+2026-02-12 04:51:44,253 - INFO - Extracting abstract from PDF 90997.pdf for entry: A UVM Test-bench Skeleton Leveraging the Event Pool and Sequence Layering
+2026-02-12 04:51:44,445 - INFO - Extracting abstract from PDF 90555.pdf for entry: Verilator + UVM-SystemC: a match made in heaven
+2026-02-12 04:51:44,553 - INFO - Extracting abstract from PDF Scalable-agile-processor-verification-using-SystemC-UVM-and-friends.pdf for entry: Scalable agile processor verification using SystemC UVM and friends
+2026-02-12 04:51:44,595 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Scalable-agile-processor-verification-using-SystemC-UVM-and-friends.pdf
+2026-02-12 04:51:44,596 - INFO - Extracting abstract from PDF Migrating-from-UVM-to-UVM-MS.pdf for entry: Migrating from UVM to UVM-MS
+2026-02-12 04:51:44,619 - WARNING - Ignoring wrong pointing object 10 0 (offset 0)
+2026-02-12 04:51:44,619 - WARNING - Ignoring wrong pointing object 15 0 (offset 0)
+2026-02-12 04:51:44,620 - WARNING - Ignoring wrong pointing object 19 0 (offset 0)
+2026-02-12 04:51:44,620 - WARNING - Ignoring wrong pointing object 21 0 (offset 0)
+2026-02-12 04:51:44,620 - WARNING - Ignoring wrong pointing object 23 0 (offset 0)
+2026-02-12 04:51:44,621 - WARNING - Ignoring wrong pointing object 42 0 (offset 0)
+2026-02-12 04:51:44,621 - WARNING - Ignoring wrong pointing object 44 0 (offset 0)
+2026-02-12 04:51:44,621 - WARNING - Ignoring wrong pointing object 56 0 (offset 0)
+2026-02-12 04:51:44,621 - WARNING - Ignoring wrong pointing object 78 0 (offset 0)
+2026-02-12 04:51:44,622 - WARNING - Ignoring wrong pointing object 80 0 (offset 0)
+2026-02-12 04:51:44,622 - WARNING - Ignoring wrong pointing object 126 0 (offset 0)
+2026-02-12 04:51:44,622 - WARNING - Ignoring wrong pointing object 150 0 (offset 0)
+2026-02-12 04:51:44,623 - WARNING - Ignoring wrong pointing object 152 0 (offset 0)
+2026-02-12 04:51:44,623 - WARNING - Ignoring wrong pointing object 164 0 (offset 0)
+2026-02-12 04:51:44,624 - WARNING - Ignoring wrong pointing object 166 0 (offset 0)
+2026-02-12 04:51:44,624 - WARNING - Ignoring wrong pointing object 171 0 (offset 0)
+2026-02-12 04:51:44,624 - WARNING - Ignoring wrong pointing object 207 0 (offset 0)
+2026-02-12 04:51:44,624 - WARNING - Ignoring wrong pointing object 215 0 (offset 0)
+2026-02-12 04:51:44,625 - WARNING - Ignoring wrong pointing object 233 0 (offset 0)
+2026-02-12 04:51:44,625 - WARNING - Ignoring wrong pointing object 235 0 (offset 0)
+2026-02-12 04:51:44,625 - WARNING - Ignoring wrong pointing object 248 0 (offset 0)
+2026-02-12 04:51:44,626 - WARNING - Ignoring wrong pointing object 250 0 (offset 0)
+2026-02-12 04:51:44,626 - WARNING - Ignoring wrong pointing object 262 0 (offset 0)
+2026-02-12 04:51:44,626 - WARNING - Ignoring wrong pointing object 328 0 (offset 0)
+2026-02-12 04:51:44,627 - WARNING - Ignoring wrong pointing object 342 0 (offset 0)
+2026-02-12 04:51:44,627 - WARNING - Ignoring wrong pointing object 369 0 (offset 0)
+2026-02-12 04:51:44,627 - WARNING - Ignoring wrong pointing object 414 0 (offset 0)
+2026-02-12 04:51:44,628 - WARNING - Ignoring wrong pointing object 419 0 (offset 0)
+2026-02-12 04:51:44,628 - WARNING - Ignoring wrong pointing object 488 0 (offset 0)
+2026-02-12 04:51:44,628 - WARNING - Ignoring wrong pointing object 490 0 (offset 0)
+2026-02-12 04:51:44,629 - WARNING - Ignoring wrong pointing object 558 0 (offset 0)
+2026-02-12 04:51:44,629 - WARNING - Ignoring wrong pointing object 573 0 (offset 0)
+2026-02-12 04:51:44,652 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Migrating-from-UVM-to-UVM-MS.pdf
+2026-02-12 04:51:44,652 - INFO - Extracting abstract from PDF Exploring-New-Frontiers-of-High-Performance-Verification-with-UVM-AMS.pdf for entry: Exploring New Frontiers of High-Performance Verification with UVM-AMS
+2026-02-12 04:51:44,672 - WARNING - Ignoring wrong pointing object 10 0 (offset 0)
+2026-02-12 04:51:44,673 - WARNING - Ignoring wrong pointing object 12 0 (offset 0)
+2026-02-12 04:51:44,674 - WARNING - Ignoring wrong pointing object 16 0 (offset 0)
+2026-02-12 04:51:44,674 - WARNING - Ignoring wrong pointing object 18 0 (offset 0)
+2026-02-12 04:51:44,674 - WARNING - Ignoring wrong pointing object 29 0 (offset 0)
+2026-02-12 04:51:44,674 - WARNING - Ignoring wrong pointing object 31 0 (offset 0)
+2026-02-12 04:51:44,675 - WARNING - Ignoring wrong pointing object 33 0 (offset 0)
+2026-02-12 04:51:44,675 - WARNING - Ignoring wrong pointing object 35 0 (offset 0)
+2026-02-12 04:51:44,675 - WARNING - Ignoring wrong pointing object 40 0 (offset 0)
+2026-02-12 04:51:44,675 - WARNING - Ignoring wrong pointing object 58 0 (offset 0)
+2026-02-12 04:51:44,676 - WARNING - Ignoring wrong pointing object 71 0 (offset 0)
+2026-02-12 04:51:44,676 - WARNING - Ignoring wrong pointing object 79 0 (offset 0)
+2026-02-12 04:51:44,676 - WARNING - Ignoring wrong pointing object 82 0 (offset 0)
+2026-02-12 04:51:44,676 - WARNING - Ignoring wrong pointing object 89 0 (offset 0)
+2026-02-12 04:51:44,677 - WARNING - Ignoring wrong pointing object 102 0 (offset 0)
+2026-02-12 04:51:44,677 - WARNING - Ignoring wrong pointing object 109 0 (offset 0)
+2026-02-12 04:51:44,677 - WARNING - Ignoring wrong pointing object 121 0 (offset 0)
+2026-02-12 04:51:44,677 - WARNING - Ignoring wrong pointing object 123 0 (offset 0)
+2026-02-12 04:51:44,678 - WARNING - Ignoring wrong pointing object 125 0 (offset 0)
+2026-02-12 04:51:44,678 - WARNING - Ignoring wrong pointing object 131 0 (offset 0)
+2026-02-12 04:51:44,678 - WARNING - Ignoring wrong pointing object 133 0 (offset 0)
+2026-02-12 04:51:44,678 - WARNING - Ignoring wrong pointing object 135 0 (offset 0)
+2026-02-12 04:51:44,678 - WARNING - Ignoring wrong pointing object 137 0 (offset 0)
+2026-02-12 04:51:44,679 - WARNING - Ignoring wrong pointing object 152 0 (offset 0)
+2026-02-12 04:51:44,679 - WARNING - Ignoring wrong pointing object 159 0 (offset 0)
+2026-02-12 04:51:44,679 - WARNING - Ignoring wrong pointing object 165 0 (offset 0)
+2026-02-12 04:51:44,679 - WARNING - Ignoring wrong pointing object 167 0 (offset 0)
+2026-02-12 04:51:44,680 - WARNING - Ignoring wrong pointing object 173 0 (offset 0)
+2026-02-12 04:51:44,680 - WARNING - Ignoring wrong pointing object 177 0 (offset 0)
+2026-02-12 04:51:44,680 - WARNING - Ignoring wrong pointing object 189 0 (offset 0)
+2026-02-12 04:51:44,680 - WARNING - Ignoring wrong pointing object 215 0 (offset 0)
+2026-02-12 04:51:44,681 - WARNING - Ignoring wrong pointing object 219 0 (offset 0)
+2026-02-12 04:51:44,681 - WARNING - Ignoring wrong pointing object 221 0 (offset 0)
+2026-02-12 04:51:44,681 - WARNING - Ignoring wrong pointing object 223 0 (offset 0)
+2026-02-12 04:51:44,681 - WARNING - Ignoring wrong pointing object 225 0 (offset 0)
+2026-02-12 04:51:44,681 - WARNING - Ignoring wrong pointing object 227 0 (offset 0)
+2026-02-12 04:51:44,682 - WARNING - Ignoring wrong pointing object 229 0 (offset 0)
+2026-02-12 04:51:44,682 - WARNING - Ignoring wrong pointing object 231 0 (offset 0)
+2026-02-12 04:51:44,682 - WARNING - Ignoring wrong pointing object 233 0 (offset 0)
+2026-02-12 04:51:44,682 - WARNING - Ignoring wrong pointing object 293 0 (offset 0)
+2026-02-12 04:51:44,683 - WARNING - Ignoring wrong pointing object 300 0 (offset 0)
+2026-02-12 04:51:44,683 - WARNING - Ignoring wrong pointing object 306 0 (offset 0)
+2026-02-12 04:51:44,683 - WARNING - Ignoring wrong pointing object 309 0 (offset 0)
+2026-02-12 04:51:44,683 - WARNING - Ignoring wrong pointing object 317 0 (offset 0)
+2026-02-12 04:51:44,683 - WARNING - Ignoring wrong pointing object 320 0 (offset 0)
+2026-02-12 04:51:44,684 - WARNING - Ignoring wrong pointing object 327 0 (offset 0)
+2026-02-12 04:51:44,684 - WARNING - Ignoring wrong pointing object 329 0 (offset 0)
+2026-02-12 04:51:44,684 - WARNING - Ignoring wrong pointing object 337 0 (offset 0)
+2026-02-12 04:51:44,684 - WARNING - Ignoring wrong pointing object 339 0 (offset 0)
+2026-02-12 04:51:44,685 - WARNING - Ignoring wrong pointing object 346 0 (offset 0)
+2026-02-12 04:51:44,685 - WARNING - Ignoring wrong pointing object 362 0 (offset 0)
+2026-02-12 04:51:44,685 - WARNING - Ignoring wrong pointing object 364 0 (offset 0)
+2026-02-12 04:51:44,685 - WARNING - Ignoring wrong pointing object 374 0 (offset 0)
+2026-02-12 04:51:44,685 - WARNING - Ignoring wrong pointing object 391 0 (offset 0)
+2026-02-12 04:51:44,686 - WARNING - Ignoring wrong pointing object 393 0 (offset 0)
+2026-02-12 04:51:44,686 - WARNING - Ignoring wrong pointing object 426 0 (offset 0)
+2026-02-12 04:51:44,686 - WARNING - Ignoring wrong pointing object 437 0 (offset 0)
+2026-02-12 04:51:44,687 - WARNING - Ignoring wrong pointing object 461 0 (offset 0)
+2026-02-12 04:51:44,727 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Exploring-New-Frontiers-of-High-Performance-Verification-with-UVM-AMS.pdf
+2026-02-12 04:51:44,728 - INFO - Extracting abstract from PDF Paper-1.3-Scoreboards-and-Checkers-Memory-TLB-and-Cache.pdf for entry: UVM Scoreboards and Checkers Memory, TLB and Cache
+2026-02-12 04:51:44,815 - INFO - No explicit 'Abstract' section found in downloads/dvcon/Paper-1.3-Scoreboards-and-Checkers-Memory-TLB-and-Cache.pdf
+2026-02-12 04:51:44,816 - INFO - Extracting abstract from PDF Paper-1.2-UVM-based-extended-Low-Power-Library-package-with-Low-Power-Multi-Core-Architectures_paper.pdf for entry: UVM-based extended Low Power Library package with Low Power Multi-Core Architectures
+2026-02-12 04:51:44,963 - INFO - Extracting abstract from PDF 3B2_DVCon_India_2023_Final_Paper_285.pdf for entry: UVM Sequence Layering for Register Sequences
+2026-02-12 04:51:45,043 - INFO - Extracting abstract from PDF 1B3_DVCon_India_2023_Final_Paper_2910.pdf for entry: Breaking Down Barriers: Seamless Protocol Conversion with UVM Component Layering
+2026-02-12 04:51:45,218 - INFO - Extracting abstract from PDF TS2A-Integrating-L1-L2-Cache-for-multi-Core-UVM-based-extended-Low-Power-Library-Package-slide.pdf for entry: Integrating L1&L2 Cache for multi-Core UVM based extended Low Power Library Package
+2026-02-12 04:51:45,236 - WARNING - Ignoring wrong pointing object 12 0 (offset 0)
+2026-02-12 04:51:45,236 - WARNING - Ignoring wrong pointing object 14 0 (offset 0)
+2026-02-12 04:51:45,236 - WARNING - Ignoring wrong pointing object 16 0 (offset 0)
+2026-02-12 04:51:45,237 - WARNING - Ignoring wrong pointing object 27 0 (offset 0)
+2026-02-12 04:51:45,237 - WARNING - Ignoring wrong pointing object 29 0 (offset 0)
+2026-02-12 04:51:45,237 - WARNING - Ignoring wrong pointing object 31 0 (offset 0)
+2026-02-12 04:51:45,237 - WARNING - Ignoring wrong pointing object 33 0 (offset 0)
+2026-02-12 04:51:45,238 - WARNING - Ignoring wrong pointing object 43 0 (offset 0)
+2026-02-12 04:51:45,238 - WARNING - Ignoring wrong pointing object 64 0 (offset 0)
+2026-02-12 04:51:45,238 - WARNING - Ignoring wrong pointing object 66 0 (offset 0)
+2026-02-12 04:51:45,238 - WARNING - Ignoring wrong pointing object 68 0 (offset 0)
+2026-02-12 04:51:45,239 - WARNING - Ignoring wrong pointing object 81 0 (offset 0)
+2026-02-12 04:51:45,239 - WARNING - Ignoring wrong pointing object 87 0 (offset 0)
+2026-02-12 04:51:45,239 - WARNING - Ignoring wrong pointing object 89 0 (offset 0)
+2026-02-12 04:51:45,239 - WARNING - Ignoring wrong pointing object 92 0 (offset 0)
+2026-02-12 04:51:45,240 - WARNING - Ignoring wrong pointing object 94 0 (offset 0)
+2026-02-12 04:51:45,240 - WARNING - Ignoring wrong pointing object 96 0 (offset 0)
+2026-02-12 04:51:45,240 - WARNING - Ignoring wrong pointing object 114 0 (offset 0)
+2026-02-12 04:51:45,240 - WARNING - Ignoring wrong pointing object 119 0 (offset 0)
+2026-02-12 04:51:45,241 - WARNING - Ignoring wrong pointing object 132 0 (offset 0)
+2026-02-12 04:51:45,241 - WARNING - Ignoring wrong pointing object 153 0 (offset 0)
+2026-02-12 04:51:45,241 - WARNING - Ignoring wrong pointing object 177 0 (offset 0)
+2026-02-12 04:51:45,292 - INFO - No explicit 'Abstract' section found in downloads/dvcon/TS2A-Integrating-L1-L2-Cache-for-multi-Core-UVM-based-extended-Low-Power-Library-Package-slide.pdf
+2026-02-12 04:51:45,293 - INFO - Extracting abstract from PDF TS2A-Integrating-L1-L2-Cache-for-multi-Core-UVM-based-extended-Low-Power-Library-Package-paper.pdf for entry: Integrating L1 & L2 Cache for multi-Core UVM-based extended Low Power Library Package
+2026-02-12 04:51:45,406 - INFO - Extracting abstract from PDF UVM-Working-Group-Release-1800.2-2020-2.0-Library.pdf for entry: UVM Working Group Releases 1800.2-2020-2.0 Library
+2026-02-12 04:51:45,427 - INFO - No explicit 'Abstract' section found in downloads/dvcon/UVM-Working-Group-Release-1800.2-2020-2.0-Library.pdf
+2026-02-12 04:51:45,428 - INFO - Extracting abstract from PDF 3008-Harnessing-the-Power-of-UVM-for-AMS-Verification-with-XMODEL.pdf for entry: Harnessing the Power of UVM for AMS Verification with XMODEL
+2026-02-12 04:51:45,540 - INFO - No explicit 'Abstract' section found in downloads/dvcon/3008-Harnessing-the-Power-of-UVM-for-AMS-Verification-with-XMODEL.pdf
+2026-02-12 04:51:45,540 - INFO - Extracting abstract from PDF 104-Migrating-from-UVM-to-UVM-AMS.pdf for entry: Migrating from UVM to UVM-AMS
+2026-02-12 04:51:45,613 - INFO - No explicit 'Abstract' section found in downloads/dvcon/104-Migrating-from-UVM-to-UVM-AMS.pdf
+2026-02-12 04:51:45,613 - INFO - Extracting abstract from PDF 1125-Tree-Data-Framework-for-Code-Generation-Application-of-Generating-UVM-Testbench-for-Complex-Designs-1.pdf for entry: Tree Data Framework for Code Generation: Application of Generating UVM Testbench for Complex Designs
+2026-02-12 04:51:45,620 - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2026-02-12 04:51:45,620 - WARNING - Ignoring wrong pointing object 13 0 (offset 0)
+2026-02-12 04:51:45,620 - WARNING - Ignoring wrong pointing object 25 0 (offset 0)
+2026-02-12 04:51:45,621 - WARNING - Ignoring wrong pointing object 27 0 (offset 0)
+2026-02-12 04:51:45,621 - WARNING - Ignoring wrong pointing object 29 0 (offset 0)
+2026-02-12 04:51:45,621 - WARNING - Ignoring wrong pointing object 31 0 (offset 0)
+2026-02-12 04:51:45,621 - WARNING - Ignoring wrong pointing object 33 0 (offset 0)
+2026-02-12 04:51:45,622 - WARNING - Ignoring wrong pointing object 35 0 (offset 0)
+2026-02-12 04:51:45,622 - WARNING - Ignoring wrong pointing object 41 0 (offset 0)
+2026-02-12 04:51:45,622 - WARNING - Ignoring wrong pointing object 47 0 (offset 0)
+2026-02-12 04:51:45,622 - WARNING - Ignoring wrong pointing object 57 0 (offset 0)
+2026-02-12 04:51:45,623 - WARNING - Ignoring wrong pointing object 60 0 (offset 0)
+2026-02-12 04:51:45,623 - WARNING - Ignoring wrong pointing object 62 0 (offset 0)
+2026-02-12 04:51:45,623 - WARNING - Ignoring wrong pointing object 64 0 (offset 0)
+2026-02-12 04:51:45,623 - WARNING - Ignoring wrong pointing object 66 0 (offset 0)
+2026-02-12 04:51:45,624 - WARNING - Ignoring wrong pointing object 72 0 (offset 0)
+2026-02-12 04:51:45,624 - WARNING - Ignoring wrong pointing object 74 0 (offset 0)
+2026-02-12 04:51:45,625 - WARNING - Ignoring wrong pointing object 76 0 (offset 0)
+2026-02-12 04:51:45,625 - WARNING - Ignoring wrong pointing object 89 0 (offset 0)
+2026-02-12 04:51:45,625 - WARNING - Ignoring wrong pointing object 91 0 (offset 0)
+2026-02-12 04:51:45,626 - WARNING - Ignoring wrong pointing object 102 0 (offset 0)
+2026-02-12 04:51:45,626 - WARNING - Ignoring wrong pointing object 140 0 (offset 0)
+2026-02-12 04:51:45,642 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1125-Tree-Data-Framework-for-Code-Generation-Application-of-Generating-UVM-Testbench-for-Complex-Designs-1.pdf
+2026-02-12 04:51:45,643 - INFO - Extracting abstract from PDF 1113-A-UVM-Reactive-Testbench-for-Jitter-Tolerance-Measurement-of-High-Speed-Wireline-Receivers-1.pdf for entry: A UVM Reactive Testbench for Jitter Tolerance Measurement of High-Speed Wireline Receivers
+2026-02-12 04:51:45,682 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1113-A-UVM-Reactive-Testbench-for-Jitter-Tolerance-Measurement-of-High-Speed-Wireline-Receivers-1.pdf
+2026-02-12 04:51:45,683 - INFO - Extracting abstract from PDF 1086-UVM-SV-Feedback-Loop-The-foundation-of-self-improving-testbenches-1.pdf for entry: UVM-SV Feedback Loop – The foundation of Self-Improving Testbenches
+2026-02-12 04:51:45,712 - INFO - No explicit 'Abstract' section found in downloads/dvcon/1086-UVM-SV-Feedback-Loop-The-foundation-of-self-improving-testbenches-1.pdf
+2026-02-12 04:51:45,712 - INFO - Abstract extraction complete: 51/100 entries now have abstracts
+2026-02-12 04:51:45,712 - INFO - Generating table for 100 papers
+2026-02-12 04:51:45,715 - INFO - Successfully generated table
+2026-02-12 04:51:45,715 - INFO - Generating table for 15 papers
+2026-02-12 04:51:45,715 - INFO - Successfully generated table
+2026-02-12 04:51:45,717 - INFO - Fetching IEEE papers for keyword: UVM
+2026-02-12 04:51:45,717 - INFO - Attempting to get IEEE papers for keyword 'UVM' with 3 retries
+2026-02-12 04:51:45,717 - INFO - Getting IEEE papers for keyword: UVM
+2026-02-12 04:51:45,717 - INFO - Requesting IEEE papers for keyword: UVM
+2026-02-12 04:51:45,718 - INFO - IEEE search page query=UVM page=1 get_page_number=True
+2026-02-12 04:51:49,407 - INFO - IEEE keyword search totalPages=7
+2026-02-12 04:51:49,408 - INFO - IEEE search page query=UVM page=1 get_page_number=False
+2026-02-12 04:51:54,242 - INFO - IEEE page 1 returned 100 records
+2026-02-12 04:51:54,243 - INFO - Successfully processed 100 IEEE papers
+2026-02-12 04:51:54,244 - INFO - Retrieved 100 IEEE papers after column selection
+2026-02-12 04:51:54,244 - INFO - Successfully retrieved 100 IEEE papers on attempt 1
+2026-02-12 04:51:54,245 - INFO - Generating table for 100 papers
+2026-02-12 04:51:54,246 - INFO - Successfully generated table
+2026-02-12 04:51:54,246 - INFO - Generating table for 15 papers
+2026-02-12 04:51:54,247 - INFO - Successfully generated table
+2026-02-12 04:51:54,248 - INFO - Fetching ACM papers for keyword: UVM
+2026-02-12 04:51:54,248 - INFO - Attempting to get ACM papers for keyword 'UVM' with 3 retries
+2026-02-12 04:51:54,248 - INFO - Getting ACM papers for keyword: UVM
+2026-02-12 04:51:54,248 - ERROR - Error on ACM attempt 1: ACM_ACCESS_TOKEN environment variable is not set. Please configure your ACM API access token before using the ACM metadata integration.
+2026-02-12 04:51:54,248 - INFO - Waiting 60 seconds before ACM retry...
+2026-02-12 04:52:53,185 - INFO - Getting ACM papers for keyword: UVM
+2026-02-12 04:52:53,185 - ERROR - Error on ACM attempt 2: ACM_ACCESS_TOKEN environment variable is not set. Please configure your ACM API access token before using the ACM metadata integration.
+2026-02-12 04:52:53,186 - INFO - Waiting 60 seconds before ACM retry...
+2026-02-12 04:53:52,687 - INFO - Getting ACM papers for keyword: UVM
+2026-02-12 04:53:52,687 - ERROR - Error on ACM attempt 3: ACM_ACCESS_TOKEN environment variable is not set. Please configure your ACM API access token before using the ACM metadata integration.
+2026-02-12 04:53:52,688 - ERROR - Failed to get ACM papers after all retry attempts
+2026-02-12 04:53:52,689 - INFO - Fetching CrossRef papers for keyword: UVM
+2026-02-12 04:53:52,690 - INFO - Attempting to get CrossRef papers for keyword 'UVM' with 3 retries
+2026-02-12 04:53:52,691 - INFO - Getting CrossRef papers for keyword: UVM
+2026-02-12 04:53:52,692 - INFO - Requesting papers from CrossRef for keyword: UVM
+2026-02-12 04:53:54,865 - INFO - Successfully retrieved 100 papers from CrossRef
+2026-02-12 04:53:54,867 - INFO - Successfully processed 100 CrossRef papers
+2026-02-12 04:53:54,869 - INFO - Retrieved 100 CrossRef papers after column selection
+2026-02-12 04:53:54,870 - INFO - Successfully retrieved 100 CrossRef papers on attempt 1
+2026-02-12 04:53:54,870 - INFO - Generating table for 100 papers
+2026-02-12 04:53:54,872 - INFO - Successfully generated table
+2026-02-12 04:53:54,873 - INFO - Generating table for 15 papers
+2026-02-12 04:53:54,873 - INFO - Successfully generated table
+2026-02-12 04:53:54,874 - INFO - Fetching OpenAlex papers for keyword: UVM
+2026-02-12 04:53:54,875 - INFO - Attempting to get OpenAlex papers for keyword 'UVM' with 3 retries
+2026-02-12 04:53:54,875 - INFO - Getting OpenAlex papers for keyword: UVM
+2026-02-12 04:53:54,875 - INFO - Requesting papers from OpenAlex for keyword: UVM
+2026-02-12 04:53:58,782 - INFO - Successfully retrieved 100 papers from OpenAlex
+2026-02-12 04:53:58,790 - INFO - Successfully processed 100 OpenAlex papers
+2026-02-12 04:53:58,792 - INFO - Retrieved 100 OpenAlex papers after column selection
+2026-02-12 04:53:58,792 - INFO - Successfully retrieved 100 OpenAlex papers on attempt 1
+2026-02-12 04:53:58,793 - INFO - Generating table for 100 papers
+2026-02-12 04:53:58,794 - INFO - Successfully generated table
+2026-02-12 04:53:58,794 - INFO - Generating table for 15 papers
+2026-02-12 04:53:58,795 - INFO - Successfully generated table
+2026-02-12 04:53:58,797 - INFO - Fetching Semantic Scholar papers for keyword: UVM
+2026-02-12 04:53:58,797 - INFO - Attempting to get Semantic Scholar papers for keyword 'UVM' with 3 retries
+2026-02-12 04:53:58,797 - INFO - Getting Semantic Scholar papers for keyword: UVM
+2026-02-12 04:53:58,797 - INFO - Requesting papers from Semantic Scholar for keyword: UVM
+2026-02-12 04:53:59,375 - ERROR - Failed to fetch papers from Semantic Scholar: HTTP Error 429: 
+2026-02-12 04:53:59,376 - ERROR - Error on Semantic Scholar attempt 1: HTTP Error 429: 
+2026-02-12 04:53:59,376 - ERROR - Semantic Scholar returned HTTP 429 for keyword 'UVM'; skipping further Semantic Scholar retries for this keyword.
+2026-02-12 04:53:59,377 - INFO - Attempting to get papers for keyword 'UVM' with 6 retries
+2026-02-12 04:53:59,377 - INFO - Getting papers for keyword: UVM
+2026-02-12 04:53:59,377 - INFO - Requesting papers from arXiv API for keyword: "UVM"
+2026-02-12 04:53:59,835 - INFO - Successfully retrieved 8 papers from arXiv API
+2026-02-12 04:53:59,837 - INFO - Successfully processed 8 papers
+2026-02-12 04:53:59,838 - INFO - Filtering papers by tags: ['cs', 'stat']
+2026-02-12 04:53:59,838 - INFO - Filtered papers: 7 out of 8 papers kept
+2026-02-12 04:53:59,839 - INFO - Retrieved 7 papers after filtering and column selection
+2026-02-12 04:53:59,839 - INFO - Successfully retrieved 7 papers on attempt 1
+2026-02-12 04:53:59,839 - INFO - Generating table for 7 papers
+2026-02-12 04:53:59,840 - INFO - Successfully generated table
+2026-02-12 04:53:59,840 - INFO - Generating table for 7 papers
+2026-02-12 04:53:59,841 - INFO - Successfully generated table
+2026-02-12 04:53:59,841 - INFO - Successfully processed 7 arXiv papers for keyword: UVM
+2026-02-12 04:54:04,902 - INFO - Created archive: data/2026-02-12.md
+2026-02-12 04:54:04,902 - INFO - Removing backup files
+2026-02-12 04:54:04,907 - INFO - Script completed successfully!
