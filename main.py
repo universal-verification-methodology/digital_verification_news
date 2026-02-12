@@ -5,12 +5,15 @@ import shutil
 import sys
 import time
 from datetime import datetime
+from pathlib import Path
 from typing import Any
 
 import pytz
 
 from utils import (
     back_up_files,
+    download_dvcon_assets,
+    extract_abstracts_from_downloaded_dvcon_pdfs,
     generate_table,
     get_daily_date,
     get_daily_papers_by_keyword_with_retries,
@@ -20,10 +23,9 @@ from utils import (
     get_daily_papers_by_keyword_with_retries_ieee,
     get_daily_papers_by_keyword_with_retries_openalex,
     get_daily_papers_by_keyword_with_retries_semantic_scholar,
-    download_dvcon_assets,
-    extract_abstracts_from_downloaded_dvcon_pdfs,
     remove_backups,
     restore_files,
+    update_markdown_years_from_pdfs,
 )
 
 logging.basicConfig(
@@ -573,6 +575,13 @@ def main() -> None:
                     )
 
                 time.sleep(5)  # avoid being blocked by remote APIs
+
+        # After generating the README, patch any DVCon rows that still carry
+        # the legacy 1970 date placeholder by inferring years from local PDFs.
+        try:
+            update_markdown_years_from_pdfs(markdown_path=Path("README.md"))
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("Failed to post-process README dates from PDFs: %s", exc)
 
         # Create dated archive in data folder
         data_dir = "data"

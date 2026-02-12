@@ -41,24 +41,6 @@ labels: documentation
 | **[Application of novel hierarchical approach to formal verification of digital ICs](https://ieeexplore.ieee.org/document/1562248)** | 2003-01-01 | <details><summary>2003 ...</summary><p>2003 46th Midwest Symposium on Circuits and Systems</p></details> |
 | **[Formal verification of digital circuits by 3-valued simulation](https://ieeexplore.ieee.org/document/957592)** | 2001-01-01 | <details><summary>ICECS...</summary><p>ICECS 2001. 8th IEEE International Conference on Electronics, Circuits and Systems (Cat. No.01EX483)</p></details> |
 
-| **Title** | **Date** | **Comment** |
-| --- | --- | --- |
-| **[Survey and perspective on verification, validation, and uncertainty quantification of digital twins for precision medicine](https://www.semanticscholar.org/paper/d955f109c1ea25ce4999745fe06a24d96c648c51)** | 2025-01-01 | npj Digital Medicine |
-| **[Rural Revitalization Driven by Digital Infrastructure: Mechanisms and Empirical Verification](https://www.semanticscholar.org/paper/6e8819502d79bc287eec13dccc98d7640caa2401)** | 2025-01-01 | <details><summary>Journ...</summary><p>Journal of Digital Economy</p></details> |
-| **[Verification and validation of digital twins: a systematic literature review for manufacturing applications](https://www.semanticscholar.org/paper/a295d2a5e7339196d9d8d1f05d2d8f0ed52c6e8e)** | 2024-01-01 | <details><summary>Inter...</summary><p>International Journal of Production Research</p></details> |
-| **[Digital Twins Verification and Validation Approach through the Quintuple Helix Conceptual Framework](https://www.semanticscholar.org/paper/7d99957226b2f695d0bfda771627fe12751b03c7)** | 2024-01-01 | Electronics |
-| **[Digital Signature Verification In Cloud Computing](https://www.semanticscholar.org/paper/d8b1b8b63d3fc53adc3ceb453104ae213b820c81)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 11th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO)</p></details> |
-| **[An integrated framework for risk assessment in digital verification and validation](https://www.semanticscholar.org/paper/8b19a748b5d3670ede4a42c95d485b46fd5ba06f)** | 2024-01-01 | Measurement: Sensors |
-| **[Digital Verification And Face Recognition](https://www.semanticscholar.org/paper/1fa2ba0a23c1bf56c07d9179b8a794b1fb11b4b2)** | 2023-01-01 | <details><summary>Inter...</summary><p>International Conference on Computing Communication and Networking Technologies</p></details> |
-| **[Digital Identity Verification: Transforming KYC Processes in Banking Through Advanced Technology and Enhanced Security Measures](https://www.semanticscholar.org/paper/52a9c730227ac1156eeda66690579e0154d1a12e)** | 2023-01-01 | <details><summary>Inter...</summary><p>International Research Journal of Modernization in Engineering Technology and Science</p></details> |
-| **[Ethics of Digital Verification in International Reporting](https://www.semanticscholar.org/paper/a0214461448d9a31ce76979b14f6346fb78378f9)** | 2021-01-01 | <details><summary>Handb...</summary><p>Handbook of Global Media Ethics</p></details> |
-| **[Digital verification of identity](https://www.semanticscholar.org/paper/8a9cd0eada0a08e51c0ae39f2cb0b28a228a2a6c)** | 2019-01-01 |  |
-| **[New architecture of the object-oriented functional coverage mechanism for digital verification](https://www.semanticscholar.org/paper/db269c36b52b9ebfd0e1e7123d2e19bacd97d803)** | 2016-01-01 | <details><summary>Inter...</summary><p>International Verification and Security Workshop</p></details> |
-| **[Digital verification: on the frontline](https://www.semanticscholar.org/paper/1b5da06950d04e6fa4ac58eccfc957d08595815a)** | 2016-01-01 |  |
-| **[Developing business analytic capabilities for combating e-commerce identity fraud: A study of Trustev's digital verification solution](https://www.semanticscholar.org/paper/2cc1c13be3ca0aafac4f370f211e61e5bc54a9c0)** | 2016-01-01 | <details><summary>Infor...</summary><p>Information Manager (The)</p></details> |
-| **[A BIST Architecture based UART Transmitter for Digital Verification](https://www.semanticscholar.org/paper/e0137f1636a37896829819a4dd7692494a2293e3)** | 2015-01-01 |  |
-| **[Comprehensive Application of Satellite Digital Verification Environment](https://www.semanticscholar.org/paper/931c4bb1cd1ca446af1e2636cdff82e5a2349e4b)** | 2014-01-01 |  |
-
 
 
 ## UVM

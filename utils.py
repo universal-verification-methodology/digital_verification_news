@@ -1672,55 +1672,18 @@ def extract_abstracts_from_downloaded_dvcon_pdfs(
             abstract = extract_abstract_from_pdf(matching_pdf)
             if abstract:
                 entry["Abstract"] = abstract
-                logger.debug("Extracted abstract (length: %d chars) for: %s", len(abstract), entry.get("Title", "Unknown"))
+                logger.debug(
+                    "Extracted abstract (length: %d chars) for: %s",
+                    len(abstract),
+                    entry.get("Title", "Unknown"),
+                )
             else:
                 logger.debug("No abstract found in PDF: %s", matching_pdf.name)
 
             # Best-effort year inference so that DVCon entries carry a realistic
-            # publication year instead of the legacy 1970 placeholder. We try,
-            # in order:
-            #   1. File name stem (fast, very reliable for DVCon assets).
-            #   2. First-page text content around "DVCon" if necessary.
+            # publication year instead of the legacy 1970 placeholder.
             try:
-                current_year = datetime.datetime.now().year
-                inferred_year: Optional[int] = None
-
-                # 1) Infer from filename stem, e.g. "DVConEU_2025_paper_132".
-                stem_match = re.search(r"(19|20)\d{2}", matching_pdf.stem)
-                if stem_match:
-                    candidate = int(stem_match.group(0))
-                    if 1990 <= candidate <= current_year + 1:
-                        inferred_year = candidate
-
-                # 2) If filename-based inference failed, fall back to text.
-                if inferred_year is None:
-                    text_for_year = extract_text_with_fallback(
-                        pdf_path=matching_pdf,
-                        max_pages=1,
-                    )
-                    if text_for_year:
-                        year_candidates = [
-                            int(match.group(0))
-                            for match in re.finditer(r"(19|20)\d{2}", text_for_year)
-                        ]
-                        year_candidates = [
-                            y for y in year_candidates if 1990 <= y <= current_year + 1
-                        ]
-
-                        # Prefer years that appear near "DVCon" or similar.
-                        if year_candidates:
-                            lowered_text = text_for_year.lower()
-                            for y in sorted(year_candidates, reverse=True):
-                                if re.search(
-                                    rf"(dvcon[^0-9]{{0,40}}{y})|({y}[^0-9]{{0,40}}dvcon)",
-                                    lowered_text,
-                                ):
-                                    inferred_year = y
-                                    break
-                            if inferred_year is None:
-                                inferred_year = max(year_candidates)
-
-                # Only override obviously placeholder dates or unset dates.
+                inferred_year = infer_year_from_pdf(matching_pdf)
                 existing_date = entry.get("Date", "")
                 is_placeholder = existing_date.startswith("1970-01-01") or not existing_date
                 if inferred_year is not None and is_placeholder:
@@ -2018,6 +1981,70 @@ def extract_abstract_from_pdf(
     return abstract
 
 
+def infer_year_from_pdf(
+    pdf_path: Path,
+    max_pages: int = 1,
+) -> Optional[int]:
+    """Infer a reasonable publication year from a DVCon-style PDF.
+
+    The inference strategy is tuned for slides and proceedings PDFs that
+    resemble DVCon material. It tries, in order:
+
+    1. Extract a four-digit year from the filename stem (for example,
+       ``DVCon_US_2024_Tutorial.pdf``).
+    2. Extract text from the first page and look for years close to the
+       word ``\"DVCon\"``. If multiple candidates exist, the most recent
+       plausible year is chosen.
+
+    Args:
+        pdf_path: Path to the input PDF file.
+        max_pages: Maximum number of pages to inspect when scanning the
+            document text for year candidates. Defaults to 1 for speed.
+
+    Returns:
+        The inferred year as an integer if a plausible candidate could be
+        located (within ``[1990, current_year + 1]``); otherwise ``None``.
+    """
+    current_year = datetime.datetime.now().year
+
+    # 1) Filename-based heuristic.
+    stem_match = re.search(r"(19|20)\d{2}", pdf_path.stem)
+    if stem_match:
+        try:
+            candidate = int(stem_match.group(0))
+        except ValueError:
+            candidate = 0
+        if 1990 <= candidate <= current_year + 1:
+            return candidate
+
+    # 2) Text-based heuristic from the first pages.
+    text_for_year = extract_text_with_fallback(
+        pdf_path=pdf_path,
+        max_pages=max_pages,
+    )
+    if not text_for_year:
+        return None
+
+    year_candidates = [
+        int(match.group(0)) for match in re.finditer(r"(19|20)\d{2}", text_for_year)
+    ]
+    year_candidates = [
+        y for y in year_candidates if 1990 <= y <= current_year + 1
+    ]
+    if not year_candidates:
+        return None
+
+    lowered_text = text_for_year.lower()
+    for year in sorted(year_candidates, reverse=True):
+        if re.search(
+            rf"(dvcon[^0-9]{{0,40}}{year})|({year}[^0-9]{{0,40}}dvcon)",
+            lowered_text,
+        ):
+            return year
+
+    return max(year_candidates)
+
+
 def build_dvcon_readme_from_pdfs(
     pdf_dir: Path = Path("downloads/dvcon"),
     output_path: Path = Path("DVCON_README.md"),
@@ -2091,6 +2118,79 @@ def build_dvcon_readme_from_pdfs(
     content = "\n".join(content_lines + rows) + "\n"
     output_path.write_text(content, encoding="utf-8")
     logger.info("Wrote DVCon abstract README to %s", output_path)
+
+
+def update_markdown_years_from_pdfs(
+    markdown_path: Path,
+    project_root: Path | None = None,
+) -> None:
+    """Update ``1970-01-01`` date placeholders using local DVCon PDFs.
+
+    This helper scans a markdown file for rows that look like DVCon-style
+    table entries whose link points to a local asset under
+    ``downloads/dvcon`` and whose date column is the legacy placeholder
+    ``\"1970-01-01\"``. For each such row, it attempts to infer a more
+    realistic year from the referenced PDF using :func:`infer_year_from_pdf`
+    and, if successful, rewrites the date in-place to ``\"YYYY-01-01\"``.
+
+    The function is intentionally conservative and only touches rows that
+    match the DVCon downloads pattern; external links (for example, IEEE
+    or arXiv URLs) are left unchanged.
+
+    Args:
+        markdown_path: Path to the markdown file to be updated (for example,
+            ``README.md`` or ``DVCON_README.md``).
+        project_root: Optional project root used to resolve relative PDF
+            paths. Defaults to the directory containing ``markdown_path``.
+    """
+    if not markdown_path.exists():
+        logger.info("Markdown file %s does not exist; skipping year update", markdown_path)
+        return
+
+    root = project_root if project_root is not None else markdown_path.parent
+    original_text = markdown_path.read_text(encoding="utf-8")
+
+    pattern = re.compile(
+        r"(\*\*\[[^]]+\]\((?P<path>downloads/dvcon/[^)]+)\)\*\*\s*\|\s*)"
+        r"(?P<date>1970-01-01)(\s*\|)",
+    )
+
+    changes = 0
+
+    def _replace(match: re.Match[str]) -> str:
+        nonlocal changes
+        rel_path = match.group("path")
+        pdf_path = (root / rel_path).resolve()
+        if not pdf_path.exists() or not pdf_path.is_file():
+            logger.debug("PDF %s not found on disk; leaving date as-is", pdf_path)
+            return match.group(0)
+
+        try:
+            year = infer_year_from_pdf(pdf_path)
+        except Exception as exc:  # noqa: BLE001
+            logger.debug("Failed to infer year from %s: %s", pdf_path, exc)
+            return match.group(0)
+
+        if year is None:
+            return match.group(0)
+
+        new_date = f"{year:04d}-01-01"
+        changes += 1
+        logger.info(
+            "Updating date for %s from 1970-01-01 to %s",
+            rel_path,
+            new_date,
+        )
+        return match.group(0).replace("1970-01-01", new_date)
+
+    updated_text = pattern.sub(_replace, original_text)
+
+    if changes == 0:
+        logger.info("No DVCon 1970-01-01 placeholders found in %s", markdown_path)
+        return
+
+    markdown_path.write_text(updated_text, encoding="utf-8")
+    logger.info("Updated %d DVCon date placeholders in %s", changes, markdown_path)
 
 
 def generate_table(
