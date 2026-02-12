@@ -392,6 +392,52 @@ def request_papers_with_semantic_scholar(
     return papers
 
 
+def _is_verification_flavoured_query(keyword: str) -> bool:
+    """Return True if the keyword looks like a DV/verification-style query.
+
+    This is used to decide when additional post-filtering should be applied to
+    generic aggregators such as CrossRef and OpenAlex to keep the feed focused
+    on digital / hardware verification topics.
+    """
+    lowered = keyword.lower()
+    return any(token in lowered for token in ["verification", "uvm", "uvm-", "dvcon"])
+
+
+def _is_digital_verification_paper(paper: Dict[str, str]) -> bool:
+    """Heuristically decide whether a paper is about digital / hardware verification.
+
+    The check is intentionally conservative: it looks for common hardware and
+    verification-related terms across the title, abstract and venue/comment
+    fields, and treats anything failing this test as out of scope for DV-CON.
+    """
+    haystack = " ".join(
+        [
+            paper.get("Title", ""),
+            paper.get("Abstract", ""),
+            paper.get("Comment", ""),
+        ],
+    ).lower()
+    if not haystack.strip():
+        return False
+
+    verification_markers = [
+        "verification",
+        "uvm",
+        "systemverilog",
+        "rtl",
+        "testbench",
+        "formal",
+        "assertion",
+        "coverage",
+        "dvcon",
+        "soc",
+        "fpga",
+        "asic",
+        "hdl",
+    ]
+    return any(marker in haystack for marker in verification_markers)
+
+
 def request_papers_with_acm_api(
     keyword: str,
     max_results: int,
@@ -901,10 +947,18 @@ def get_daily_papers_by_keyword_from_crossref(
     """
     logger.info("Getting CrossRef papers for keyword: %s", keyword)
     papers = request_papers_with_crossref(keyword, max_result)
-    # select columns for display, falling back to empty string if missing
+
+    # For verification-centric queries, aggressively drop non-DV papers from
+    # generic aggregators so that DV-CON stays focused on digital verification.
+    if _is_verification_flavoured_query(keyword):
+        papers = [paper for paper in papers if _is_digital_verification_paper(paper)]
+
+    # Select columns for display, falling back to empty string if missing.
     processed: List[Dict[str, str]] = []
     for paper in papers:
-        processed.append({column_name: paper.get(column_name, "") for column_name in column_names})
+        processed.append(
+            {column_name: paper.get(column_name, "") for column_name in column_names},
+        )
     logger.info("Retrieved %d CrossRef papers after column selection", len(processed))
     return processed
 
@@ -928,6 +982,9 @@ def get_daily_papers_by_keyword_from_openalex(
     """
     logger.info("Getting OpenAlex papers for keyword: %s", keyword)
     papers = request_papers_with_openalex(keyword, max_result)
+
+    if _is_verification_flavoured_query(keyword):
+        papers = [paper for paper in papers if _is_digital_verification_paper(paper)]
     processed: List[Dict[str, str]] = []
     for paper in papers:
         processed.append(
@@ -954,6 +1011,9 @@ def get_daily_papers_by_keyword_from_semantic_scholar(
     """
     logger.info("Getting Semantic Scholar papers for keyword: %s", keyword)
     papers = request_papers_with_semantic_scholar(keyword, max_result)
+
+    if _is_verification_flavoured_query(keyword):
+        papers = [paper for paper in papers if _is_digital_verification_paper(paper)]
     processed: List[Dict[str, str]] = []
     for paper in papers:
         processed.append(
@@ -983,6 +1043,9 @@ def get_daily_papers_by_keyword_from_acm(
     """
     logger.info("Getting ACM papers for keyword: %s", keyword)
     papers = request_papers_with_acm_api(keyword, max_result)
+
+    if _is_verification_flavoured_query(keyword):
+        papers = [paper for paper in papers if _is_digital_verification_paper(paper)]
     processed: List[Dict[str, str]] = []
     for paper in papers:
         processed.append(
@@ -1086,6 +1149,16 @@ def get_daily_papers_by_keyword_from_dvcon(
             continue
         seen_links.add(link)
 
+        # Best-effort year inference from the title / URL so that DVCon entries
+        # render with realistic dates instead of the old 1970 placeholder.
+        year_match = re.search(r"(19|20)\d{2}", f"{title} {href}", re.IGNORECASE)
+        if year_match:
+            year = int(year_match.group(0))
+            date_value = f"{year:04d}-01-01T00:00:00Z"
+        else:
+            # Fallback for truly ambiguous cases.
+            date_value = "1970-01-01T00:00:00Z"
+
         paper: Dict[str, str] = {
             "Title": remove_duplicated_spaces(title.replace("\n", " ")),
             "Abstract": "",
@@ -1093,8 +1166,7 @@ def get_daily_papers_by_keyword_from_dvcon(
             "Link": link,
             "Tags": ["DVConProceedings"],
             "Comment": "DVCon proceedings entry",
-            # Date is unknown from the list view; default to epoch-style placeholder.
-            "Date": "1970-01-01T00:00:00Z",
+            "Date": date_value,
         }
         results.append(paper)
 
@@ -1577,6 +1649,51 @@ def extract_abstracts_from_downloaded_dvcon_pdfs(
                 logger.debug("Extracted abstract (length: %d chars) for: %s", len(abstract), entry.get("Title", "Unknown"))
             else:
                 logger.debug("No abstract found in PDF: %s", matching_pdf.name)
+            # Best-effort year inference from the PDF content so that DVCon
+            # entries can carry a realistic publication year instead of a
+            # placeholder date.
+            try:
+                text_for_year = extract_text_with_fallback(
+                    pdf_path=matching_pdf,
+                    max_pages=1,
+                )
+                if text_for_year:
+                    year_candidates = [
+                        int(match.group(0))
+                        for match in re.finditer(r"(19|20)\d{2}", text_for_year)
+                    ]
+                    current_year = datetime.datetime.now().year
+                    year_candidates = [
+                        y for y in year_candidates if 1990 <= y <= current_year + 1
+                    ]
+                    inferred_year: Optional[int] = None
+
+                    # Prefer years that appear near "DVCon" or "DVCon India/EU/US".
+                    if year_candidates:
+                        lowered_text = text_for_year.lower()
+                        for y in sorted(year_candidates, reverse=True):
+                            if re.search(
+                                rf"(dvcon[^0-9]{{0,40}}{y})|({y}[^0-9]{{0,40}}dvcon)",
+                                lowered_text,
+                            ):
+                                inferred_year = y
+                                break
+                        if inferred_year is None:
+                            inferred_year = max(year_candidates)
+
+                    if inferred_year is not None:
+                        entry["Date"] = f"{inferred_year:04d}-01-01T00:00:00Z"
+                        logger.debug(
+                            "Inferred DVCon year %d for entry: %s",
+                            inferred_year,
+                            entry.get("Title", "Unknown"),
+                        )
+            except Exception as exc:  # noqa: BLE001
+                logger.debug(
+                    "Failed to infer year from DVCon PDF %s: %s",
+                    matching_pdf,
+                    exc,
+                )
         else:
             logger.debug("No matching PDF found for URL: %s", page_url)
 

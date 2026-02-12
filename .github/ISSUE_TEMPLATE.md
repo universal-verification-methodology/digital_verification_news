@@ -7,6 +7,9 @@ labels: documentation
 ## verification
 | **Title** | **Date** | **Comment** |
 | --- | --- | --- |
+| **[Breaking Barriers: Formal Verification in Complex Compressor Controller](downloads/dvcon/2B3_DVConIndia25_Final_PPT_5338.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[AI-Driven Design and Verification - Scaling Complexity with Intelligence](downloads/dvcon/2-DVCON-2025_Sandisk-Jayanth-Final-Shreyas-S-Budgur.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[Breaking Barriers: Formal Verification in Complex Compressor Controller Architecture](downloads/dvcon/2B3-DVConIndia2025_Final_Paper_5338.pdf)** | 2017-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Uncovering Hardware Vulnerabilities: Formal Verification for Security-Focused Negative Testing](downloads/dvcon/2C2-DVConIndia2025_Final_Paper_9003.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Robust Verification of Clock Tree Network using “Clock Monitor” Integrated by ACRMG](downloads/dvcon/1C3-DVConIndia2025_Final_Paper_2809.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Optimizing CPU-Based Configuration Path Verification Through Automated C Test Case Generation with UVM RAL](downloads/dvcon/1C1-DVConIndia2025_Final_Paper_7562.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
@@ -15,10 +18,7 @@ labels: documentation
 | **[Efficient Verification of Multi-Die Systems using Multi-Die Co-Simulation Framework](downloads/dvcon/4A3-DVConIndia2025_Final_Paper_0314.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Decoding the RAS Maze: Microscopic Complexity Meets Verification](downloads/dvcon/3C1-DVConIndia2025_Final_Paper_0076.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Catching the Unseen: A Case Study on Conquering Caching and Ordering Verification Challenges in Release Critical Unit](downloads/dvcon/3C3-DVConIndia2025_Final_Paper_7251.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[Breaking Barriers: Formal Verification in Complex Compressor Controller Architecture](downloads/dvcon/2B3-DVConIndia2025_Final_Paper_5338.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[Breaking Barriers: Formal Verification in Complex Compressor Controller](downloads/dvcon/2B3_DVConIndia25_Final_PPT_5338.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Breaking barriers in Advanced Multi-Chiplet AI SoCs using scalable UCIe and Boot Verification and Emulation techniques](downloads/dvcon/4A1-DVConIndia2025_Final_Paper_2911.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[An Ideal FuSa Verification Solution!](downloads/dvcon/P20-DVConIndia2025_Final_Paper_6976.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Accelerating Debug with Experience-Driven Insights: A Tool-Based Approach for IP and SoC-Level Verification](downloads/dvcon/1A2_DVConIndia25_Final_PPT_7616.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Accelerating Debug with Experience-Driven Insights: A Tool-Based Approach for IP and SoC-Level Verification](downloads/dvcon/1A2-DVConIndia2025_Final_Paper_7616.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[A Hybrid Functional Verification Approach of complex designs using Python based Models](downloads/dvcon/4B2-DVConIndia2025_Final_Paper_6824.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
@@ -41,62 +41,26 @@ labels: documentation
 | **[Application of novel hierarchical approach to formal verification of digital ICs](https://ieeexplore.ieee.org/document/1562248)** | 2003-01-01 | <details><summary>2003 ...</summary><p>2003 46th Midwest Symposium on Circuits and Systems</p></details> |
 | **[Formal verification of digital circuits by 3-valued simulation](https://ieeexplore.ieee.org/document/957592)** | 2001-01-01 | <details><summary>ICECS...</summary><p>ICECS 2001. 8th IEEE International Conference on Electronics, Circuits and Systems (Cat. No.01EX483)</p></details> |
 
-| **Title** | **Date** | **Comment** |
-| --- | --- | --- |
-| **[ANALYTICAL CLOUD SYSTEM ERI Digital health analysis using Spectral analysis in AI](https://doi.org/10.47363/jeast/2021/vid/1006)** | 2121-04-30 | <details><summary>Journ...</summary><p>Journal of Engineering and Applied Sciences Technology</p></details> |
-| **[DIGITAL LIBRARIES AND KNOWLEDGE MANAGEMENT IN MULTICULTURAL ENVIRONMENTS: LIBRARIAN’S PERSPECTIVES](https://doi.org/10.15556/ijiim.01.02.004)** | 2114-12-10 | <details><summary>Inter...</summary><p>International Journal on Integrated Information Management</p></details> |
-| **[Title Pending 63](https://doi.org/10.61147/des.63)** | 2036-01-29 | <details><summary>Digit...</summary><p>Digital Enlightenment Studies</p></details> |
-| **[Title Pending 8782](https://doi.org/10.3998/gs.8782)** | 2035-09-29 | <details><summary>Globa...</summary><p>Global Storytelling: Journal of Digital and Moving Images</p></details> |
-| **[Title Pending 8759](https://doi.org/10.3998/gs.8759)** | 2035-09-29 | <details><summary>Globa...</summary><p>Global Storytelling: Journal of Digital and Moving Images</p></details> |
-| **[Title Pending 8022](https://doi.org/10.3998/gs.8022)** | 2035-09-29 | <details><summary>Globa...</summary><p>Global Storytelling: Journal of Digital and Moving Images</p></details> |
-| **[Title Pending 7692](https://doi.org/10.3998/gs.7692)** | 2035-09-29 | <details><summary>Globa...</summary><p>Global Storytelling: Journal of Digital and Moving Images</p></details> |
-| **[Title Pending 8319](https://doi.org/10.3998/gs.8319)** | 2035-09-23 | <details><summary>Globa...</summary><p>Global Storytelling: Journal of Digital and Moving Images</p></details> |
-| **[Title Pending 8267](https://doi.org/10.3998/gs.8267)** | 2035-08-14 | <details><summary>Globa...</summary><p>Global Storytelling: Journal of Digital and Moving Images</p></details> |
-| **[Title Pending 18169](https://doi.org/10.16995/dscn.18169)** | 2035-04-23 | <details><summary>Digit...</summary><p>Digital Studies / Le champ numérique</p></details> |
-| **[Title Pending 33958](https://doi.org/10.17077/2643-8410.33958)** | 2035-04-22 | <details><summary>Synth...</summary><p>Synthesis: A Digital Journal of Student Science Communication</p></details> |
-| **[Title Pending 33890](https://doi.org/10.17077/2643-8410.33890)** | 2035-04-16 | <details><summary>Synth...</summary><p>Synthesis: A Digital Journal of Student Science Communication</p></details> |
-| **[Title Pending 33874](https://doi.org/10.17077/2643-8410.33874)** | 2035-04-07 | <details><summary>Synth...</summary><p>Synthesis: A Digital Journal of Student Science Communication</p></details> |
-| **[Title Pending 7218](https://doi.org/10.3998/gs.7218)** | 2035-02-26 | <details><summary>Globa...</summary><p>Global Storytelling: Journal of Digital and Moving Images</p></details> |
-| **[Title Pending 11059](https://doi.org/10.16995/dscn.11059)** | 2034-10-17 | <details><summary>Digit...</summary><p>Digital Studies / Le champ numérique</p></details> |
-
-| **Title** | **Date** | **Comment** |
-| --- | --- | --- |
-| **[RepStake: A Blockchain-Based Trust System with Reputation Staking](https://doi.org/10.1145/3748522.3779898)** | 2026-03-01 |  |
-| **[Catfishing on Social Media: A Criminal Law And Islamic Criminal Law Analysis In Jambi](https://doaj.org/article/bb0db60ce8b14c0abfc5773d0770ae0f)** | 2026-03-01 |  |
-| **[中文逻辑编程体系 (CLPS) 深度架构白皮书](https://doi.org/10.5281/zenodo.18565382)** | 2026-02-09 |  |
-| **[中文逻辑编程体系 (CLPS) 深度架构白皮书](https://doi.org/10.5281/zenodo.18565381)** | 2026-02-09 |  |
-| **[Towards Supporting Non-Destructive Testing Inspectors with a Multi-Modal Generative AI Copilot](https://doi.org/10.58286/32600)** | 2026-02-09 |  |
-| **[Sovereign Intelligence: The Strategic Architecture of Synaptic AI Lab and the Future of Indian AI Infrastructure](https://doi.org/10.5281/zenodo.18549853)** | 2026-02-09 |  |
-| **[Quantitative Perceptual Analysis of Feature-Space Scenarios in Network Media Evaluation Using Transformer-Based Deep Learning: A Case Study of Fuwen Township Primary School in China](https://doi.org/10.3390/buildings16040714)** | 2026-02-09 |  |
-| **[Pengembangan Media Pembelajaran Berbasis Sistem Presensi Face Recognition Integrasi GPS MTS Daarul Hikmah](https://doi.org/10.56709/stj.v5i1.1007)** | 2026-02-09 |  |
-| **[Patient-centred digital adherence technology for tuberculosis treatment outcomes: data from a pragmatic randomized controlled trial in Argentina](https://doi.org/10.17632/d5kbwb2xn6.1)** | 2026-02-09 |  |
-| **[Multi-State Reliability Modeling and Evaluation of Islanded Microgrids with Semi-Active Hybrid Energy Storage Systems](https://doi.org/10.4108/ew.11843)** | 2026-02-09 |  |
-| **[History of the emergence of in silico medicine](https://doi.org/10.5281/zenodo.18328392)** | 2026-02-09 |  |
-| **[History of the emergence of in silico medicine](https://doi.org/10.5281/zenodo.18539300)** | 2026-02-09 |  |
-| **[Establishment of a droplet digital PCR detection method for Vp4 gene of PoRV](https://doi.org/10.3389/fvets.2026.1742171)** | 2026-02-09 |  |
-| **[Blockchain-Based Solution for Privacy-Preserving SIM Card Registration](https://doi.org/10.3390/jcp6010030)** | 2026-02-09 |  |
-| **[AI Identification: An Integrated Framework for Sustainable Governance in Digital Enterprises](https://doi.org/10.3390/su18041750)** | 2026-02-09 |  |
-
 
 
 ## UVM
 | **Title** | **Date** | **Comment** |
 | --- | --- | --- |
+| **[Unified UVM Testbench: Integrating Random, Directed and Pseudo-Random Verification Capabilities](downloads/dvcon/Unified-UVM-Testbench-Integrating-Random-Directed-and-Pseudo-Random-Verification-Capabilities.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[Pumping Up Test Development with Task Based, C-callable, UVM based Tests](downloads/dvcon/1A3_DVConIndia25_Final_PPT_5986.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[AI Pair or Despair ProgrammingUsing Aider to build a VIP with UVM-SV and PyUVM](downloads/dvcon/AI-Pair-or-Despair-Programming-Using-Aider-to-build-a-VIP-with-UVM-SV-and-PyUVM.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[A UVM Testbench for Exploring Design Margins of Analog/Mixed-Signal Systems: A PCI-Express Receiver Detection Circuit Example](downloads/dvcon/A-UVM-Testbench-for-Exploring-Design-Margins-of-AnalogMixed-Signal-Circuits-A-PCI-Express-Receiver-Detection-Circuit-Example.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[Chain of Responsibility Design Pattern for scalable UVM drivers](downloads/dvcon/P17-DVConIndia25_Final_PPT_5053.pdf)** | 2017-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[A Summary and Examination of UVM Virtual Sequence Techniques](downloads/dvcon/1B1-DVConIndia2025_Final_Paper_3272.pdf)** | 2016-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[UVM Based Generic Interrupt Service Routine (gISR)](downloads/dvcon/1A1-DVConIndia2025_Final_Paper_4877.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[UVM based Generic Interrupt Service Routine (gISR)](downloads/dvcon/1A1_DVConIndia25_Final_PPT_4877.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[Unified UVM Testbench: Integrating Random, Directed and Pseudo-Random Verification Capabilities](downloads/dvcon/Unified-UVM-Testbench-Integrating-Random-Directed-and-Pseudo-Random-Verification-Capabilities.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[SmartLint Booster: Automation of UVM Testbench Linting with AMIQ Verissimo](downloads/dvcon/P15-DVConIndia2025_Final_Paper_4873.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[SmartLint Booster: Automation of UVM Testbench Linting with AMIQ Verissimo](downloads/dvcon/P15-DVConIndia25_Final_PPT_4873.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[Pumping Up Test Development with Task Based, C-callable, UVM based Tests](downloads/dvcon/1A3_DVConIndia25_Final_PPT_5986.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Pumping Up Test Development with Task Based, C-callable, UVM based Tests](downloads/dvcon/1A3-DVConIndia2025_Final_Paper_5986.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Optimizing CPU-Based Configuration Path Verification Through Automated C Test Case Generation with UVM RAL](downloads/dvcon/1C1-DVConIndia2025_Final_Paper_7562.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Novel Customized Algorithm and Verification Checklist to Improve the Process of Register Verification in UVM](downloads/dvcon/P13-DVConIndia25_Final_PPT_4118.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Efficient Coverage Optimization with Formal Guided Testcase Generation in UVM Verification](downloads/dvcon/Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Chain of Responsibility Design Pattern for scalable UVM drivers](downloads/dvcon/P17-DVConIndia2025_Final_Paper_5053.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[Chain of Responsibility Design Pattern for scalable UVM drivers](downloads/dvcon/P17-DVConIndia25_Final_PPT_5053.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[AI Pair or Despair ProgrammingUsing Aider to build a VIP with UVM-SV and PyUVM](downloads/dvcon/AI-Pair-or-Despair-Programming-Using-Aider-to-build-a-VIP-with-UVM-SV-and-PyUVM.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[A UVM Testbench for Exploring Design Margins of Analog/Mixed-Signal Systems: A PCI-Express Receiver Detection Circuit Example](downloads/dvcon/A-UVM-Testbench-for-Exploring-Design-Margins-of-AnalogMixed-Signal-Circuits-A-PCI-Express-Receiver-Detection-Circuit-Example.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[A Summary and Examination of UVM Virtual Sequence Techniques](downloads/dvcon/1B1-DVConIndia2025_Final_Paper_3272.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 
 | **Title** | **Date** | **Comment** |
 | --- | --- | --- |
@@ -115,42 +79,6 @@ labels: documentation
 | **[Scaling the UVM_REG Model towards Automation and Simplicity of Use](https://ieeexplore.ieee.org/document/7031726)** | 2015-01-01 | <details><summary>2015 ...</summary><p>2015 28th International Conference on VLSI Design</p></details> |
 | **[Pragmatic approaches to implement self-checking mechanism in UVM based TestBench](https://ieeexplore.ieee.org/document/7164768)** | 2015-01-01 | <details><summary>2015 ...</summary><p>2015 International Conference on Advances in Computer Engineering and Applications</p></details> |
 | **[The development and initial testing of a new sensor to simultaneously measure strain and pressure in tendons and ligaments](https://ieeexplore.ieee.org/document/154660)** | 1991-01-01 | <details><summary>Proce...</summary><p>Proceedings of the 1991 IEEE Seventeenth Annual Northeast Bioengineering Conference</p></details> |
-
-| **Title** | **Date** | **Comment** |
-| --- | --- | --- |
-| **[YTHDF3-TRIM2-P53 axis promotes malignant progression in uveal melanoma (UVM)](https://doi.org/10.1016/j.cellsig.2025.112316)** | 2026-03-01 | Cellular Signalling |
-| **[LLM-Aided Verification Gap Detection: A Methodology for Identifying Missing Checkers in UVM Testbenches](https://doi.org/10.36227/techrxiv.177069683.39144593/v1)** | 2026-02-10 |  |
-| **[Modular SystemVerilog-UVM verification framework for the IGNITE pixel readout chip](https://doi.org/10.1088/1748-0221/21/01/c01026)** | 2026-01-01 | <details><summary>Journ...</summary><p>Journal of Instrumentation</p></details> |
-| **[Brain Capillary Ion Channels: Physiology and Channelopathies](https://doi.org/10.1152/physiol.00015.2025)** | 2026-01-01 | Physiology |
-| **[REV1 Loss Triggers a G2/M Cell-Cycle Arrest Through Dysregulation of Mitotic Regulators](https://doi.org/10.3390/genes17010044)** | 2025-12-31 | Genes |
-| **[PIP <sub>2</sub> corrects an endothelial Piezo1 channelopathy](https://doi.org/10.1073/pnas.2522750122)** | 2025-12-23 | <details><summary>Proce...</summary><p>Proceedings of the National Academy of Sciences</p></details> |
-| **[UVM Based Registers and Functionality Verification of GPIO Controller](https://doi.org/10.1109/cicn67655.2025.11368027)** | 2025-12-20 | <details><summary>2025 ...</summary><p>2025 IEEE 17th International Conference on Computational Intelligence and Communication Networks (CICN)</p></details> |
-| **[Wildfire smoke and pediatric asthma control in the Northeastern United States: a cross-sectional study](https://doi.org/10.1186/s12940-025-01245-9)** | 2025-12-11 | Environmental Health |
-| **[UVM Based RISC-V Verification Using Arduino Uno](https://doi.org/10.22214/ijraset.2025.74959)** | 2025-11-30 | <details><summary>Inter...</summary><p>International Journal for Research in Applied Science and Engineering Technology</p></details> |
-| **[Scalable UVM Verification Components (UVCs) to Accelerate Functional Verification of SoCs](https://doi.org/10.1109/icet66147.2025.11321432)** | 2025-11-18 | <details><summary>2025 ...</summary><p>2025 20th International Conference on Emerging Technologies (ICET)</p></details> |
-| **[Enhancement in design verification process using UVM- driven AXI verification IP](https://doi.org/10.21203/rs.3.rs-7985650/v1)** | 2025-11-14 |  |
-| **[Automating UVM Frameworks Using Artificial Intelligence and Machine Learning for Complex SoC Verification](https://doi.org/10.22399/ijcesen.4280)** | 2025-11-13 | <details><summary>Inter...</summary><p>International Journal of Computational and Experimental Science and Engineering</p></details> |
-| **[Novel Verification IP (VIP) for AXI4 Interconnects Employing Universal Verification Methodology (UVM)](https://doi.org/10.1109/norcas66540.2025.11231284)** | 2025-10-28 | <details><summary>2025 ...</summary><p>2025 IEEE Nordic Circuits and Systems Conference (NorCAS)</p></details> |
-| **[From Concept to Practice: an Automated LLM-aided UVM Machine for RTL Verification](https://doi.org/10.1109/iccad66269.2025.11240679)** | 2025-10-26 | <details><summary>2025 ...</summary><p>2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)</p></details> |
-| **[CROSS-LAYER HW–SW CO-VERIFICATION USING C-TEST INTEGRATION IN UVM ENVIRONMENTS](https://doi.org/10.12732/ijam.v38i7s.525)** | 2025-10-22 | <details><summary>Inter...</summary><p>International Journal of Applied Mathematics</p></details> |
-
-| **Title** | **Date** | **Comment** |
-| --- | --- | --- |
-| **["EyePatch-Sicherheitsmodul für Computer Vision Systeme zum Schutz vor Abgriffen sensibler Bilddaten"](https://doi.org/10.34657/29095)** | 2026-02-02 |  |
-| **[A Switching Nonlinear Model Predictive Control Strategy for Safe Collision Handling by an Underwater Vehicle-Manipulator System](http://arxiv.org/abs/2601.18971)** | 2026-01-26 |  |
-| **[A Switching Nonlinear Model Predictive Control Strategy for Safe Collision Handling by an Underwater Vehicle-Manipulator System](https://doi.org/10.48550/arxiv.2601.18971)** | 2026-01-26 |  |
-| **[Chromosome 3p deletion leads to extensive genomic alterations in diverse cancers and confers synthetic lethality in uveal melanoma](https://doi.org/10.64898/2026.01.21.700826)** | 2026-01-23 |  |
-| **[A Switching Nonlinear Model Predictive Control Strategy for Safe Collision Handling by an Underwater Vehicle-Manipulator System](https://doi.org/10.5281/zenodo.18357280)** | 2026-01-23 |  |
-| **[A Switching Nonlinear Model Predictive Control Strategy for Safe Collision Handling by an Underwater Vehicle-Manipulator System](https://doi.org/10.5281/zenodo.18357279)** | 2026-01-23 |  |
-| **[Multi-omics integrative analysis of stemness-associated pathological signatures to guide prognosis and therapeutic strategies in uveal melanoma](https://doi.org/10.1097/js9.0000000000004914)** | 2026-01-21 |  |
-| **[CDKN2AIPNL: a potential pan-cancer biomarker](https://doi.org/10.3389/fgene.2025.1588292)** | 2026-01-20 |  |
-| **[Discovering High- <i>z</i> BL Lacs Using Swift/UVOT and SARA Observations with the Dropout Technique](https://doi.org/10.3847/1538-4357/ae21d6)** | 2026-01-12 |  |
-| **[Recent Advances in Vibrating Mesh Atomizer Enable Innovative Technology in Spray Drying: A Review](https://doi.org/10.48048/tis.2026.12551)** | 2026-01-10 |  |
-| **[Decoding HSP90AA1-driven inflammatory signaling in the uveal melanoma microenvironment: an integrated analysis at single-cell resolution](https://doi.org/10.3389/fimmu.2025.1730622)** | 2026-01-06 |  |
-| **[Linked collectors and determiners for: UVM Milkweed Pollinator Project.](https://doi.org/10.5281/zenodo.18123382)** | 2026-01-02 |  |
-| **[Linked collectors and determiners for: UVM Milkweed Pollinator Project.](https://doi.org/10.5281/zenodo.10506596)** | 2026-01-02 |  |
-| **[Linked collectors and determiners for: Historic Butterfly Specimens in the UVM Zadock Thompson Natural History Collection Digitized for the Vermont Butterfly Atlas.](https://doi.org/10.5281/zenodo.18124145)** | 2026-01-02 |  |
-| **[Linked collectors and determiners for: Bumble bees and Large Carpenter bees in the UVM Zadock Thompson Zoological Collection.](https://doi.org/10.5281/zenodo.18123397)** | 2026-01-02 |  |
 
 | **Title** | **Date** | **Comment** |
 | --- | --- | --- |

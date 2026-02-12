@@ -75,7 +75,14 @@ case "$SOURCE" in
         INCLUDE_FLAGS="--include-dvcon --download-dvcon-assets"
         ;;
     all)
-        INCLUDE_FLAGS="--include-crossref --include-acm --include-openalex --include-semanticscholar --include-ieee --include-dvcon --download-dvcon-assets"
+        # For verification-centric runs, prefer DV-focused sources (DVCon, IEEE,
+        # ACM, Semantic Scholar) and skip broad aggregators like CrossRef and
+        # OpenAlex unless explicitly requested.
+        if [[ "$PROFILE" == "verification" ]]; then
+            INCLUDE_FLAGS="--include-acm --include-semanticscholar --include-ieee --include-dvcon --download-dvcon-assets"
+        else
+            INCLUDE_FLAGS="--include-crossref --include-acm --include-openalex --include-semanticscholar --include-ieee --include-dvcon --download-dvcon-assets"
+        fi
         ;;
     *)
         echo "Invalid source: $SOURCE. Valid options are: arxiv, crossref, acm, openalex, semanticscholar, ieee, all."
