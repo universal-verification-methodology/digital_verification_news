@@ -2124,17 +2124,26 @@ def update_markdown_years_from_pdfs(
     markdown_path: Path,
     project_root: Path | None = None,
 ) -> None:
-    """Update ``1970-01-01`` date placeholders using local DVCon PDFs.
+    """Update ``1970-01-01`` date placeholders using DVCon PDFs.
 
     This helper scans a markdown file for rows that look like DVCon-style
-    table entries whose link points to a local asset under
-    ``downloads/dvcon`` and whose date column is the legacy placeholder
-    ``\"1970-01-01\"``. For each such row, it attempts to infer a more
-    realistic year from the referenced PDF using :func:`infer_year_from_pdf`
-    and, if successful, rewrites the date in-place to ``\"YYYY-01-01\"``.
+    table entries whose date column is the legacy placeholder ``"1970-01-01"``.
+    It supports two link patterns:
+
+    * Local assets under ``downloads/dvcon`` – for these, it resolves the
+      relative path on disk and, if the PDF exists, calls
+      :func:`infer_year_from_pdf` directly.
+    * DVCon proceedings URLs (``https://dvcon-proceedings.org/...``) – for
+      these, it attempts to locate a previously downloaded asset in
+      ``downloads/dvcon`` whose stem loosely matches the proceedings URL
+      slug. If a matching PDF is found, it infers the year from that file.
+
+    For each successfully resolved PDF, it rewrites the date in-place to
+    ``"YYYY-01-01"``.
 
     The function is intentionally conservative and only touches rows that
-    match the DVCon downloads pattern; external links (for example, IEEE
+    either point to a local ``downloads/dvcon`` asset or to a
+    ``dvcon-proceedings.org`` page. Other external links (for example, IEEE
     or arXiv URLs) are left unchanged.
 
     Args:
@@ -2148,10 +2157,19 @@ def update_markdown_years_from_pdfs(
         return
 
     root = project_root if project_root is not None else markdown_path.parent
+    dvcon_dir = (root / "downloads" / "dvcon").resolve()
     original_text = markdown_path.read_text(encoding="utf-8")
 
+    # Pre-scan available DVCon PDFs so that dvcon-proceedings.org links can
+    # be mapped back to local files where possible.
+    dvcon_pdfs: Dict[str, Path] = {}
+    if dvcon_dir.exists():
+        for pdf in dvcon_dir.glob("*.pdf"):
+            stem = pdf.stem.lower()
+            dvcon_pdfs[stem] = pdf
+
     pattern = re.compile(
-        r"(\*\*\[[^]]+\]\((?P<path>downloads/dvcon/[^)]+)\)\*\*\s*\|\s*)"
+        r"(\*\*\[[^]]+\]\((?P<link>[^)]+)\)\*\*\s*\|\s*)"
         r"(?P<date>1970-01-01)(\s*\|)",
     )
 
@@ -2159,10 +2177,40 @@ def update_markdown_years_from_pdfs(
 
     def _replace(match: re.Match[str]) -> str:
         nonlocal changes
-        rel_path = match.group("path")
-        pdf_path = (root / rel_path).resolve()
-        if not pdf_path.exists() or not pdf_path.is_file():
-            logger.debug("PDF %s not found on disk; leaving date as-is", pdf_path)
+        link = match.group("link")
+
+        pdf_path: Path | None = None
+
+        # Case 1: Local downloads/dvcon path.
+        if link.startswith("downloads/dvcon/"):
+            rel_path = link
+            candidate = (root / rel_path).resolve()
+            if candidate.exists() and candidate.is_file():
+                pdf_path = candidate
+            else:
+                logger.debug("PDF %s not found on disk; leaving date as-is", candidate)
+
+        # Case 2: dvcon-proceedings.org URL – try to match a local PDF by URL slug.
+        elif "dvcon-proceedings.org" in link:
+            try:
+                url_path = urllib.parse.urlparse(link).path.strip("/")
+            except Exception as exc:  # noqa: BLE001
+                logger.debug("Failed to parse DVCon proceedings URL %s: %s", link, exc)
+                url_path = ""
+
+            url_stem = url_path.split("/")[-1].lower() if url_path else ""
+            if url_stem and dvcon_pdfs:
+                # Exact stem match
+                if url_stem in dvcon_pdfs:
+                    pdf_path = dvcon_pdfs[url_stem]
+                else:
+                    # Fallback: partial match, either direction.
+                    for stem, candidate in dvcon_pdfs.items():
+                        if url_stem in stem or stem in url_stem:
+                            pdf_path = candidate
+                            break
+
+        if pdf_path is None:
             return match.group(0)
 
         try:
@@ -2178,7 +2226,7 @@ def update_markdown_years_from_pdfs(
         changes += 1
         logger.info(
             "Updating date for %s from 1970-01-01 to %s",
-            rel_path,
+            link,
             new_date,
         )
         return match.group(0).replace("1970-01-01", new_date)

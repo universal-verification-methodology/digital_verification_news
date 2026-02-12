@@ -1,5 +1,5 @@
 ---
-title: Latest 15 Papers - February 12, 2026
+title: Latest 15 Papers - February 13, 2026
 labels: documentation
 ---
 **Please check the project's GitHub page for a better reading experience and more papers.**
@@ -79,6 +79,24 @@ labels: documentation
 | **[Scaling the UVM_REG Model towards Automation and Simplicity of Use](https://ieeexplore.ieee.org/document/7031726)** | 2015-01-01 | <details><summary>2015 ...</summary><p>2015 28th International Conference on VLSI Design</p></details> |
 | **[Pragmatic approaches to implement self-checking mechanism in UVM based TestBench](https://ieeexplore.ieee.org/document/7164768)** | 2015-01-01 | <details><summary>2015 ...</summary><p>2015 International Conference on Advances in Computer Engineering and Applications</p></details> |
 | **[The development and initial testing of a new sensor to simultaneously measure strain and pressure in tendons and ligaments](https://ieeexplore.ieee.org/document/154660)** | 1991-01-01 | <details><summary>Proce...</summary><p>Proceedings of the 1991 IEEE Seventeenth Annual Northeast Bioengineering Conference</p></details> |
+
+| **Title** | **Date** | **Comment** |
+| --- | --- | --- |
+| **[NoCFuzzer: Automating NoC Verification in UVM](https://www.semanticscholar.org/paper/c3b3500a7427b7ed9fd26a9c6aa05072127d9037)** | 2025-01-01 | <details><summary>IEEE ...</summary><p>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</p></details> |
+| **[From Concept to Practice: an Automated LLM-aided UVM Machine for RTL Verification](https://www.semanticscholar.org/paper/90da95a6be76b9b63f3d41d2335d18fe8735532b)** | 2025-01-01 | <details><summary>2025 ...</summary><p>2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)</p></details> |
+| **[Forest: Access-aware GPU UVM Management](https://www.semanticscholar.org/paper/3c2c516b097641944d415786a9363974449c27c4)** | 2025-01-01 | <details><summary>Inter...</summary><p>International Symposium on Computer Architecture</p></details> |
+| **[APB Protocol Verification using UVM Methodology](https://www.semanticscholar.org/paper/31adaaf35f1588389bca2e52fb78524da634710d)** | 2025-01-01 | <details><summary>2025 ...</summary><p>2025 3rd International Conference on Self Sustainable Artificial Intelligence Systems (ICSSAS)</p></details> |
+| **[UVM Verification of RISC-V Instruction set](https://www.semanticscholar.org/paper/59e0114014045329dcaa7d2eb93b5d222671a677)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 International Conference on Smart Systems for Electrical, Electronics, Communication and Computer Engineering (ICSSEECC)</p></details> |
+| **[UVM Based Verification Framework for Deep Learning Hardware Accelerator: Case Study](https://www.semanticscholar.org/paper/d278cff9d7b6ce4617994d03bfa7df81c7d4865f)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 International Conference on Electrical, Computer and Energy Technologies (ICECET</p></details> |
+| **[Using Python Language Capabilities to Implement Elements of the UVM Methodology in the Task of Modeling a Periodic Signal Source](https://www.semanticscholar.org/paper/2713d70343d1f457a25dd49757d4cf51f65f7a6a)** | 2024-01-01 | Summa |
+| **[SPI Verification Monitor Module Using UVM](https://www.semanticscholar.org/paper/a072d33f5833088b01071710351b740bcf589cf2)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 10th International Conference on Advanced Computing and Communication Systems (ICACCS)</p></details> |
+| **[RTL to GDS Implementation and Verification of UART using UVM and OpenROAD](https://www.semanticscholar.org/paper/65ac812f79a680ad88449a8dd1aee1962dd1667f)** | 2024-01-01 | <details><summary>Compu...</summary><p>Computing and Communication Workshop and Conference</p></details> |
+| **[Robust Serial Driver Verification Through UVM Framework](https://www.semanticscholar.org/paper/8676ddb89ca4c878337dc01c107044a9bdc4a5a4)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 Control Instrumentation System Conference (CISCON)</p></details> |
+| **[Implementation of 8-Bit SPI Protocol Using System Verilog and UVM](https://www.semanticscholar.org/paper/8d232f1d87a63fa5f62308ce29e76824bc4af5e2)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 4th International Conference on Ubiquitous Computing and Intelligent Information Systems (ICUIS)</p></details> |
+| **[Development of Serial Driver Verification Environment Module Using UVM Method](https://www.semanticscholar.org/paper/e88146c53afa6d70de2d31313a80efbba1f7198d)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 5th International Conference on Intelligent Communication Technologies and Virtual Mobile Networks (ICICV)</p></details> |
+| **[Design of Reusable VIP(Verification IP) of AXI Master and Slave in UVM](https://www.semanticscholar.org/paper/725025e3eca76f3e7104453c713bcf9213b7da57)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 International Conference on Computing, Semiconductor, Mechatronics, Intelligent Systems and Communications (COSMIC)</p></details> |
+| **[Design and UVM based Verification of UART, SPI, and I2C Protocols](https://www.semanticscholar.org/paper/6d4ce869f19de173bd4313cc25199b715427b360)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 5th International Conference on Smart Electronics and Communication (ICOSEC)</p></details> |
+| **[Analyzing AES Verification: A Comparative Study of UVM and Cocotb Approaches](https://www.semanticscholar.org/paper/d9287db06dc7459d193a5ad97fe59295f9948922)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 International Conference on Smart Systems for Electrical, Electronics, Communication and Computer Engineering (ICSSEECC)</p></details> |
 
 | **Title** | **Date** | **Comment** |
 | --- | --- | --- |
