@@ -838,6 +838,16 @@ def filter_tags(
     papers: List[Dict[str, str]],
     target_fileds: List[str] = ["cs", "stat"],
 ) -> List[Dict[str, str]]:
+    """Filter papers by arXiv-style subject tags.
+
+    Args:
+        papers: List of paper dictionaries, each containing a ``"Tags"`` field.
+        target_fileds: List of allowed tag prefixes (e.g. ``["cs", "stat"]``).
+
+    Returns:
+        Filtered list of papers whose first tag component matches any of
+        ``target_fileds``.
+    """
     logger.info("Filtering papers by tags: %s", target_fileds)
     # filtering tags: only keep the papers in target_fileds
     results = []
@@ -847,7 +857,7 @@ def filter_tags(
             if tag.split(".")[0] in target_fileds:
                 results.append(paper)
                 break
-    logger.info(f"Filtered papers: {len(results)} out of {len(papers)} papers kept")
+    logger.info("Filtered papers: %d out of %d papers kept", len(results), len(papers))
     return results
 
 
@@ -1206,7 +1216,11 @@ def get_daily_papers_by_keyword_with_retries_crossref(
     max_result: int,
     retries: int = 3,
 ) -> List[Dict[str, str]]:
-    """Retry wrapper for fetching papers via CrossRef."""
+    """Retry wrapper for fetching papers via CrossRef.
+
+    This helper never raises on retry exhaustion and instead returns an empty
+    list, which keeps the calling pipeline simple.
+    """
     logger.info(
         "Attempting to get CrossRef papers for keyword '%s' with %d retries",
         keyword,
@@ -1246,7 +1260,7 @@ def get_daily_papers_by_keyword_with_retries_crossref(
                 time.sleep(60)
 
     logger.error("Failed to get CrossRef papers after all retry attempts")
-    return None
+    return []
 
 
 def get_daily_papers_by_keyword_with_retries_openalex(
@@ -1255,7 +1269,11 @@ def get_daily_papers_by_keyword_with_retries_openalex(
     max_result: int,
     retries: int = 3,
 ) -> List[Dict[str, str]]:
-    """Retry wrapper for fetching papers via OpenAlex."""
+    """Retry wrapper for fetching papers via OpenAlex.
+
+    This helper never raises on retry exhaustion and instead returns an empty
+    list, which keeps the calling pipeline simple.
+    """
     logger.info(
         "Attempting to get OpenAlex papers for keyword '%s' with %d retries",
         keyword,
@@ -1295,7 +1313,7 @@ def get_daily_papers_by_keyword_with_retries_openalex(
                 time.sleep(60)
 
     logger.error("Failed to get OpenAlex papers after all retry attempts")
-    return None
+    return []
 
 
 def get_daily_papers_by_keyword_with_retries_semantic_scholar(
@@ -1304,7 +1322,11 @@ def get_daily_papers_by_keyword_with_retries_semantic_scholar(
     max_result: int,
     retries: int = 3,
 ) -> List[Dict[str, str]]:
-    """Retry wrapper for fetching papers via Semantic Scholar."""
+    """Retry wrapper for fetching papers via Semantic Scholar.
+
+    This helper never raises on retry exhaustion and instead returns an empty
+    list, which keeps the calling pipeline simple.
+    """
     logger.info(
         "Attempting to get Semantic Scholar papers for keyword '%s' with %d retries",
         keyword,
@@ -1346,7 +1368,7 @@ def get_daily_papers_by_keyword_with_retries_semantic_scholar(
     logger.error(
         "Failed to get Semantic Scholar papers after all retry attempts",
     )
-    return None
+    return []
 
 
 def get_daily_papers_by_keyword_with_retries_acm(
@@ -1355,7 +1377,11 @@ def get_daily_papers_by_keyword_with_retries_acm(
     max_result: int,
     retries: int = 3,
 ) -> List[Dict[str, str]]:
-    """Retry wrapper for fetching papers via the ACM Digital Library API."""
+    """Retry wrapper for fetching papers via the ACM Digital Library API.
+
+    This helper never raises on retry exhaustion and instead returns an empty
+    list, which keeps the calling pipeline simple.
+    """
     logger.info(
         "Attempting to get ACM papers for keyword '%s' with %d retries",
         keyword,
@@ -1395,7 +1421,7 @@ def get_daily_papers_by_keyword_with_retries_acm(
                 time.sleep(60)
 
     logger.error("Failed to get ACM papers after all retry attempts")
-    return None
+    return []
 
 
 def get_daily_papers_by_keyword_with_retries_dvcon(
@@ -1417,8 +1443,8 @@ def get_daily_papers_by_keyword_with_retries_dvcon(
         retries: Maximum number of retries on failure.
 
     Returns:
-        A list of dictionaries ready for table generation, or ``None`` if all
-        retries fail.
+        A list of dictionaries ready for table generation. Returns an empty
+        list if all retries fail.
     """
     logger.info(
         "Attempting to get DVCon papers for keyword '%s' with %d retries",
@@ -1451,7 +1477,7 @@ def get_daily_papers_by_keyword_with_retries_dvcon(
                 time.sleep(60)
 
     logger.error("Failed to get DVCon papers after all retry attempts")
-    return None
+    return []
 
 
 def download_dvcon_assets(
@@ -1649,45 +1675,61 @@ def extract_abstracts_from_downloaded_dvcon_pdfs(
                 logger.debug("Extracted abstract (length: %d chars) for: %s", len(abstract), entry.get("Title", "Unknown"))
             else:
                 logger.debug("No abstract found in PDF: %s", matching_pdf.name)
-            # Best-effort year inference from the PDF content so that DVCon
-            # entries can carry a realistic publication year instead of a
-            # placeholder date.
+
+            # Best-effort year inference so that DVCon entries carry a realistic
+            # publication year instead of the legacy 1970 placeholder. We try,
+            # in order:
+            #   1. File name stem (fast, very reliable for DVCon assets).
+            #   2. First-page text content around "DVCon" if necessary.
             try:
-                text_for_year = extract_text_with_fallback(
-                    pdf_path=matching_pdf,
-                    max_pages=1,
-                )
-                if text_for_year:
-                    year_candidates = [
-                        int(match.group(0))
-                        for match in re.finditer(r"(19|20)\d{2}", text_for_year)
-                    ]
-                    current_year = datetime.datetime.now().year
-                    year_candidates = [
-                        y for y in year_candidates if 1990 <= y <= current_year + 1
-                    ]
-                    inferred_year: Optional[int] = None
+                current_year = datetime.datetime.now().year
+                inferred_year: Optional[int] = None
 
-                    # Prefer years that appear near "DVCon" or "DVCon India/EU/US".
-                    if year_candidates:
-                        lowered_text = text_for_year.lower()
-                        for y in sorted(year_candidates, reverse=True):
-                            if re.search(
-                                rf"(dvcon[^0-9]{{0,40}}{y})|({y}[^0-9]{{0,40}}dvcon)",
-                                lowered_text,
-                            ):
-                                inferred_year = y
-                                break
-                        if inferred_year is None:
-                            inferred_year = max(year_candidates)
+                # 1) Infer from filename stem, e.g. "DVConEU_2025_paper_132".
+                stem_match = re.search(r"(19|20)\d{2}", matching_pdf.stem)
+                if stem_match:
+                    candidate = int(stem_match.group(0))
+                    if 1990 <= candidate <= current_year + 1:
+                        inferred_year = candidate
 
-                    if inferred_year is not None:
-                        entry["Date"] = f"{inferred_year:04d}-01-01T00:00:00Z"
-                        logger.debug(
-                            "Inferred DVCon year %d for entry: %s",
-                            inferred_year,
-                            entry.get("Title", "Unknown"),
-                        )
+                # 2) If filename-based inference failed, fall back to text.
+                if inferred_year is None:
+                    text_for_year = extract_text_with_fallback(
+                        pdf_path=matching_pdf,
+                        max_pages=1,
+                    )
+                    if text_for_year:
+                        year_candidates = [
+                            int(match.group(0))
+                            for match in re.finditer(r"(19|20)\d{2}", text_for_year)
+                        ]
+                        year_candidates = [
+                            y for y in year_candidates if 1990 <= y <= current_year + 1
+                        ]
+
+                        # Prefer years that appear near "DVCon" or similar.
+                        if year_candidates:
+                            lowered_text = text_for_year.lower()
+                            for y in sorted(year_candidates, reverse=True):
+                                if re.search(
+                                    rf"(dvcon[^0-9]{{0,40}}{y})|({y}[^0-9]{{0,40}}dvcon)",
+                                    lowered_text,
+                                ):
+                                    inferred_year = y
+                                    break
+                            if inferred_year is None:
+                                inferred_year = max(year_candidates)
+
+                # Only override obviously placeholder dates or unset dates.
+                existing_date = entry.get("Date", "")
+                is_placeholder = existing_date.startswith("1970-01-01") or not existing_date
+                if inferred_year is not None and is_placeholder:
+                    entry["Date"] = f"{inferred_year:04d}-01-01T00:00:00Z"
+                    logger.debug(
+                        "Inferred DVCon year %d for entry: %s",
+                        inferred_year,
+                        entry.get("Title", "Unknown"),
+                    )
             except Exception as exc:  # noqa: BLE001
                 logger.debug(
                     "Failed to infer year from DVCon PDF %s: %s",
@@ -2005,7 +2047,7 @@ def build_dvcon_readme_from_pdfs(
     def _infer_year_from_stem(stem: str) -> int:
         """Best-effort extraction of a four-digit year from a filename stem."""
 
-        match = re.search(r"(19|20)\\d{2}", stem)
+        match = re.search(r"(19|20)\d{2}", stem)
         if not match:
             return 0
         try:
@@ -2051,7 +2093,26 @@ def build_dvcon_readme_from_pdfs(
     logger.info("Wrote DVCon abstract README to %s", output_path)
 
 
-def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) -> str:
+def generate_table(
+    papers: List[Dict[str, str]],
+    ignore_keys: List[str] | None = None,
+) -> str:
+    """Convert a list of paper dictionaries into a Markdown table.
+
+    The function sorts papers by date (newest first), formats the title as a
+    markdown link, wraps long fields such as ``Abstract`` and ``Comment`` in
+    collapsible details blocks, and returns a markdown table string.
+
+    Args:
+        papers: Normalised paper dictionaries.
+        ignore_keys: Optional list of keys to omit from the table body
+            (commonly ``["Abstract"]`` for issue templates).
+
+    Returns:
+        A markdown table string, or an empty string if ``papers`` is empty.
+    """
+    if ignore_keys is None:
+        ignore_keys = []
     logger.info("Generating table for %d papers", len(papers))
     
     # Handle empty papers list
@@ -2161,7 +2222,14 @@ def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) ->
     logger.info("Successfully generated table")
     return header + body
 
-def back_up_files():
+
+def back_up_files() -> None:
+    """Back up README and issue template files before regeneration.
+
+    The current ``README.md`` and ``.github/ISSUE_TEMPLATE.md`` files are moved
+    to ``*.bk`` siblings so that the main script can restore them in case of
+    failure.
+    """
     logger.info("Backing up files")
 
     # Back up README.md if it exists
@@ -2191,7 +2259,8 @@ def back_up_files():
         )
 
 
-def restore_files():
+def restore_files() -> None:
+    """Restore README and issue template files from their backups."""
     logger.info("Restoring files from backup")
 
     # Restore README.md if backup exists
@@ -2221,7 +2290,8 @@ def restore_files():
         )
 
 
-def remove_backups():
+def remove_backups() -> None:
+    """Remove backup files created by :func:`back_up_files`."""
     logger.info("Removing backup files")
 
     # Remove README.md backup if it exists
@@ -2248,10 +2318,15 @@ def remove_backups():
             ".github/ISSUE_TEMPLATE.md.bk not found, skipping ISSUE_TEMPLATE removal",
         )
 
-def get_daily_date():
-    # get beijing time in the format of "March 1, 2021"
-    beijing_timezone = pytz.timezone('Asia/Shanghai')
+
+def get_daily_date() -> str:
+    """Return today's date string in Beijing time for issue titles.
+
+    The format is ``\"Month DD, YYYY\"`` (for example, ``\"March 01, 2025\"``),
+    which is used when constructing the daily issue template title.
+    """
+    beijing_timezone = pytz.timezone("Asia/Shanghai")
     today = datetime.datetime.now(beijing_timezone)
     date_str = today.strftime("%B %d, %Y")
-    logger.debug(f"Generated date string: {date_str}")
+    logger.debug("Generated date string: %s", date_str)
     return date_str

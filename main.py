@@ -193,7 +193,17 @@ def parse_arguments() -> argparse.Namespace:
 
 
 def main() -> None:
-    """Entry point for updating the daily papers README and issue template."""
+    """Entry point for updating the daily papers README and issue template.
+
+    This function orchestrates the end-to-end update flow:
+
+    * Parses CLI arguments and applies profile-specific defaults.
+    * Backs up existing README and issue template files.
+    * Queries the configured sources for each keyword.
+    * Generates and writes markdown tables into ``README.md`` and
+      ``.github/ISSUE_TEMPLATE.md``.
+    * Archives the daily README snapshot into ``data/YYYY-MM-DD.md``.
+    """
     args = parse_arguments()
 
     # Apply keyword and source defaults for the verification / UVM profile.

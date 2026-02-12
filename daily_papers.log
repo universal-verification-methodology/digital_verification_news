@@ -1,0 +1,8 @@
+2026-02-12 17:41:06,973 - INFO - Using 'verification' profile: focusing on digital/UVM verification topics.
+2026-02-12 17:41:06,984 - INFO - Starting Daily Papers Update Script
+2026-02-12 17:41:06,990 - INFO - Backing up files
+2026-02-12 17:41:06,998 - INFO - Backed up existing files
+2026-02-12 17:41:07,003 - INFO - Processing keyword: verification
+2026-02-12 17:41:07,005 - INFO - Fetching DVCon papers for keyword: verification
+2026-02-12 17:41:07,005 - INFO - Attempting to get DVCon papers for keyword 'verification' with 3 retries
+2026-02-12 17:41:07,005 - INFO - Getting DVCon papers for keyword via proceedings site: verification
