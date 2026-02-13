@@ -32,6 +32,9 @@ except ImportError:  # pragma: no cover - optional heavy OCR dependencies
 # Set up logger
 logger = logging.getLogger(__name__)
 
+# Placeholder for unknown publication date (avoids misleading 1970-01-01 in output).
+UNKNOWN_DATE = ""
+
 
 def remove_duplicated_spaces(text: str) -> str:
     """Collapse duplicate whitespace characters into single spaces.
@@ -203,7 +206,7 @@ def request_papers_with_crossref(
                 day = date_parts[0][2] if len(date_parts[0]) > 2 else 1
                 date_str = f"{year:04d}-{month:02d}-{day:02d}T00:00:00Z"
             else:
-                date_str = "1970-01-01T00:00:00Z"
+                date_str = UNKNOWN_DATE
 
             container_list = item.get("container-title") or []
             container = container_list[0] if container_list else ""
@@ -287,8 +290,8 @@ def request_papers_with_openalex(
                 "",
             )
 
-            date_str = item.get("publication_date") or "1970-01-01"
-            if "T" not in date_str:
+            date_str = item.get("publication_date") or UNKNOWN_DATE
+            if date_str and "T" not in date_str:
                 date_str = f"{date_str}T00:00:00Z"
 
             venue = ""
@@ -370,7 +373,7 @@ def request_papers_with_semantic_scholar(
             if year:
                 date_str = f"{int(year):04d}-01-01T00:00:00Z"
             else:
-                date_str = "1970-01-01T00:00:00Z"
+                date_str = UNKNOWN_DATE
 
             venue = item.get("venue", "") or ""
 
@@ -578,11 +581,11 @@ def request_papers_with_acm_api(
                     if year:
                         date_str = f"{int(year):04d}-01-01T00:00:00Z"
                     else:
-                        date_str = "1970-01-01T00:00:00Z"
+                        date_str = UNKNOWN_DATE
             elif year:
                 date_str = f"{int(year):04d}-01-01T00:00:00Z"
             else:
-                date_str = "1970-01-01T00:00:00Z"
+                date_str = UNKNOWN_DATE
 
             venue = (
                 item.get("publicationTitle")
@@ -809,11 +812,11 @@ def request_papers_with_ieee_keyword(
                     if pub_year:
                         date_str = f"{int(pub_year):04d}-01-01T00:00:00Z"
                     else:
-                        date_str = "1970-01-01T00:00:00Z"
+                        date_str = UNKNOWN_DATE
             elif pub_year:
                 date_str = f"{int(pub_year):04d}-01-01T00:00:00Z"
             else:
-                date_str = "1970-01-01T00:00:00Z"
+                date_str = UNKNOWN_DATE
 
             venue = rec.get("publicationTitle") or ""
 
@@ -1166,8 +1169,8 @@ def get_daily_papers_by_keyword_from_dvcon(
             year = int(year_match.group(0))
             date_value = f"{year:04d}-01-01T00:00:00Z"
         else:
-            # Fallback for truly ambiguous cases.
-            date_value = "1970-01-01T00:00:00Z"
+            # Fallback for truly ambiguous cases (no misleading epoch date).
+            date_value = UNKNOWN_DATE
 
         paper: Dict[str, str] = {
             "Title": remove_duplicated_spaces(title.replace("\n", " ")),
@@ -2211,16 +2214,20 @@ def update_markdown_years_from_pdfs(
                             break
 
         if pdf_path is None:
-            return match.group(0)
+            # No matching PDF: clear placeholder so we don't show 1970-01-01.
+            changes += 1
+            return match.group(0).replace("1970-01-01", UNKNOWN_DATE)
 
         try:
             year = infer_year_from_pdf(pdf_path)
         except Exception as exc:  # noqa: BLE001
             logger.debug("Failed to infer year from %s: %s", pdf_path, exc)
-            return match.group(0)
+            changes += 1
+            return match.group(0).replace("1970-01-01", UNKNOWN_DATE)
 
         if year is None:
-            return match.group(0)
+            changes += 1
+            return match.group(0).replace("1970-01-01", UNKNOWN_DATE)
 
         new_date = f"{year:04d}-01-01"
         changes += 1
@@ -2302,11 +2309,12 @@ def generate_table(
             logger.debug("Failed to parse date '%s': %s", date_str, exc)
             return datetime.datetime(1970, 1, 1)
     
-    # Sort papers by date (newest first), then by title for stable ordering
+    # Sort papers by date (newest first), then by title for stable ordering.
+    # Missing or unknown dates sort last (parse_date(UNKNOWN_DATE) yields epoch).
     sorted_papers = sorted(
         papers,
         key=lambda p: (
-            parse_date(p.get("Date", "1970-01-01T00:00:00Z")),
+            parse_date(p.get("Date") or UNKNOWN_DATE),
             p.get("Title", "").lower(),
         ),
         reverse=True,  # Newest first
@@ -2320,8 +2328,11 @@ def generate_table(
             formatted_paper = EasyDict()
             ## Title and Link
             formatted_paper.Title = "**" + "[{0}]({1})".format(paper["Title"], paper["Link"]) + "**"
-            ## Process Date (format: 2021-08-01T00:00:00Z -> 2021-08-01)
-            formatted_paper.Date = paper["Date"].split("T")[0]
+            ## Process Date: show empty for unknown/placeholder (avoid 1970-01-01 in output)
+            raw_date = paper.get("Date") or UNKNOWN_DATE
+            if raw_date.startswith("1970-01-01"):
+                raw_date = UNKNOWN_DATE
+            formatted_paper.Date = raw_date.split("T")[0] if raw_date else UNKNOWN_DATE
             
             # process other columns
             for key in keys:

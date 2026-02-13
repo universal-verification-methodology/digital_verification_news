@@ -21,7 +21,7 @@ labels: documentation
 | **[AI-Driven Design and Verification - Scaling Complexity with Intelligence](downloads/dvcon/2-DVCON-2025_Sandisk-Jayanth-Final-Shreyas-S-Budgur.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Accelerating Debug with Experience-Driven Insights: A Tool-Based Approach for IP and SoC-Level Verification](downloads/dvcon/1A2-DVConIndia2025_Final_Paper_7616.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[A Hybrid Functional Verification Approach of complex designs using Python based Models](downloads/dvcon/4B2-DVConIndia2025_Final_Paper_6824.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[Accelerating Debug with Experience-Driven Insights: A Tool-Based Approach for IP and SoC-Level Verification](downloads/dvcon/1A2_DVConIndia25_Final_PPT_7616.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[Accelerating Debug with Experience-Driven Insights: A Tool-Based Approach for IP and SoC-Level Verification](downloads/dvcon/1A2_DVConIndia25_Final_PPT_7616.pdf)** |  | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 
 | **Title** | **Date** | **Comment** |
 | --- | --- | --- |
@@ -48,6 +48,7 @@ labels: documentation
 | **[Verification and validation of digital twins: a systematic literature review for manufacturing applications](https://www.semanticscholar.org/paper/a295d2a5e7339196d9d8d1f05d2d8f0ed52c6e8e)** | 2024-01-01 | <details><summary>Inter...</summary><p>International Journal of Production Research</p></details> |
 | **[Digital Twins Verification and Validation Approach through the Quintuple Helix Conceptual Framework](https://www.semanticscholar.org/paper/7d99957226b2f695d0bfda771627fe12751b03c7)** | 2024-01-01 | Electronics |
 | **[Digital Signature Verification In Cloud Computing](https://www.semanticscholar.org/paper/d8b1b8b63d3fc53adc3ceb453104ae213b820c81)** | 2024-01-01 | <details><summary>2024 ...</summary><p>2024 11th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO)</p></details> |
+| **[Data Journalism, Digital Verification and AI. The Case for Newsroom Convergence](https://www.semanticscholar.org/paper/90b2ebfe861ccd73a128bfb7e110cac0c7c799fe)** | 2024-01-01 | <details><summary>VIEW ...</summary><p>VIEW Journal of European Television History and Culture</p></details> |
 | **[An integrated framework for risk assessment in digital verification and validation](https://www.semanticscholar.org/paper/8b19a748b5d3670ede4a42c95d485b46fd5ba06f)** | 2024-01-01 | Measurement: Sensors |
 | **[Digital Verification And Face Recognition](https://www.semanticscholar.org/paper/1fa2ba0a23c1bf56c07d9179b8a794b1fb11b4b2)** | 2023-01-01 | <details><summary>Inter...</summary><p>International Conference on Computing Communication and Networking Technologies</p></details> |
 | **[Digital Identity Verification: Transforming KYC Processes in Banking Through Advanced Technology and Enhanced Security Measures](https://www.semanticscholar.org/paper/52a9c730227ac1156eeda66690579e0154d1a12e)** | 2023-01-01 | <details><summary>Inter...</summary><p>International Research Journal of Modernization in Engineering Technology and Science</p></details> |
@@ -57,7 +58,6 @@ labels: documentation
 | **[Digital verification: on the frontline](https://www.semanticscholar.org/paper/1b5da06950d04e6fa4ac58eccfc957d08595815a)** | 2016-01-01 |  |
 | **[Developing business analytic capabilities for combating e-commerce identity fraud: A study of Trustev's digital verification solution](https://www.semanticscholar.org/paper/2cc1c13be3ca0aafac4f370f211e61e5bc54a9c0)** | 2016-01-01 | <details><summary>Infor...</summary><p>Information Manager (The)</p></details> |
 | **[A BIST Architecture based UART Transmitter for Digital Verification](https://www.semanticscholar.org/paper/e0137f1636a37896829819a4dd7692494a2293e3)** | 2015-01-01 |  |
-| **[Comprehensive Application of Satellite Digital Verification Environment](https://www.semanticscholar.org/paper/931c4bb1cd1ca446af1e2636cdff82e5a2349e4b)** | 2014-01-01 |  |
 
 
 
@@ -75,10 +75,10 @@ labels: documentation
 | **[A UVM Testbench for Exploring Design Margins of Analog/Mixed-Signal Systems: A PCI-Express Receiver Detection Circuit Example](downloads/dvcon/A-UVM-Testbench-for-Exploring-Design-Margins-of-AnalogMixed-Signal-Circuits-A-PCI-Express-Receiver-Detection-Circuit-Example.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[A Summary and Examination of UVM Virtual Sequence Techniques](downloads/dvcon/1B1-DVConIndia2025_Final_Paper_3272.pdf)** | 2025-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 | **[Chain of Responsibility Design Pattern for scalable UVM drivers](downloads/dvcon/P17-DVConIndia25_Final_PPT_5053.pdf)** | 2017-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[UVM based Generic Interrupt Service Routine (gISR)](downloads/dvcon/1A1_DVConIndia25_Final_PPT_4877.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[SmartLint Booster: Automation of UVM Testbench Linting with AMIQ Verissimo](downloads/dvcon/P15-DVConIndia25_Final_PPT_4873.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[Novel Customized Algorithm and Verification Checklist to Improve the Process of Register Verification in UVM](downloads/dvcon/P13-DVConIndia25_Final_PPT_4118.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
-| **[Efficient Coverage Optimization with Formal Guided Testcase Generation in UVM Verification](downloads/dvcon/Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf)** | 1970-01-01 | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[UVM based Generic Interrupt Service Routine (gISR)](downloads/dvcon/1A1_DVConIndia25_Final_PPT_4877.pdf)** |  | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[SmartLint Booster: Automation of UVM Testbench Linting with AMIQ Verissimo](downloads/dvcon/P15-DVConIndia25_Final_PPT_4873.pdf)** |  | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[Novel Customized Algorithm and Verification Checklist to Improve the Process of Register Verification in UVM](downloads/dvcon/P13-DVConIndia25_Final_PPT_4118.pdf)** |  | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
+| **[Efficient Coverage Optimization with Formal Guided Testcase Generation in UVM Verification](downloads/dvcon/Efficient-Coverage-Optimization-with-Formal-Guided-Testcase-Generation-in-UVM-Verification.pdf)** |  | <details><summary>DVCon...</summary><p>DVCon proceedings entry</p></details> |
 
 | **Title** | **Date** | **Comment** |
 | --- | --- | --- |
